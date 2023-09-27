@@ -1,0 +1,51 @@
+.home-banner {
+    margin-top: 80px;
+}
+
+.home-banner img {
+    height: 100%;
+}
+
+.home-banner-box {
+    position: absolute;
+    top: 80px;
+}
+
+.home-banner-title {
+    color: var(--brown);
+    font-size: 40px;
+    line-height: 140%;
+    font-weight: 600;
+}
+
+.home-banner-btn {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: var(--brown);
+    border: none;
+    border-radius: 8px;
+    padding: 6px 18px;
+    margin-top: 20px;
+    color: white;
+    display: block;
+    width: 137px;
+    font-family: "Montserrat", sans-serif;
+    transition: opacity .3s;
+}
+
+.home-banner-btn:hover {
+    opacity: .7;
+}
+
+
+@media screen and (max-width:575px) {
+    .home-banner-box {
+        top: 20px;
+    }
+
+    .home-banner-title {
+        font-size: 26px;
+        font-weight: 800;
+    }
+}

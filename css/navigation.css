@@ -1,0 +1,82 @@
+:root {
+    --swiper-navigation-size: 40px;
+}
+.swiper-button-prev,
+.swiper-button-next {
+    position: absolute;
+    top: 50%;
+    width: calc(var(--swiper-navigation-size) / 44 * 27);
+    height: var(--swiper-navigation-size);
+    margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+    opacity: 0.4;
+    cursor: auto;
+    pointer-events: none;
+}
+
+.swiper-button-prev.swiper-button-hidden,
+.swiper-button-next.swiper-button-hidden {
+    opacity: 0;
+    cursor: auto;
+    pointer-events: none;
+}
+
+.swiper-button-prev:before {
+    content: url('../images/banner/arrow-prev.svg');
+}
+
+.swiper-button-next:before {
+    content: url('../images/banner/arrow-next.svg');
+}
+
+.swiper-button-next {
+    right: 5%;
+}
+
+.swiper-button-prev {
+    left: 5%;
+}
+
+
+@media (max-width: 1399px) {
+    .swiper-button-next {
+        right: 20px;
+    }
+
+    .swiper-button-prev {
+        left: 20px;
+    }
+
+    .swiper-button-prev:before {
+        content: url('../images/banner/mobile-arrow-prev.svg');
+    }
+
+    .swiper-button-next:before {
+        content: url('../images/banner/mobile-arrow-next.svg');
+    }
+}
+
+@media (max-width: 767px) {
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1700px) {
+    .swiper-button-next {
+        right: 19%;
+    }
+
+    .swiper-button-prev {
+        left: 19%;
+    }
+}

@@ -1,0 +1,134 @@
+.about-us {
+    color: var(--brown);
+}
+.about-title {
+    font-size: 90px;
+    line-height: 110%;
+    margin-top: 120px;
+}
+
+.about-text {
+    font-size: 30px;
+    line-height: 140%;
+    margin: 60px 0 30px 0;
+}
+
+.about-info {
+    font-size: 20px;
+}
+
+.about-info._bottom {
+    margin-bottom: 60px;
+}
+
+.about-bottom-text {
+    margin: 60px 0 30px 0;
+}
+
+.infographic {
+    margin: 19px 0;
+    display: flex;
+    gap: 100px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    scrollbar-color: transparent transparent;
+}
+
+.hand-icon {
+    margin: 12px 0
+}
+
+.infographic::-webkit-scrollbar {
+    display: none;
+}
+
+.infographic__box .__title {
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 140%;
+    margin: 0;
+}
+
+.infographic__box .__info {
+    font-size: 20px;
+    line-height: 140%;
+    margin: 0;
+}
+
+.bottom-box {
+    margin: 32px 0 0;
+}
+
+.about-last-text {
+    margin: 0;
+}
+
+.about-last-text a {
+    text-decoration: none;
+    color: var(--brown);
+}
+
+@media screen and (max-width: 1199px) {
+    .about-title {
+        margin-top: 95px;
+    }
+
+    .infographic {
+        gap: 38px;
+    }
+
+    .infographic__box .__title {
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 150%;
+    }
+
+    .infographic__box .__info {
+        font-size: 14px;
+        line-height: 140%;
+        margin-top: 6px;
+    }
+
+    .about-last-text {
+        max-width: 332px;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .about-title {
+        font-size: 40px;
+        line-height: 140%;
+        margin-top: 60px;
+    }
+
+    .about-text {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+
+    .about-last-text {
+        max-width: 222px;
+    }
+
+    .about-info._bottom {
+        margin-bottom: 0;
+    }
+
+    .infographic {
+        margin: 2px 0 12px 0;
+        gap: 20px;
+    }
+
+    .infographic__box .__info {
+        font-size: 12px;
+        line-height: normal;
+    }
+
+    .__arrow-more {
+        width: 45px;
+        height: 44px;
+        stroke-width: 2px !important;
+        stroke: var(--brown, #381F15);
+    }
+}

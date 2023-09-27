@@ -1,0 +1,277 @@
+/*Offcanvas*/
+.offcanvas, .offcanvas-call {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    background-color: var(--brown);
+    color: #fff;
+    transition: right 0.3s ease-in-out;
+    z-index: 100;
+}
+
+.offcanvas {
+    right: -375px;
+    width: 375px;
+}
+
+.offcanvas-call {
+    right: -396px;
+    width: 396px;
+}
+
+.offcanvas-header {
+    background-color:var(--brown);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offcanvas-header h2 {
+    margin: 0;
+}
+
+.offcanvas-call .offcanvas-content {
+    padding: 0 40px!important;
+}
+
+.offcanvas-content {
+    padding: 0 53px 0 47px;
+}
+
+.offcanvas-content p {
+    margin: 0 0 10px 0;
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.offcanvas-content span {
+    font-size: 20px;
+}
+
+.offcanvas-content input {
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 8px;
+    line-height: 140%;
+    font-weight: 500;
+    font-size: 20px;
+    background: none;
+    height: 48px;
+    padding-left: 13px;
+    outline: none;
+    color: white;
+    margin-top: 32px;
+}
+
+.offcanvas-content .bottom-info {
+    color: var(--grey-1);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.offcanvas-content .bottom-info a {
+    color: var(--grey-1);
+}
+
+.offcanvas-content .modal-submit-btn {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background: var(--green-1);
+    margin: 32px 0 20px 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.offcanvas-content .__box {
+    margin-top: 10px;
+}
+
+.offcanvas-content .__hr {
+    border-bottom: 1px solid #EAF3D1;
+}
+
+.offcanvas-content .__box .item {
+    text-decoration: none;
+    display: block;
+    margin: 22px 0 6px 0;
+    font-size: 20px;
+    line-height: 140%;
+    color: #EAF3D1;
+}
+
+.offcanvas-content .__box .info {
+    text-decoration: none;
+    line-height: 140%;
+    color: white;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.mobile-header-btn {
+    border: none;
+    border-bottom: 1px solid #EAF3D1;
+    width: 100%;
+    font-size: 20px;
+    line-height: 140%;
+    height: 40px;
+    text-align: left;
+    margin: 10px 0 0;
+    padding-left: 0;
+    background: none;
+    color: #EAF3D1;
+}
+
+.offcanvas-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.offcanvas-content ul li {
+    margin-bottom: 10px;
+}
+
+.offcanvas-content ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.close-btn {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    opacity: 0;
+    transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+/*Offcanvas*/
+
+header * {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background: rgba(56, 31, 21, 0.7);
+    padding: 14px 0;
+}
+
+.header__menu {
+    /*opacity: 0 !important;*/
+    list-style: none;
+    overflow: hidden;
+    display: flex;
+    padding: 0;
+    gap: 40px;
+}
+
+/*.header__location {*/
+/*  margin: 0 10px;*/
+/*}*/
+
+/*.header__text-toggle {*/
+/* margin-right: 10px;*/
+/*}*/
+
+.header__menu li {
+    cursor: pointer;
+}
+
+.header__menu li:hover a {
+    transition: color .3s;
+}
+
+.header__menu li:hover a {
+    color: var(--green-3);
+}
+
+.header__btn-group {
+    gap: 20px;
+}
+
+.header__btn-group button {
+    background: none;
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: 500;
+    transition-property: border-color, color;
+    transition-duration: .3s;
+}
+
+.header__btn-group button:hover {
+    border-color: var(--green-3);
+    color: var(--green-3);
+}
+
+.header__phone, .header__phone__info {
+    line-height: 0;
+}
+
+.header__phone {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.18px;
+}
+
+.header__phone__info {
+    font-size: 10px;
+    letter-spacing: 0.2px;
+    line-height: 9px;
+    opacity: .8;
+}
+
+@media screen and (max-width:1399px) {
+    /*.header__menu {*/
+    /*gap: 25px;*/
+    /*}*/
+
+    /*.header__location {*/
+    /*  margin: 0 5px;*/
+    /*}*/
+
+    /*.header__text-toggle {*/
+    /*  margin-right: 5px;*/
+    /*}*/
+}
+
+@media screen and (max-width:1199px) {}
+
+@media screen and (max-width:575px) {
+    .header__btn-group {
+        gap: 20px;
+    }
+
+    .offcanvas-call {
+        width: 375px;
+    }
+
+    .offcanvas-call .offcanvas-content {
+        padding: 0 20px!important;
+    }
+
+    .header__btn-group button {
+        padding: 8px 11px;
+    }
+}
