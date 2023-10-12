@@ -1,6 +1,6 @@
 footer {
     background-color: var(--brown);
-    padding: 40px 0 23px 0;
+    padding: 40px 0 18px 0;
     color: white;
 }
 
@@ -14,65 +14,63 @@ footer {
     background-color: #E3ED73;
 }
 
-.address {
-    font-size: 16px;
-    margin-top: 21px;
-    max-width: 241px;
+footer .address {
+    font-size: 12px;
+    max-width: 250px;
 }
 
-.icons-group {
+footer .icons-group {
     gap: 19px;
     display: flex;
-    margin: 14px 0 35px 0;
+    margin: 20px 0;
 }
 
-.down-btn {
+footer button {
     border: 1px solid white;
     transition: border-color .3s;
     border-radius: 8px;
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: 500;
     line-height: 140%;
     text-align: center;
     display: flex;
-    padding: 14px 16px;
+    padding: 0 16px;
+    height: 46px;
     background: none;
     color: white;
 }
 
-.down-btn:hover {
+footer .modal-btn {
+    color: #E3ED73;
     border-color: #E3ED73;
 }
 
-.down-btn:hover span {
+footer .modal-btn:hover {
+    color: #DA9819;
+    border-color: #DA9819;
+}
+
+footer .modal-btn:hover svg path {
+    stroke: #DA9819;
+}
+
+footer .down-btn:hover {
+    border-color: #E3ED73;
     color: #E3ED73;
 }
 
-.down-btn:hover svg path {
+footer .down-btn:hover svg path {
     stroke: #E3ED73;
 }
 
-.down-btn span {
+footer button span {
     margin-left: 20px;
     transition: color .3s;
 }
 
-.address a {
+footer .address a {
     color: white;
     text-decoration: none;
-}
-
-.label-second {
-    margin-top: 47px;
-}
-
-.footer__contact {
-    line-height: 140% !important;
-}
-
-.list-label {
-    font-size: 16px;
-    font-weight: 800;
-    line-height: 210%;
 }
 
 footer ul {
@@ -82,14 +80,14 @@ footer ul {
 }
 
 footer ul li {
-    margin-bottom: 10px;
+    margin-bottom: 16px;
 }
 
 footer ul li a {
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 500;
     cursor: pointer;
-    color: var(--grey-text);
+    color: white;
     text-decoration: none;
     transition: color .3s;
 }
@@ -114,7 +112,7 @@ footer .form-info {
     font-weight: 400;
     line-height: 160%;
     letter-spacing: -0.3px;
-    margin-bottom: 16px;
+    margin-bottom: 10px;
 }
 
 .footer__input {
@@ -125,7 +123,7 @@ footer .form-info {
     border-radius: 8px;
     font-size: 16px;
     outline: none;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .footer__btn {
@@ -141,14 +139,10 @@ footer .form-info {
 
 .form-bottom-text, .form-bottom-text a {
     font-size: 12px;
-    color: var(--grey-text);
-    margin: 20px 0 20px 0;
-}
-
-footer .additional-info {
-    font-size: 16px;
-    font-weight: 800;
-    line-height: 210%;
+    color: white;
+    opacity: .6;
+    margin: 12px 0 0 0;
+    line-height: normal;
 }
 
 footer .additional-info a {
@@ -159,15 +153,16 @@ footer .additional-info a {
 .footer__hr {
     border-bottom: 1px solid white;
     width: 100%;
+    opacity: .4;
     margin-top: 20px;
 }
 
-.supplier {
+footer .supplier {
     font-size: 12px;
     margin-top: 20px;
 }
 
-.supplier a {
+footer .supplier a {
     color: white;
     text-decoration: none;
 }
@@ -175,33 +170,51 @@ footer .additional-info a {
 footer .custom-hr {
     height: 1px;
     width: 100%;
-    margin-top: 20px;
+    margin: 30px 0;
 }
 
 footer .custom-hr .__hr {
     border-bottom: 1px solid white;
+    opacity: .4;
     width: 100%;
 }
 
-footer .hr-md {
-    margin: 17px 0 30px 0;
-}
-
 @media screen and (max-width:1399px) {
-    .address {
-        font-size: 12px;
+    footer .form-info {
+        margin-bottom: 16px;
     }
 
-    .address a {
+    .footer__input {
+        font-weight: 700;
+    }
+
+    .footer__input::placeholder {
+        color: white;
+        opacity: 0.4;
+    }
+
+    footer .custom-hr {
+        margin: 40px 0;
+    }
+
+    footer ul li {
+        margin-bottom: 30px;
+    }
+
+    footer .address a {
         display: inline;
     }
 
-    .icons-group {
-        margin: 14px 0 29px 0;
+    .footer__hr {
+        margin: 0 0 20px 0;
     }
 
-    .footer__hr {
-        margin-top: 20px;
+    footer .address-order {
+        margin-top: -166px;
+    }
+
+    footer {
+        padding: 40px 0;
     }
 }
 @media screen and (max-width: 767px) {
@@ -210,12 +223,16 @@ footer .hr-md {
         color: white;
     }
 
-    .address {
+    footer .custom-hr {
+        margin: 30px 0;
+    }
+
+    footer .address {
         font-size: 14px;
         max-width: 300px;
     }
 
-    .icons-group svg {
+    footer .icons-group svg {
         width: 36px;
         height: 36px;
     }
@@ -226,32 +243,20 @@ footer .hr-md {
         justify-content: center;
     }
 
-    footer .form-title {
-        margin-top: 20px;
-    }
-
-    .list-label {
-        margin-top: 0;
-    }
-
-    footer .additional-info {
-        margin-top: 10px;
-    }
-
-    footer .label-second {
+    footer .supplier {
+        display: block !important;
         margin-top: 30px;
     }
 
-    .footer__contact {
-        margin-top: 36px;
-    }
-
-    .supplier {
-        display: block !important;
-        margin-top: 40px;
+    footer .supplier .__bottom {
+        margin-top: 30px;
     }
 
     .form-bottom-text, .form-bottom-text a {
-        margin: 20px 0 0 0;
+        margin: 10px 0 0 0;
+    }
+
+    footer .address-order {
+        margin-top: 0;
     }
 }

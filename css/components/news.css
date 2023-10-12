@@ -1,0 +1,266 @@
+.news {
+    background-color: var(--green-1-2);
+}
+
+.all-news {
+    margin: 35px 0 120px 0;
+}
+
+.main-title {
+    margin-top: 100px;
+}
+
+.main-title a {
+    color: #2C2C2C;
+}
+
+.news-text {
+    font-size: 40px;
+    line-height: 140%;
+    font-weight: 600;
+    color: var(--brown);
+}
+
+.news__info-text {
+    font-size: 14px;
+    gap: 20px;
+    padding: 0;
+    color: #2C2C2C;
+    text-decoration: none;
+}
+
+.news__info-text:hover ~ a svg path {
+    stroke: #586C3E;
+}
+
+.news-card {
+    border-radius: 22px;
+}
+
+.card-box {
+    padding: 30px;
+}
+
+.card-box p {
+    margin: 10px 0 0;
+}
+
+.news__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 120%;
+    color: white;
+}
+
+.news__info {
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    line-height: 140%;
+}
+
+.news__text {
+    color: white;
+    font-size: 14px;
+}
+
+.news__first {
+    background-color: white;
+}
+
+.news__first .news-btn a {
+    background-color: #6D8880;
+    color: white;
+}
+
+.news-btn a {
+    line-height: 140%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding: 8px 18px;
+    border-radius: 8px;
+    border: none;
+    text-decoration: none;
+    transition: opacity .3s;
+    color: #6D8880;
+    background-color: white;
+}
+
+.news-btn a:hover {
+    opacity: .7;
+}
+
+.news__first .news-btn {
+    margin-top: 90px;
+}
+
+.news__second .news-btn {
+    margin-top: 30px;
+}
+
+.news__first .__img {
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    height: 90%;
+    width: auto;
+}
+
+.news__second {
+    background-color: var(--green-2);
+}
+
+.news__second .__img {
+    width: auto;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.news__third {
+    background-color: var(--green-1);
+    height: 100%;
+}
+
+.news__third .news-btn {
+    margin-top: 66px;
+}
+
+.news__third .__img {
+    position: absolute;
+    bottom: 0;
+    border-radius: 22px;
+}
+
+.news__first .news__title {
+    color: var(--green-1);
+}
+
+.news__first .news__info, .news__first .news__text {
+    color: #2C2C2C;
+}
+
+@media screen and (max-width:1399px) {
+    .news__third .__img {
+        position: absolute;
+        border-radius: 22px;
+        right: 0;
+        height: 100%;
+        width: auto;
+        margin-left: auto;
+    }
+
+    .news__first .news-btn {
+        margin: 44px 0 5px 0;
+    }
+
+    .news__second .news-btn {
+        margin: 23px 0 10px 0;
+    }
+
+    .news__third .news-btn {
+        margin: 44px 0 5px 0;
+    }
+}
+
+@media screen and (max-width:1199px) {
+    .main-title {
+        margin-top: 80px;
+    }
+
+    .news__info, .news__text {
+        width: 45%;
+    }
+
+    .news__third .news__info {
+        width: 58%;
+    }
+
+    .news__info span {
+        white-space: pre-wrap;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .all-news {
+        margin: 5px 0 65px 0;
+    }
+
+    .main-title {
+        margin-top: 80px;
+    }
+
+    .news-block {
+        overflow-x: scroll;
+        scrollbar-width: none
+    }
+
+    .news-block::-webkit-scrollbar {
+        width: 0;
+    }
+
+    .news-card {
+        height: 442px;
+        width: 300px;
+    }
+
+    .news__first .news__title {
+        margin-top: 70px;
+    }
+
+    .news__first .news-btn, .news__second .news-btn {
+        position: absolute;
+        bottom: 35px;
+        margin: 0 !important;
+    }
+
+    .news__third .news-btn {
+        margin-top: 44px;
+    }
+
+    .news__second .card-box {
+        padding-top: 0;
+        margin-top: 15px;
+    }
+
+    .news__second > img {
+        padding-left: 35px;
+        margin-bottom: 23px
+    }
+
+    .news__title {
+        font-size: 26px;
+    }
+
+    .news__info {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 160%;
+    }
+
+    .news__info span {
+        white-space: nowrap;
+    }
+
+    .news__third img {
+        border-radius: 22px;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .news__info, .news__text, .news__third .news__info {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .news-text {
+        font-size: 26px;
+        font-weight: 800;
+    }
+
+    .news__info-text {
+        font-size: 12px;
+    }
+}

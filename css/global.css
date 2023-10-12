@@ -14,7 +14,7 @@
 
   /* Variables */
   --brown: #381F15;
-  --grey-text: #a59b97;
+  --grey-text: #2C2C2C;
   --green-1: #6D8880;
   --green-2: #586C3E;
   --grey-1: #CBCAC8;
@@ -38,14 +38,6 @@ body {
 
 body::-webkit-scrollbar {
   display: none !important;
-}
-
-/*.header__menu li:nth-of-type(1) {*/
-/*  opacity: 0;*/
-/*}*/
-
-.news {
-  display: none !important
 }
 
 img {
@@ -200,37 +192,190 @@ button:hover {
   cursor: pointer;
 }
 
-.bottom-block {
-  background-color: var(--green-1-2);
+/*Offcanvas*/
+.offcanvas, .offcanvas-call {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  background-color: var(--brown);
+  color: #fff;
+  transition: right 0.3s ease-in-out;
+  z-index: 100;
+  overflow-y: scroll;
+  padding: 55px 0;
 }
 
-.bottom-block .order-form {
-  color: var(--brown);
-  padding: 44px 20px 30px 20px;
-  background-color: var(--green-1-3);
-  border-radius: 22px;
-  margin: 120px 0;
+.offcanvas {
+  right: -375px;
+  width: 375px;
 }
 
-.bottom-block .form-input {
-  color: var(--brown);;
-  border: 1px solid var(--grey-1);
+.offcanvas-call {
+  right: -396px;
+  width: 396px;
 }
 
-.bottom-block .form-input::placeholder {
-  opacity: .7;
-  color: var(--brown);
+.offcanvas-header {
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
-.bottom-block .btn-form {
-  background-color: #2C2C2C;
-  transition: background-color .3s;
+.offcanvas-header h2 {
+  margin: 0;
 }
 
-.bottom-block .btn-form:hover {
-  background-color: #586C3E;
+.offcanvas-call .offcanvas-content {
+  padding: 0 40px!important;
 }
 
-.bottom-block .form-submit-info, .bottom-block .form-submit-info a {
-  color: var(--brown);
+.offcanvas-content {
+  padding: 0 53px 0 47px;
 }
+
+.offcanvas-content p {
+  margin: 0 0 17px 0;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.offcanvas-partner p {
+  line-height: 140%;
+}
+
+.offcanvas-content span {
+  font-size: 20px;
+}
+
+.offcanvas-content input {
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 8px;
+  line-height: 140%;
+  font-weight: 500;
+  font-size: 20px;
+  background: none;
+  height: 48px;
+  padding-left: 13px;
+  outline: none;
+  color: white;
+  margin-top: 32px;
+}
+
+.offcanvas-content .bottom-info {
+  color: var(--grey-1);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.offcanvas-content .bottom-info a {
+  color: var(--grey-1);
+}
+
+.offcanvas-content .modal-submit-btn {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background: var(--green-1);
+  margin: 32px 0 20px 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.offcanvas-content .__hr {
+  border-bottom: 1px solid #DEEEE8;
+  margin: 10px 0;
+}
+
+.offcanvas-content .__box .item {
+  text-decoration: none;
+  display: block;
+  margin: 0;
+  font-size: 20px;
+  line-height: 140%;
+  color: #DEEEE8;
+}
+
+.offcanvas-content .__box .info {
+  text-decoration: none;
+  line-height: 140%;
+  color: white;
+  font-size: 14px;
+  display: block;
+  margin-top: 10px;
+}
+
+.mobile-header-btn {
+  border: none;
+  border-bottom: 1px solid #EAF3D1;
+  width: 100%;
+  font-size: 20px;
+  line-height: 140%;
+  height: 40px;
+  text-align: left;
+  margin: 10px 0 0;
+  padding-left: 0;
+  background: none;
+  color: #EAF3D1;
+}
+
+.offcanvas-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.offcanvas-content ul li {
+  margin-bottom: 10px;
+}
+
+.offcanvas-content ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.close-btn {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+  opacity: 0;
+  transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+@media screen and (max-width:575px) {
+  .offcanvas-call {
+    width: 375px;
+  }
+
+  .offcanvas-call .offcanvas-content {
+    padding: 0 20px!important;
+  }
+}
+
+@media screen and (max-width: 395px) {
+  .offcanvas {
+    right: -395px;
+    width: 100%;
+  }
+
+  .offcanvas-call {
+    right: -396px;
+    width: 100%;
+  }
+}
+/*Offcanvas*/

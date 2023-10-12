@@ -1,0 +1,95 @@
+.swiper__banner {
+    height: 289px;
+    background-color: #E6ECEA;
+}
+
+.swiper__banner img {
+    height: 100%;
+    width: auto;
+    flex-shrink: 0;
+}
+
+.swiper__banner a {
+    text-decoration: none;
+}
+
+.swiper__banner .__title {
+    color: var(--green-2);
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 140%;
+    margin-top: 40px;
+}
+
+.swiper__banner .__info {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--grey-text);
+    margin: 8px 0;
+}
+
+.swiper__banner .__address {
+    font-size: 14px;
+}
+
+.swiper-btn {
+    background-color: var(--green-2);
+    font-size: 20px;
+    line-height: 140%;
+    font-weight: 500;
+    text-align: center;
+    max-width: 157px;
+    margin-top: 45px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 6px 18px;
+    transition: opacity .3s;
+}
+
+.swiper-btn:hover {
+    opacity: .7;
+}
+
+@media screen and (max-width:1399px) {
+    .swiper__banner img {
+        height: 289px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .swiper__banner {
+        height: 262px;
+    }
+
+    .swiper__banner img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+        height: 160px;
+    }
+
+    .swiper__banner .__title {
+        margin-top: 21px;
+    }
+
+    .swiper__banner .__info {
+        margin: 3px 0 0;
+    }
+
+    .swiper__banner .__address {
+        display: none;
+    }
+
+    .swiper-btn {
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        z-index: 1;
+        max-width: 93%;
+        background-color: #381F15;
+    }
+}

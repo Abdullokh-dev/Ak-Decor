@@ -1,37 +1,10 @@
-.video-content {
-    z-index: -1;
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    object-fit: cover;
-    width: 100%;
+.bottom-block {
+    background-color: var(--green-1-2);
+    padding-bottom: 60px;
 }
 
-.home-main__logo {
-    width: 492px;
-    margin: 220px 0 26px 0;
-}
-
-.home-main__title {
-    font-size: 50px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: white;
-    line-height: 135%;
-    width: 100%;
-}
-
-.home-main__info {
-    font-size: 30px;
-    text-transform: uppercase;
-    color: white;
-    line-height: 150%;
-    margin: 7px 0 193px 0;
-}
-
-.home-belt {
-    background: var(--green-1);
+.form-bottom {
+    background-color: var(--brown);
 }
 
 .order-form {
@@ -42,7 +15,7 @@
 .order-form__title {
     font-size: 26px;
     font-weight: 800;
-    line-height: normal;
+    line-height: unset;
 }
 
 .order-form__info {
@@ -55,7 +28,7 @@
     font-size: 18px;
     color: var(--grey-1);
     border-radius: 8px;
-    border: 1px solid var(--grey-1);
+    border: 1px solid white;
     padding: 0 13px;
     height: 40px;
     line-height: 140%;
@@ -65,7 +38,7 @@
     margin-bottom: 15px;
 }
 .form-input::placeholder {
-    color: var(--grey-1);
+    color: white;
     opacity: .6;
 }
 
@@ -73,7 +46,7 @@
     background-color: white;
     transition-property: background-color, color;
     transition-duration: .3s;
-    color: var(--green-1);
+    color: var(--brown);
     border: none;
     border-radius: 8px;
     padding: 0 0;
@@ -88,7 +61,7 @@
 }
 
 .form-submit-info {
-    color: var(--grey-1);
+    color: white;
     opacity: 0.8;
     font-size: 12px;
     line-height: normal;
@@ -97,14 +70,14 @@
 }
 
 .form-submit-info a {
-    color: var(--grey-1);
+    color: white;
 }
 
 .col-box {
     padding: 0;
 }
 
-@media screen and (max-width:1399px) {
+@media screen and (max-width: 1399px) {
     .col-box {
         padding: 0 10px;
     }
@@ -117,21 +90,10 @@
         margin-bottom: 9px;
     }
 }
+
 @media screen and (max-width:1199px) {
-    .home-main__logo {
-        width: 354px;
-        margin: 125px 0 20px 0;
-    }
-
-    .home-main__title {
-        max-width: 483px;
-        margin: 0 auto;
-    }
-
-    .home-main__info {
-        font-size: 16px;
-        line-height: 140%;
-        margin: 30px 0 125px 0;
+    .bottom-block {
+        padding-bottom: 40px;
     }
 
     .form-input, .btn-form {
@@ -147,21 +109,8 @@
     }
 }
 
-@media screen and (max-width:767px) {
-    .home-main__logo {
-        width: 304px;
-        margin: 81px 0 13px 0;
-    }
 
-    .home-main__title {
-        font-size: 35px;
-        line-height: 130%;
-    }
-
-    .home-main__info {
-        margin: 4px 0 76px 0;
-    }
-
+@media screen and (max-width: 767px) {
     .order-form {
         padding: 20px 0 24px 0;
     }
