@@ -25,48 +25,19 @@ footer .icons-group {
     margin: 20px 0;
 }
 
-footer button {
-    border: 1px solid white;
-    transition: border-color .3s;
-    border-radius: 8px;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 140%;
-    text-align: center;
-    display: flex;
-    padding: 0 16px;
-    height: 46px;
-    background: none;
-    color: white;
-}
+/*footer button {*/
+    /*height: 46px;*/
+/*}*/
 
-footer .modal-btn {
+footer .home-partner-btn {
     color: #E3ED73;
     border-color: #E3ED73;
 }
 
-footer .modal-btn:hover {
-    color: #DA9819;
-    border-color: #DA9819;
-}
-
-footer .modal-btn:hover svg path {
-    stroke: #DA9819;
-}
-
-footer .down-btn:hover {
-    border-color: #E3ED73;
-    color: #E3ED73;
-}
-
-footer .down-btn:hover svg path {
-    stroke: #E3ED73;
-}
-
-footer button span {
-    margin-left: 20px;
-    transition: color .3s;
-}
+/*footer button span {*/
+/*    margin-left: 20px;*/
+/*    transition: color .3s;*/
+/*}*/
 
 footer .address a {
     color: white;

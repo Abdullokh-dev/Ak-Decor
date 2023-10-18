@@ -1,0 +1,27 @@
+.banner-footer .__box {
+    position: absolute;
+    top: 26px;
+}
+
+.banner-footer__btn {
+    width: 288px;
+}
+
+@media screen and (max-width:767px) {
+    .banner-footer .__box {
+        top: 20px;
+    }
+
+    .banner-footer__btn {
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: 400;
+        width: 210px;
+    }
+
+    .banner-footer__title {
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+}

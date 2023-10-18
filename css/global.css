@@ -98,7 +98,63 @@ button:hover {
   height: 0;
 }
 
-.privacy-link {
+.modal-btn {
+  color: white;
+  background: none;
+  border-radius: 8px;
+  border: 1px solid white;
+  transition: all .3s;
+  height: 46px;
+  padding: 0 16px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 140%;
+  text-align: center;
+  display: flex;
+}
+
+.modal-btn svg {
+  margin-right: 10px;
+}
+
+.modal-btn svg path,
+.modal-btn span {
+  transition: all .3s;
+}
+
+.partner-btn-modal:hover {
+  color: #DA9819;
+  border-color: #DA9819;
+}
+
+.partner-btn-modal:hover span {
+  color: #DA9819;
+}
+
+
+.partner-btn-modal:hover span {
+  color: #DA9819;
+}
+
+.partner-btn-modal:hover svg path {
+  stroke: #DA9819;
+}
+
+.price-down-btn:hover {
+  color: #E3ED73 !important;
+  border-color: #E3ED73;
+}
+
+.price-down-btn:hover span {
+  color: #E3ED73 !important;
+}
+
+.price-down-btn:hover svg path {
+  stroke: #E3ED73;
+}
+
+.privacy-link,
+.price-down-btn span {
   transition: color .3s;
 }
 
@@ -190,6 +246,40 @@ button:hover {
   top: 30px;
   right: 31px;
   cursor: pointer;
+}
+
+.block-title {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--brown, #381F15);
+  line-height: 140%;
+}
+
+.banner-title {
+  color: var(--brown);
+  font-size: 40px;
+  line-height: 140%;
+  font-weight: 600;
+}
+
+.banner-btn {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: var(--brown);
+  border: none;
+  border-radius: 8px;
+  padding: 6px 18px;
+  margin-top: 20px;
+  line-height: 140%;
+  color: white;
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  transition: opacity .3s;
+}
+
+.banner-btn:hover {
+  opacity: .7;
 }
 
 /*Offcanvas*/
@@ -357,6 +447,32 @@ button:hover {
   transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
+.px-my-12 {
+  padding: 0 12px !important;
+}
+
+@media screen and (max-width: 991px) {
+  .px-my-12 {
+    padding: 0 5.33333%;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .block-title {
+    font-size: 26px;
+    font-weight: 800;
+  }
+
+  .banner-title {
+    font-size: 26px;
+    font-weight: 800;
+  }
+
+  .px-my-12 {
+    padding: 0 12px;
+  }
+}
+
 @media screen and (max-width:575px) {
   .offcanvas-call {
     width: 375px;
@@ -368,14 +484,8 @@ button:hover {
 }
 
 @media screen and (max-width: 395px) {
-  .offcanvas {
-    right: -395px;
-    width: 100%;
-  }
-
-  .offcanvas-call {
-    right: -396px;
-    width: 100%;
+  .offcanvas, .offcanvas-call {
+    width: 100% !important;
   }
 }
 /*Offcanvas*/

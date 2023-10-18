@@ -1,0 +1,27 @@
+.watched-swiper {
+    margin: 40px 0 148px 0;
+}
+
+.watched-swiper .product {
+    height: auto !important;
+}
+
+.history_title {
+    margin-top: 83px;
+}
+
+@media screen and (max-width: 1199px) {
+    .history_title {
+        margin-top: 106px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .watched-swiper {
+        margin: 30px 0 60px 0;
+    }
+
+    .history_title {
+        margin-top: 83px;
+    }
+}

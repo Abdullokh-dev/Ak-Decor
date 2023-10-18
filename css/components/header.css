@@ -68,6 +68,7 @@ header {
     font-weight: 500;
     transition-property: border-color, color;
     transition-duration: .3s;
+    height: auto;
 }
 
 .partner-btn svg path {

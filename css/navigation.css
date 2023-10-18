@@ -37,21 +37,21 @@
 }
 
 .swiper-button-next {
-    right: 54px;
+    right: 84px !important;
 }
 
 .swiper-button-prev {
-    left: 55px;
+    left: 85px !important;
 }
 
 
 @media (max-width: 1700px) {
     .swiper-button-next {
-        right: 20px;
+        right: 20px !important;
     }
 
     .swiper-button-prev {
-        left: 20px;
+        left: 20px !important;
     }
 
     .swiper-button-prev:before {

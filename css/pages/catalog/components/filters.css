@@ -1,0 +1,317 @@
+.filters {
+    padding-bottom: 40px;
+}
+
+.filters .__set-btn {
+    display: none;
+}
+
+.filters .__title, .switch-filter .__title {
+    color: var(--green-1, #6D8880);
+    font-weight: 700;
+}
+
+.switch-filter {
+    margin-top: 40px;
+    gap: 40px;
+}
+
+.switch-filter .__title {
+    margin-right: 20px;
+}
+
+.filters .__title {
+    margin: 40px 0 10px 0;
+}
+
+.select-filter label img {
+    height: 20px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.select-filter .__more-link {
+    margin-top: 10px;
+}
+
+.select-filter .__more-link a {
+    font-size: 18px;
+    color: var(--green-1, #6D8880);
+}
+
+.select-filter input[type='checkbox'] {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+}
+
+.select-filter input[type='checkbox'] + label {
+    position: relative;
+    font-size: 18px;
+    color: #2C2C2C;
+    cursor: pointer;
+    display: inline-flex;
+    margin-top: 9px;
+}
+
+.select-filter input[type='checkbox'] + label::before {
+    content: " ";
+    display: inline-block;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #CED6D3;
+    border-radius: 4px;
+}
+
+.select-filter input[type='checkbox']:checked + label::after {
+    content: " ";
+    background: url("../../../../images/icons/checked.svg") no-repeat center center;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+}
+
+/*Range*/
+.range-field {
+    display: flex;
+    align-items: center;
+    height: 24px;
+}
+
+.range-field input[type=range] {
+    position: absolute;
+}
+
+.range-field input[type=range] {
+    width: 90%;
+    max-width: 240px;
+    height: 1px;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    pointer-events: none;
+    -webkit-appearance: none;
+}
+
+.range-field input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+.range-field input[type=range]:active,
+.range-field input[type=range]:focus {
+    outline: 0;
+}
+
+.range-field input[type=range]::-ms-track {
+    width: 188px;
+    height: 1px;
+    outline: 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    pointer-events: none;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+.range-field input[type=range]::-webkit-slider-thumb {
+    /*Chrome*/
+    position: relative;
+    -webkit-appearance: none;
+    margin-top: -11px;
+    border: 0;
+    outline: 0;
+    border-radius: 50%;
+    height: 22px;
+    width: 22px;
+    background-color: #6D8880;
+    cursor: pointer;
+    pointer-events: all;
+    z-index: 1;
+}
+
+.range-field input[type=range]::-moz-range-thumb {
+    /* Fox */
+    position: relative;
+    appearance: none;
+    margin-top: -11px;
+    border: 0;
+    outline: 0;
+    border-radius: 50%;
+    height: 22px;
+    width: 22px;
+    background-color: #6D8880;
+    cursor: pointer;
+    pointer-events: all;
+    z-index: 1;
+}
+
+.range-field input[type=range]::-ms-thumb  {
+    /* IE */
+    position: relative;
+    appearance: none;
+    margin-top: -11px;
+    border: 0;
+    outline: 0;
+    border-radius: 50%;
+    height: 22px;
+    width: 22px;
+    background-color: #6D8880;
+    cursor: pointer;
+    pointer-events: all;
+    z-index: 1;
+}
+
+/* Style track input range */
+.range-field input[type=range]::-webkit-slider-runnable-track {
+    /* WebKit/Blink */
+    width: 100%;
+    height: 1px;
+    cursor: pointer;
+    background: #6D8880;
+}
+
+.range-field input[type=range]::-moz-range-track {
+    /* Firefox */
+    width: 100%;
+    height: 1px;
+    cursor: pointer;
+    background: #6D8880;
+}
+
+.range-field input[type=range]::-ms-track {
+    /* IE */
+    width: 100%;
+    height: 1px;
+    cursor: pointer;
+    background: #6D8880;
+}
+
+.filter-range {
+    max-width: 240px;
+    width: 100%;
+}
+
+.filter-range .__box {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-range .__box .__value {
+    border: 1px solid #CBCAC8;
+    border-radius: 8px;
+    color: #2C2C2C;
+    font-size: 14px;
+    padding: 4px 8px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 26px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #D9D9D9;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.switch .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.switch input:checked + .slider {
+    background-color: var(--green-1, #6D8880);
+}
+
+.switch input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.switch .slider.round {
+    border-radius: 34px;
+}
+
+.switch .slider.round:before {
+    border-radius: 50%;
+}
+
+.offcanvas-filters {
+    position: unset;
+}
+
+@media screen and (max-width: 1199px) {
+    .switch-filter .__title {
+        margin: 0 ;
+    }
+
+    .switch-filter ._box {
+        margin-bottom: 20px;
+    }
+
+    /*Offcanvas*/
+    .offcanvas-filters {
+        position: fixed;
+        top: 0;
+        height: 100%;
+        background-color: white;
+        transition: right 0.3s ease-in-out;
+        z-index: 100;
+        overflow-y: scroll;
+        padding: 26px 95px 40px 38px;
+    }
+
+    .offcanvas-filters {
+        right: -375px;
+        width: 375px;
+    }
+
+    .filters .__set-btn {
+        display: block;
+        width: 316px;
+        margin-top: 46px;
+        color: white;
+        font-size: 20px;
+        background-color: var(--brown, #381F15);
+        line-height: 140%;
+        border: none;
+        border-radius: 8px;
+        padding: 6px 0;
+        transition: opacity .3s;
+    }
+
+    .filters .__set-btn:hover {
+        opacity: .7;
+    }
+}
