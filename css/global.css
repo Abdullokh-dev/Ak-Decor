@@ -83,6 +83,10 @@ button:hover {
   text-decoration: underline;
 }
 
+.overflow-none {
+  overflow-x: hidden !important;
+}
+
 .empty-field {
   border-color: var(--warning) !important;
 }
@@ -480,12 +484,6 @@ button:hover {
 
   .offcanvas-call .offcanvas-content {
     padding: 0 20px!important;
-  }
-}
-
-@media screen and (max-width: 395px) {
-  .offcanvas, .offcanvas-call {
-    width: 100% !important;
   }
 }
 /*Offcanvas*/

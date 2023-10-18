@@ -278,6 +278,7 @@
 
     .switch-filter ._box {
         margin-bottom: 20px;
+        padding-right: 95px;
     }
 
     /*Offcanvas*/
@@ -289,7 +290,7 @@
         transition: right 0.3s ease-in-out;
         z-index: 100;
         overflow-y: scroll;
-        padding: 26px 95px 40px 38px;
+        padding: 26px 0 40px 38px;
     }
 
     .offcanvas-filters {
@@ -299,7 +300,7 @@
 
     .filters .__set-btn {
         display: block;
-        width: 316px;
+        width: calc(100% - 38px);
         margin-top: 46px;
         color: white;
         font-size: 20px;
