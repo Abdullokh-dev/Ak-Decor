@@ -22,7 +22,7 @@ ul.breadcrumb li a {
     font-weight: 400;
 }
 
-@media screen and (max-width:991px) {
+@media screen and (max-width:1199px) {
     ul.breadcrumb {
         margin-bottom: 40px;
     }

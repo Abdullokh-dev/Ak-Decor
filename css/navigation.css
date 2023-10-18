@@ -18,12 +18,14 @@
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
     cursor: auto;
+    display: none;
     pointer-events: none;
 }
 
 .swiper-button-prev.swiper-button-hidden,
 .swiper-button-next.swiper-button-hidden {
     opacity: 0;
+    display: none !important;
     cursor: auto;
     pointer-events: none;
 }
