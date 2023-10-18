@@ -35,7 +35,7 @@
     background: none;
     border-radius: 8px;
     text-decoration: none;
-    padding: 6px 18px;
+    padding: 6px 54px;
     transition: opacity .3s;
 }
 
@@ -45,6 +45,38 @@
 
 .catalog__bottom {
     margin-top: 120px;
+}
+
+.marquee {
+    width: 2701px;
+    background-color: #DEEEE8;
+    color: #2C2C2C;
+    line-height: 140%;
+    overflow: hidden;
+    position: relative;
+    height: 44px;
+    padding-top: 12px;
+}
+
+.marquee div {
+    height: 20px;
+    display: block;
+    width: 150%;
+
+    position: absolute;
+    overflow: hidden;
+
+    animation: marquee 30s linear infinite;
+}
+
+.marquee span {
+    float: left;
+    width: 50%;
+}
+
+@keyframes marquee {
+    0% { left: 0; }
+    100% { left: -100%; }
 }
 
 @media screen and (max-width: 1199px) {

@@ -86,14 +86,6 @@
     width: 288px;
 }
 
-.text-marque {
-    color: #2C2C2C;
-    background-color: #DEEEE8;
-    font-size: 20px;
-    line-height: 140%;
-    padding: 8px 0;
-}
-
 @media screen and (max-width:767px) {
     .product .__title, .product .__price {
         font-size: 12px;
