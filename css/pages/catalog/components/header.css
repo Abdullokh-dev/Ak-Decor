@@ -45,12 +45,35 @@
     font-weight: 500;
     position: absolute;
     right: 6px;
-    top: 7px;
+    top: 8px;
 }
 
 .not-home-header .basket-col {
-    min-width: 165px !important;
-    max-width: 165px !important;
+    min-width: 175px !important;
+    max-width: 175px !important;
+}
+
+.not-home-header .basket-icon {
+    position: relative;
+    width: 75px;
+    margin-right: 10px;
+}
+
+.not-home-header .basket-icon .__value {
+    font-size: 12px;
+    line-height: normal;
+    font-weight: 700;
+    color: var(--brown, #381F15);
+    padding: 11px 5px 12px 5px;
+    border-radius: 100%;
+    background-color: #E3ED73;
+    position: absolute;
+    top: -8px;
+    right: 0;
+}
+
+.not-home-header .basket-col .basket {
+    display: flex;
 }
 
 @media (max-width: 1199px) {
@@ -76,6 +99,10 @@
         display: flex;
         width: 100%;
         margin-top: 10px;
+    }
+
+    .not-home-header .basket-icon {
+        margin-right: 30px;
     }
 }
 

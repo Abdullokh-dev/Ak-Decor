@@ -341,11 +341,11 @@
               </button>
             </div>
 
-            <div class="col d-flex justify-content-sm-end basket-col">
+            <div class="col d-flex align-self-end justify-content-sm-end basket-col">
               <div class="basket text-center">
 
                 <!-- filter burger -->
-                <svg onclick="openMenuFilters()" class="pointer d-xl-none me-2" width="42" height="31" viewBox="0 0 42 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg onclick="openMenuFilters()" class="pointer me-3 d-xl-none" width="42" height="31" viewBox="0 0 42 31" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M41 26.0719H1M41 16.1361H1M41 6.20033H1" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
                   <path d="M18.2781 5.56405C18.2781 8.36157 16.0139 10.6281 13.2225 10.6281C10.4312 10.6281 8.16699 8.36157 8.16699 5.56405C8.16699 2.76653 10.4312 0.5 13.2225 0.5C16.0139 0.5 18.2781 2.76653 18.2781 5.56405Z" fill="#381F15" stroke="white"/>
                   <path d="M37.1668 16.2154C37.1668 19.0129 34.9026 21.2795 32.1112 21.2795C29.3198 21.2795 27.0557 19.0129 27.0557 16.2154C27.0557 13.4179 29.3198 11.1514 32.1112 11.1514C34.9026 11.1514 37.1668 13.4179 37.1668 16.2154Z" fill="#381F15" stroke="white"/>
@@ -353,15 +353,19 @@
                 </svg>
 
                 <!-- basket icon -->
-                <a class="d-inline-block align-self-center ms-auto" href="#">
+                <a class="basket-icon d-inline-block align-self-center ms-auto" href="#">
                   <svg class="d-flex my-auto" width="42" height="37" viewBox="0 0 42 37" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M16.4348 4.72414H39.0671C40.4763 4.72414 41.4436 6.1426 40.929 7.4545L35.1937 22.0752C34.8933 22.8411 34.1545 23.3448 33.3318 23.3448H14.233C13.3678 23.3448 12.6008 22.7886 12.332 21.9663L5.92891 2.37857C5.6601 1.55626 4.89304 1 4.0279 1H0" stroke="white"/>
                     <path d="M19.9002 33.2759C19.9002 35.0726 18.4964 36.5 16.8002 36.5C15.104 36.5 13.7002 35.0726 13.7002 33.2759C13.7002 31.4791 15.104 30.0517 16.8002 30.0517C18.4964 30.0517 19.9002 31.4791 19.9002 33.2759Z" stroke="white"/>
                     <path d="M34.2996 33.2759C34.2996 35.0726 32.8958 36.5 31.1996 36.5C29.5034 36.5 28.0996 35.0726 28.0996 33.2759C28.0996 31.4791 29.5034 30.0517 31.1996 30.0517C32.8958 30.0517 34.2996 31.4791 34.2996 33.2759Z" stroke="white"/>
                   </svg>
+
+                  <span class="__value">
+                    +100
+                  </span>
                 </a>
 
-                <div class="ms-5 d-sm-none align-self-center">
+                <div class="d-sm-none align-self-center">
                   <svg class="pointer open-btn" id="openBtn" onclick="openMenu()" width="38" height="27" viewBox="0 0 38 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M19 26H1M37 13.5H1M37 1H1" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>

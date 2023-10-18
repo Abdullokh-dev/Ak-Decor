@@ -61,12 +61,12 @@
 .marquee div {
     height: 20px;
     display: block;
-    width: 150%;
+    width: 145%;
 
     position: absolute;
     overflow: hidden;
 
-    animation: marquee 30s linear infinite;
+    animation: marquee 40s linear infinite;
 }
 
 .marquee span {
