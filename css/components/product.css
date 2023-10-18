@@ -71,11 +71,12 @@
     color: white;
     text-decoration: none;
     border-radius: 8px;
-    transition: opacity .3s;
+    transition: all .3s;
 }
 
 .product .__bottom .__btn:hover {
-    opacity: .7;
+    color: #381F15;
+    background-color: #E3ED73;
 }
 
 .banner-footer .__box {
