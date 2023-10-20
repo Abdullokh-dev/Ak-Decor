@@ -17,29 +17,6 @@
     right: 30px;
 }
 
-.product .badge {
-    font-size: 16px;
-    color: white;
-    line-height: 140%;
-    padding: 0 10px;
-    border-radius: 22px;
-    display: inline-block;
-    margin-bottom: 5px;
-    text-decoration: none;
-}
-
-.product .badges ._sale {
-    background-color: #A34D4D;
-}
-
-.product .badges ._new {
-    background-color: #586C3E;
-}
-
-.product .badges ._hit {
-    background-color: #AA791A;
-}
-
 .product .__title, .product .__price {
     font-size: 20px;
     line-height: 140%;
