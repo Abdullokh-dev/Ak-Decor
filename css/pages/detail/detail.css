@@ -19,6 +19,7 @@
     max-height: 468px;
     max-width: 100%;
 }
+
 .gallery-thumbs {
     width: 100px;
 }
@@ -37,6 +38,7 @@
     flex-flow: column nowrap;
     cursor: pointer;
     border: 1px solid #2C2C2C;
+    opacity: 0.2;
     border-radius: 16px;
     width: 100px;
     max-height: 100px;
@@ -45,10 +47,14 @@
 
 .gallery-thumbs .swiper-slide-thumb-active {
     border-color: #DA9819;
+    opacity: 1;
 }
 
 .gallery-thumbs .swiper-slide img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    align-content: center;
 }
 
 .detail-product .detail__title {
@@ -121,9 +127,9 @@
     line-height: 110%;
 }
 
-.detail-product .__price .__info {
-    margin-top: 31px;
-    border: 1px solid #6D8880;
+.detail-product .price-info {
+    margin-top: 30px;
+    border: 1px solid #CED6D3;
     font-size: 14px;
     color: #6D8880;
     padding: 15px;
@@ -180,7 +186,7 @@
     border: 2px solid transparent;
     font-size: 20px;
     line-height: 140%;
-    padding: 16px 0;
+    padding: 15px 0;
     color: #2C2C2C;
 }
 
@@ -194,7 +200,7 @@
 
 .full-description .wrapper ul {
     padding: 0;
-    margin: 0;
+    margin: 0;;
 }
 
 .full-description .wrapper ul li:before {
@@ -216,9 +222,179 @@
 
 .full-description .wrapper ul li .amount {
     order: 3;
-    padding-top: 0.5em;
 }
 
 .recommend-title {
     margin-top: 120px;
+}
+
+.tab input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.tab__content {
+    max-height: 0;
+    overflow: hidden;
+    font-weight: 500;
+    transition: all 0.35s;
+}
+
+.tab__content p {
+    margin: 20px 0 0;
+}
+
+.tab input:checked ~ .tab__content {
+    max-height: max-content;
+}
+
+.accordion {
+    overflow: hidden;
+}
+
+.tab__label {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 700;
+    color: #6D8880;
+    line-height: normal;
+    border-radius: 8px;
+    border: 1px solid #6D8880;
+    padding: 6px 19px;
+    margin-top: 20px;
+}
+
+.tab__label::after {
+    content: url(../../../images/icons/toggle.svg);
+    transition: all 0.35s;
+}
+.tab input:checked + .tab__label::after {
+    transform: rotateX(180deg);
+}
+
+.history-block .history_title {
+    margin-top: 67px;
+}
+
+@media screen and (max-width: 1199px) {
+    .detail-product .detail__title {
+        font-weight: 800;
+        font-size: 26px;
+        margin-top: 0;
+    }
+
+    .detail-product .detail-block {
+        margin-top: 38px;
+    }
+
+    .detail-product .badges {
+        margin-top: 20px;
+    }
+
+    .gallery-top .swiper-slide img,
+    .gallery-thumbs, .gallery-top {
+        max-height: 332px;
+    }
+
+    .detail-product .__price .__value {
+        font-size: 80px;
+    }
+
+    .detail-product .__buttons .__add {
+        width: 100%;
+    }
+
+    .detail-product .__buttons .__add-basket {
+        width: 100%;
+        height: 40px;
+        margin-top: 10px;
+    }
+
+    .tablink-bar {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .detail-product .detail__title {
+        margin-top: 0;
+    }
+
+    .detail-product .detail-block {
+        margin-top: 20px;
+    }
+
+    .gallery-top {
+        width: 100%;
+        overflow: unset;
+        height: auto;
+        margin-left: 0;
+        padding: 0;
+        align-self: center;
+    }
+
+    .detail-product nav {
+        margin-left: 0;
+    }
+
+    .detail-product .__price {
+        margin-top: 40px;
+    }
+
+    .detail-product .__price .__value {
+        font-size: 75px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .detail-product .__info {
+        font-size: 16px;
+    }
+
+    .detail-product .price-info {
+        margin-top: 20px;
+        padding: 9px 15px;
+    }
+
+    .detail-product .additional .__value {
+        color: #2C2C2C;
+
+    }
+
+    .recommend-title {
+        margin-top: 80px;
+    }
+
+    .history-block .history_title {
+        margin-top: 60px;
+    }
+
+    .detail-product .__buttons .__add-basket {
+        margin: 0;
+    }
+
+    .full-description .wrapper ul li {
+        line-height: 140%;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .detail-product .__buttons {
+        margin-top: 40px;
+    }
+
+    .detail-product .__buttons .__add {
+        width: 100%;
+        padding: 6px 68px;
+    }
+
+    .detail-product .__buttons .__add-basket {
+        width: 100%;
+        height: 40px;
+        margin-top: 20px;
+    }
 }

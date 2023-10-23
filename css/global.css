@@ -478,6 +478,31 @@ button:hover {
   padding: 0 12px !important;
 }
 
+.show-more-link {
+  font-size: 14px;
+  color: #2C2C2C;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.show-more-link  .__icon svg path {
+  transition: stroke .3s;
+}
+
+.show-more-link:hover {
+  color: #586C3E;
+}
+
+.show-more-link:hover .__icon svg path {
+  stroke: #586C3E;
+}
+
+.show-more-link .__icon {
+  margin-left: 20px;
+  display: flex;
+  align-self: center;
+}
+
 @media screen and (max-width: 991px) {
   .px-my-12 {
     padding: 0 5.33333%;
@@ -509,4 +534,3 @@ button:hover {
     padding: 0 20px!important;
   }
 }
-/*Offcanvas*/

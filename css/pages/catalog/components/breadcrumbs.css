@@ -7,6 +7,7 @@ ul.breadcrumb {
 ul.breadcrumb li {
     display: inline;
     font-size: 12px;
+    line-height: 140%;
     color: #2C2C2C;
     font-weight: 600;
 }
@@ -24,11 +25,6 @@ ul.breadcrumb li a {
 
 @media screen and (max-width:1199px) {
     ul.breadcrumb {
-        margin-bottom: 40px;
-    }
-}
-@media screen and (max-width:767px) {
-    ul.breadcrumb {
-        margin: 25px 0 30px 0;
+        margin: 20px 0 30px 0;
     }
 }

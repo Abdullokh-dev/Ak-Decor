@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/navigation.css">
     <link rel="stylesheet" href="./css/pagination.css">
     <link rel="stylesheet" href="./css/components/header.css">
+    <link rel="stylesheet" href="css/components/header-marquee.css">
 
 
     <link rel="stylesheet" href="css/pages/catalog/components/header.css">
@@ -243,7 +244,7 @@
           <div class="header__btn-group d-flex align-self-center col">
             <!-- mobile call btn -->
             <div class="d-sm-none ms-auto dropdown">
-              <svg onclick="myFunction()" class="dropbtn pointer" width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg onclick="showToggle()" class="dropbtn pointer" width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="14.5" cy="14.5" r="14" stroke="white"/>
                 <path d="M18.4519 16.4011L15.7485 16.9289C13.9225 16.0054 12.7946 14.9447 12.1382 13.2912L12.6436 10.5595L11.6882 8H9.22597C8.48581 8 7.90296 8.61628 8.0135 9.35367C8.28947 11.1945 9.10317 14.5323 11.4817 16.9289C13.9796 19.4456 17.5772 20.5377 19.5572 20.9718C20.3218 21.1394 21 20.5384 21 19.75V17.3794L18.4519 16.4011Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
@@ -315,7 +316,7 @@
             </div>
 
             <div class="col d-none d-xl-flex">
-              <button class="partner-btn-modal modal-btn ms-auto me-3">
+              <button onclick="openMenuPartner()" class="partner-btn-modal modal-btn ms-auto me-3">
                 <svg width="39" height="28" viewBox="0 0 39 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="align-self-center">
                   <path d="M30.9675 17.2649L30.701 16.9746C32.0554 15.7066 33.1502 14.7838 34.7364 13.823C35.3605 13.4467 36.0283 13.1134 36.7218 12.8322L36.7446 12.8242C37.2628 12.613 37.5957 12.1006 37.6066 11.49C37.6264 10.3671 37.3589 8.48153 35.9639 5.87135C34.5105 3.14307 33.0461 2.01813 32.0742 1.55474C31.6491 1.34757 31.1855 1.34456 30.7951 1.54273L30.7872 1.55074L30.7426 1.57175C30.6346 1.61379 30.5167 1.66183 30.3889 1.71387C29.4219 2.1082 27.803 2.76775 26.0038 2.64265C25.127 2.57859 24.2818 2.75074 23.5635 3.14006L20.407 4.84048L18.0063 6.59395L17.7765 6.27268L20.2078 4.4992L23.3783 2.79077C24.162 2.36742 25.0784 2.18026 26.0305 2.24832C27.7376 2.36842 29.2456 1.75391 30.2423 1.34757C30.3621 1.29852 30.4741 1.25349 30.5771 1.21245L30.5861 1.20645C31.0913 0.93422 31.6957 0.931218 32.2426 1.19744C33.2661 1.68485 34.8047 2.85983 36.3087 5.68419C37.7433 8.36943 38.0197 10.3281 37.9989 11.498C37.9851 12.2587 37.5481 12.9252 36.8843 13.1955L36.8615 13.2035C36.1938 13.4737 35.5448 13.798 34.9385 14.1633C33.381 15.1071 32.304 16.0148 30.9685 17.2659L30.9675 17.2649Z" fill="white"/>
                   <path d="M29.1782 19.9951C29.1604 19.9951 29.1425 19.9951 29.1247 19.9951C28.6224 19.9831 28.125 19.798 27.7237 19.4737L27.9685 19.1645C28.3033 19.4347 28.7165 19.5898 29.1336 19.5998C29.6666 19.6178 30.159 19.3906 30.4771 18.9903C30.8664 18.4999 30.9358 17.8143 30.6564 17.2028C30.5316 16.9246 30.3374 16.6754 30.0956 16.4782L23.6943 11.3019C23.0731 10.8125 22.764 10.5953 22.4925 10.4051C22.1368 10.1559 21.8307 9.94074 20.9727 9.22314L21.2224 8.91789C22.0675 9.62448 22.3677 9.83566 22.7154 10.0799C22.9919 10.274 23.3049 10.4932 23.9371 10.9916L30.3413 16.1689C30.6316 16.4041 30.8635 16.7044 31.0131 17.0377C31.3549 17.7853 31.2667 18.629 30.7832 19.2375C30.3988 19.7209 29.8162 19.9951 29.1782 19.9951Z" fill="white"/>
@@ -349,15 +350,6 @@
 
             <div class="col d-flex align-self-end justify-content-sm-end basket-col">
               <div class="basket text-center">
-
-                <!-- filter burger -->
-                <svg onclick="openMenuFilters()" class="pointer me-3 d-xl-none" width="42" height="31" viewBox="0 0 42 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M41 26.0719H1M41 16.1361H1M41 6.20033H1" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M18.2781 5.56405C18.2781 8.36157 16.0139 10.6281 13.2225 10.6281C10.4312 10.6281 8.16699 8.36157 8.16699 5.56405C8.16699 2.76653 10.4312 0.5 13.2225 0.5C16.0139 0.5 18.2781 2.76653 18.2781 5.56405Z" fill="#381F15" stroke="white"/>
-                  <path d="M37.1668 16.2154C37.1668 19.0129 34.9026 21.2795 32.1112 21.2795C29.3198 21.2795 27.0557 19.0129 27.0557 16.2154C27.0557 13.4179 29.3198 11.1514 32.1112 11.1514C34.9026 11.1514 37.1668 13.4179 37.1668 16.2154Z" fill="#381F15" stroke="white"/>
-                  <path d="M21.6111 25.4361C21.6111 28.2336 19.3469 30.5002 16.5556 30.5002C13.7642 30.5002 11.5 28.2336 11.5 25.4361C11.5 22.6386 13.7642 20.3721 16.5556 20.3721C19.3469 20.3721 21.6111 22.6386 21.6111 25.4361Z" fill="#381F15" stroke="white"/>
-                </svg>
-
                 <!-- basket icon -->
                 <a class="basket-icon d-inline-block align-self-center ms-auto" href="#">
                   <svg class="d-flex my-auto" width="42" height="37" viewBox="0 0 42 37" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -386,6 +378,28 @@
   </header>
   <!-- Header end-->
 
+  <!-- text marque -->
+  <div class="row overflow-none">
+    <div class="col p-0">
+
+      <div class="marquee">
+        <div>
+          <span>
+            Возможно увеличение сроков поставки, в связи с большой загрузкой производства. • Возможно увеличение сроков
+            поставки, в связи с большой загрузкой производства. • Возможно увеличение сроков поставки, в связи с большой
+            загрузкой производства.
+          </span>
+
+          <span>
+            Возможно увеличение сроков поставки, в связи с большой загрузкой производства. • Возможно увеличение сроков
+            поставки, в связи с большой загрузкой производства. • Возможно увеличение сроков поставки, в связи с большой
+            загрузкой производства.
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Breadcrumbs -->
   <div class="row d-flex justify-content-center">
     <div class="col-12 col-md-11 col-xxxl-9">
@@ -403,7 +417,7 @@
   </div>
 
   <div class="row d-flex justify-content-center detail-product">
-    <div class="col-12 col-lg-11 col-xxxl-9">
+    <div class="col-12 col-md-11 col-xxxl-9">
       <h1 class="block-title detail__title">Горшок керамический с поддоном «Блэк»</h1>
 
       <div class="badges d-inline-block">
@@ -413,10 +427,10 @@
       </div>
     </div>
 
-    <div class="col-12 col-lg-11 col-xxxl-9 detail-block">
+    <div class="col-12 col-md-11 col-xxxl-9 detail-block">
       <div class="row">
         <div class="col-12 col-lg-6 d-flex">
-          <div class="swiper-container gallery-thumbs">
+          <div class="d-none swiper-container gallery-thumbs d-md-block">
             <div class="swiper-wrapper">
               <div class="swiper-slide"><img src="./images/pages/detail/img.png" alt="#"></div>
               <div class="swiper-slide"><img src="./images/pages/detail/img.png" alt="#"></div>
@@ -426,24 +440,26 @@
 
           <div class="swiper-container gallery-top">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
+              <div class="swiper-slide text-center">
                   <img src="./images/pages/detail/img.png" alt="#">
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide text-center">
                 <img src="./images/pages/detail/img.png" alt="#">
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide text-center">
                 <img src="./images/pages/detail/img.png" alt="#">
               </div>
             </div>
+
+            <div class="swiper-pagination mt-2"></div>
           </div>
         </div>
 
-        <div class="col-12 col-lg-6">
+        <div class="col-12 col-lg-6 mt-5 mt-md-4 mt-lg-0 pt-2 pt-lg-0">
           <div>
             <span class="__info">Артикул: 004982</span>
           </div>
-          <div class="d-flex _line">
+          <div class="d-md-flex _line">
             <span class="__info">Объем</span>
             <nav>
               <input type="radio" id="x1" name="x"/>
@@ -463,7 +479,7 @@
             </nav>
           </div>
 
-          <div class="d-flex _line">
+          <div class="d-md-flex _line">
             <span class="__info">Диаметр</span>
             <nav>
               <input type="radio" id="y1" name="y"/>
@@ -493,31 +509,42 @@
             </div>
           </div>
 
-          <div class="__price">
-            <span class="__value">10 460 ₽</span>
+          <div class="row">
 
-            <div class="__info">
-              Все цены на сайте указаны с НДС. <br>
-              Отсрочка платежа действует только для юридических лиц.
-            </div>
-          </div>
-
-          <div class="__buttons d-flex justify-content-between">
-            <div class="d-flex justify-content-between __add">
-              <span class="align-self-center">
-                <svg class="d-flex pointer" width="37" height="1" viewBox="0 0 37 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M36 1C36.2761 1 36.5 0.776142 36.5 0.5C36.5 0.223858 36.2761 0 36 0V1ZM0 1H36V0H0V1Z" fill="#6D8880"/>
-                </svg>
-              </span>
-              <span class="align-self-center">1</span>
-              <span class="align-self-center pointer">
-                <svg class="d-flex" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M24 13C24.2761 13 24.5 12.7761 24.5 12.5C24.5 12.2239 24.2761 12 24 12V13ZM12.5 0.5C12.5 0.223858 12.2761 0 12 0C11.7239 0 11.5 0.223858 11.5 0.5H12.5ZM0 13H24V12H0V13ZM12.5 24.5V0.5H11.5V24.5H12.5Z" fill="#6D8880"/>
-                </svg>
-              </span>
+            <div class="col-12 col-md-7 order-0">
+              <div class="__price nowrap">
+                <span class="__value">10 460 ₽</span>
+              </div>
             </div>
 
-            <button class="__add-basket ms-3">В корзину</button>
+            <div class="col-12 col-md-5 col-lg-12 order-lg-2">
+              <div class="__buttons d-sm-flex d-md-block d-lg-flex justify-content-between">
+                <div class="d-flex justify-content-between __add">
+                  <span class="align-self-center pointer">
+                    <svg class="d-flex" width="37" height="1" viewBox="0 0 37 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M36 1C36.2761 1 36.5 0.776142 36.5 0.5C36.5 0.223858 36.2761 0 36 0V1ZM0 1H36V0H0V1Z" fill="#6D8880"/>
+                    </svg>
+                  </span>
+
+                  <span class="align-self-center">1</span>
+
+                  <span class="align-self-center pointer">
+                    <svg class="d-flex" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M24 13C24.2761 13 24.5 12.7761 24.5 12.5C24.5 12.2239 24.2761 12 24 12V13ZM12.5 0.5C12.5 0.223858 12.2761 0 12 0C11.7239 0 11.5 0.223858 11.5 0.5H12.5ZM0 13H24V12H0V13ZM12.5 24.5V0.5H11.5V24.5H12.5Z" fill="#6D8880"/>
+                    </svg>
+                  </span>
+                </div>
+
+                <button class="__add-basket ms-sm-3 ms-md-0 ms-lg-3 mt-lg-0">В корзину</button>
+              </div>
+            </div>
+
+            <div class="col-12 order-lg-1-">
+              <div class="price-info">
+                Все цены на сайте указаны с НДС. <br>
+                Отсрочка платежа действует только для юридических лиц.
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -525,15 +552,15 @@
   </div>
 
   <div class="row d-flex justify-content-center">
-    <div class="col-12 col-lg-11 col-xxxl-9">
+    <div class="col-12 col-md-11 col-xxxl-9">
 
-      <div class="row">
+      <div class="row d-none d-md-block">
         <div class="tablink-bar">
           <button class="tablink active" onclick="openDescription(event,'Description')">Описание</button>
           <button class="tablink" onclick="openDescription(event,'Characteristic')">Характеристики</button>
         </div>
 
-        <div id="Description" class="full-description">
+        <div id="Description" class="full-description toggle_item">
           <p class="m-0">Горшок керамический «Блэк» — это идеальное решение для выращивания комнатных растений и создания красивого
             интерьера. Керамические изделия используются человечеством для выращивания растений уже не одно столетие и
             прекрасно себя зарекомендовали. Горшок подойдёт для ампельных, бромелиевых, декоративно-лиственных, луковичных,
@@ -541,7 +568,7 @@
           </p>
         </div>
 
-        <div id="Characteristic" class="full-description" style="display:none">
+        <div id="Characteristic" class="full-description toggle_item" style="display:none">
           <div class="row">
             <div class="col-12 col-lg-6 col-xl-4">
               <div class="__title">Размер и вес</div>
@@ -554,7 +581,7 @@
               </div>
             </div>
             <div class="col-12 col-lg-6 col-xl-4">
-              <div class="__title">Цвет, форм и тип монтажа</div>
+              <div class="__title mt-3 pt-md-3 mt-lg-0 pt-lg-0">Цвет, форм и тип монтажа</div>
               <div class="wrapper">
                 <ul>
                   <li>Форма<span class="amount">конус</span></li>
@@ -564,7 +591,7 @@
               </div>
             </div>
             <div class="col-12 col-lg-6 col-xl-4">
-              <div class="__title">Матерал и обработка</div>
+              <div class="__title mt-2 pt-md-4 mt-xl-0 pt-xl-0">Матерал и обработка</div>
               <div class="wrapper">
                 <ul>
                   <li>Материал<span class="amount">глина</span></li>
@@ -577,6 +604,64 @@
           </div>
         </div>
       </div>
+
+      <div class="row d-md-none">
+        <div class="col-12 accordion">
+          <div class="tab">
+            <input type="checkbox" name="accordion-1" id="cb1" checked>
+            <label for="cb1" class="tab__label">Описание</label>
+
+            <div class="tab__content">
+              <p>
+                Горшок керамический «Блэк» — это идеальное решение для выращивания комнатных растений и создания красивого
+                интерьера. Керамические изделия используются человечеством для выращивания растений уже не одно столетие и
+                прекрасно себя зарекомендовали. Горшок подойдёт для ампельных, бромелиевых, декоративно-лиственных, луковичных,
+                хищных, цветущих, плодовых растений и пальм.
+              </p>
+            </div>
+          </div>
+          <div class="tab">
+            <input type="checkbox" name="accordion-1" id="cb2">
+            <label for="cb2" class="tab__label">Характеристики</label>
+
+            <div class="tab__content">
+              <div class="full-description">
+                <div>
+                  <div class="__title">Размер и вес</div>
+                  <div class="wrapper">
+                    <ul>
+                      <li>Высота<span class="amount">12 см</span></li>
+                      <li>Диаметр<span class="amount">12 см</span></li>
+                      <li>Вес<span class="amount">0,6 кг</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <div class="__title mt-3">Цвет, форм и тип монтажа</div>
+                  <div class="wrapper">
+                    <ul>
+                      <li>Форма<span class="amount">конус</span></li>
+                      <li>Цвет<span class="amount">белый</span></li>
+                      <li>Рекомендованый тип<span class="amount">напольное, настольное</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <div class="__title mt-3">Матерал и обработка</div>
+                  <div class="wrapper">
+                    <ul>
+                      <li>Материал<span class="amount">глина</span></li>
+                      <li>Технология<span class="amount">покраска</span></li>
+                      <li>Покраска<span class="amount">эмаль акриловая</span></li>
+                      <li>Финишное покрытие<span class="amount">матовый лак</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -584,16 +669,28 @@
     <div class="col-12 col-lg-11 col-xxxl-9 px-0">
       <!-- Recommendation swiper -->
       <div class="d-flex justify-content-between px-my-12">
-        <h2 class="block-title recommend-title">Еще товары из этой коллекции</h2>
+        <h2 class="block-title recommend-title">Еще <span class="d-none d-md-inline-flex">товары из этой</span> коллекции</h2>
         <svg class="d-flex d-lg-none mt-auto mb-2" width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g opacity="0.4">
             <path d="M26.3146 10.3748H26.267C25.6086 10.3772 24.9758 10.6209 24.4974 11.0564C24.1242 10.0061 23.134 9.25394 21.9706 9.25394C21.6142 9.25833 21.2624 9.3328 20.9369 9.47278C20.6114 9.61276 20.3191 9.8153 20.0778 10.068C19.6376 9.17313 18.7278 8.57318 17.6793 8.57318H17.6289C17.0254 8.57318 16.4382 8.7462 16.0372 9.08999V2.72764C16.0372 1.22358 14.8258 0 13.3474 0C11.8704 0 10.6637 1.22255 10.6626 2.72565L10.6512 15.3087L9.85837 14.3807C9.54274 14.0023 9.14956 13.6906 8.70332 13.4649C8.25708 13.2392 7.76735 13.1043 7.26464 13.0688C6.77203 13.0363 6.27772 13.1014 5.81225 13.26C5.34678 13.4186 4.92001 13.6674 4.55829 13.991L3.91923 14.5013C3.82514 14.5764 3.76062 14.6803 3.73641 14.7956C3.7122 14.911 3.72976 15.0308 3.78616 15.1352L9.99886 26.6187C11.1289 28.7092 13.2789 30 15.6095 30H22.5776C26.1112 30 28.989 27.0594 28.9926 23.4352C28.9942 21.8162 28.9958 20.6118 28.9971 19.6307C29.0006 16.9893 29.002 16.0017 28.995 13.0942C28.9914 11.5942 27.789 10.3748 26.3146 10.3748ZM27.9278 19.6332C27.9265 20.6143 27.9248 21.8151 27.9232 23.4343C27.9202 26.4911 25.5222 28.9705 22.5776 28.9705H15.6095C13.6788 28.9705 11.8923 27.8921 10.9472 26.1436L4.93369 15.0248L5.25055 14.7739C5.25723 14.7684 5.26432 14.7636 5.271 14.7577C5.52629 14.5263 5.82838 14.3481 6.1584 14.2342C6.48843 14.1203 6.8393 14.0731 7.18912 14.0956C7.54657 14.122 7.89456 14.2189 8.21141 14.3804C8.52826 14.5419 8.80717 14.7644 9.03078 15.0342L10.7693 17.072C10.8392 17.1539 10.9338 17.2131 11.0399 17.2413C11.1461 17.2696 11.2587 17.2656 11.3625 17.2299C11.4662 17.1941 11.5559 17.1285 11.6194 17.0418C11.6829 16.9551 11.717 16.8517 11.7171 16.7456L11.7273 2.72661C11.728 1.79097 12.4597 1.02977 13.3477 1.02977C14.2358 1.02977 14.9678 1.79123 14.9678 2.72764V11.1815C14.9678 11.2105 14.9664 11.2398 14.9664 11.269C14.9664 11.2819 14.9678 11.294 14.9678 11.3063V14.9215C14.9678 15.058 15.0242 15.189 15.1244 15.2855C15.2247 15.382 15.3607 15.4363 15.5025 15.4363C15.6443 15.4363 15.7803 15.382 15.8806 15.2855C15.9809 15.189 16.0372 15.058 16.0372 14.9215V11.1988C16.0372 10.2953 16.7631 9.60269 17.6289 9.60269H17.6793C18.5676 9.60269 19.312 10.3335 19.312 11.2698V14.5765C19.312 14.7131 19.3683 14.844 19.4686 14.9405C19.5689 15.0371 19.7049 15.0913 19.8467 15.0913C19.9885 15.0913 20.1245 15.0371 20.2248 14.9405C20.325 14.844 20.3813 14.7131 20.3813 14.5765V11.982C20.3813 11.0457 21.0945 10.2839 21.9879 10.2839C22.8762 10.2839 23.5894 11.0457 23.5894 11.982V14.4299C23.5894 14.5664 23.6457 14.6974 23.746 14.7939C23.8462 14.8904 23.9822 14.9447 24.124 14.9447C24.2658 14.9447 24.4018 14.8904 24.5021 14.7939C24.6024 14.6974 24.6587 14.5664 24.6587 14.4299V13.1044C24.6587 12.168 25.3787 11.4043 26.267 11.4043H26.3146C27.2007 11.4043 27.9234 12.1648 27.9256 13.0985C27.9326 16.0044 27.9313 16.9931 27.9278 19.6332Z" fill="#2C2C2C"/>
             <path d="M1.81752 5.09856H8.68545C8.82725 5.09856 8.96324 5.04432 9.06351 4.94779C9.16378 4.85125 9.22011 4.72032 9.22011 4.5838C9.22011 4.44728 9.16378 4.31635 9.06351 4.21981C8.96324 4.12327 8.82725 4.06904 8.68545 4.06904H1.83336L3.05988 2.88818C3.15914 2.79144 3.21461 2.66082 3.21418 2.52484C3.21374 2.38886 3.15744 2.25857 3.05756 2.16242C2.95769 2.06627 2.82235 2.01208 2.68111 2.01167C2.53987 2.01126 2.4042 2.06468 2.30373 2.16025L0.156577 4.22746C0.0563217 4.32399 0 4.45491 0 4.59142C0 4.72793 0.0563217 4.85886 0.156577 4.95539L2.30373 7.02247C2.35327 7.07075 2.41223 7.10912 2.47723 7.13538C2.54222 7.16163 2.61197 7.17526 2.68246 7.17547C2.75294 7.17568 2.82278 7.16246 2.88794 7.13659C2.9531 7.11072 3.01231 7.0727 3.06215 7.02472C3.112 6.97673 3.15149 6.91973 3.17837 6.857C3.20525 6.79426 3.21898 6.72703 3.21877 6.65917C3.21856 6.59131 3.20441 6.52416 3.17714 6.46158C3.14988 6.399 3.11002 6.34223 3.05988 6.29453L1.81752 5.09856Z" fill="#2C2C2C"/>
           </g>
         </svg>
+
+        <div class="d-flex mt-auto mb-2">
+          <a class="show-more-link d-flex" href="./catalog.html">
+            посмореть все коллекцию
+
+            <div class="__icon">
+              <svg width="32" height="18" viewBox="0 0 32 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 9L31 9M31 9L23 0.5M31 9L23 17.5" stroke="#2C2C2C" stroke-linecap="round"/>
+              </svg>
+            </div>
+          </a>
+        </div>
       </div>
 
-      <div class="swiper watched-swiper px-md-0 px-my-12">
+      <div class="swiper similar-swiper px-md-0 px-my-12">
         <div class="swiper-wrapper">
           <div class="swiper-slide product position-relative">
 
@@ -766,8 +863,8 @@
       </div>
     </div>
 
-    <div class="swiper-button-next watched-swiper-next d-none d-lg-flex"></div>
-    <div class="swiper-button-prev watched-swiper-prev d-none d-lg-flex"></div>
+    <div class="swiper-button-next similar-swiper-next d-none d-lg-flex"></div>
+    <div class="swiper-button-prev similar-swiper-prev d-none d-lg-flex"></div>
   </div>
 
   <!-- History swiper -->
@@ -1221,6 +1318,24 @@
 
   const overlay = document.getElementById('overlay');
 
+  function showToggle() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  // hide on outside click
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      let dropdowns = document.getElementsByClassName("dropdown-content");
+      let i;
+      for (i = 0; i < dropdowns.length; i++) {
+        let openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+
   function openOverlay() {
     overlay.style.width = '100%'
     overlay.style.opacity = '1'
@@ -1242,6 +1357,8 @@
   }
 
   function openMenuPartner() {
+    console.log('worked')
+
     offcanvasPartner.style.right = '0'
     openOverlay()
   }
@@ -1285,7 +1402,7 @@
 <script>
   function openDescription(evt, value) {
     let i, x, tablinks;
-    x = document.getElementsByClassName("full-description");
+    x = document.getElementsByClassName("toggle_item");
     for (i = 0; i < x.length; i++) {
       x[i].style.display = "none";
     }
@@ -1312,6 +1429,11 @@
 
   let galleryTop = new Swiper(".gallery-top", {
     direction: "horizontal",
+    pagination:{
+      clickable: true,
+      el: ".swiper-pagination",
+      dynamicBullets: true
+    },
     spaceBetween: 16,
     keyboard: {
       enabled: true,
@@ -1325,6 +1447,29 @@
   });
   galleryThumbs.on("transitionStart", function () {
     galleryTop.slideTo(galleryThumbs.activeIndex);
+  });
+
+  new Swiper(".similar-swiper", {
+    autoHeight: false,
+    navigation: {
+      nextEl: ".similar-swiper-next",
+      prevEl: ".similar-swiper-prev",
+    },
+    spaceBetween: 10,
+    slidesPerView: 2.1,
+    breakpoints: {
+      768: {
+        spaceBetween: 20,
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1400: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      }
+    },
   });
 
   new Swiper(".watched-swiper", {

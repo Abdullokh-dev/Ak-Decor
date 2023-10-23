@@ -1,0 +1,31 @@
+.marquee {
+    width: 2701px;
+    background-color: #DEEEE8;
+    color: #2C2C2C;
+    line-height: 140%;
+    overflow: hidden;
+    position: relative;
+    height: 44px;
+    padding-top: 12px;
+}
+
+.marquee div {
+    height: 20px;
+    display: block;
+    width: 145%;
+
+    position: absolute;
+    overflow: hidden;
+
+    animation: marquee 40s linear infinite;
+}
+
+.marquee span {
+    float: left;
+    width: 50%;
+}
+
+@keyframes marquee {
+    0% { left: 0; }
+    100% { left: -100%; }
+}

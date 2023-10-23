@@ -74,7 +74,7 @@ button.swiper-pagination-bullet {
 
 
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
     .swiper-pagination {
         display: none !important;
         margin-top: 10px;
