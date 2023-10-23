@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="images/icons/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./css/bootstrap-grid.css">
-  <link rel="stylesheet" href="./css/global.css">
-  <link rel="stylesheet" href="./css/swiper-bundle.css">
-  <link rel="stylesheet" href="./css/navigation.css">
-  <link rel="stylesheet" href="./css/pagination.css">
-  <link rel="stylesheet" href="./css/components/header.css">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="images/icons/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap-grid.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.css">
+    <link rel="stylesheet" href="./css/navigation.css">
+    <link rel="stylesheet" href="./css/pagination.css">
+    <link rel="stylesheet" href="./css/components/header.css">
+    <link rel="stylesheet" href="css/components/header-marquee.css">
 
 
-  <link rel="stylesheet" href="css/pages/catalog/components/header.css">
-  <link rel="stylesheet" href="./css/pages/catalog/catalog.css">
-  <link rel="stylesheet" href="css/components/product.css">
-  <link rel="stylesheet" href="css/components/header-marquee.css">
-  <link rel="stylesheet" href="css/pages/catalog/components/breadcrumbs.css">
-  <link rel="stylesheet" href="css/pages/catalog/components/filters.css">
-  <link rel="stylesheet" href="css/components/watched-swiper.css">
-  <link rel="stylesheet" href="./css/components/footer.css">
+    <link rel="stylesheet" href="css/pages/catalog/components/header.css">
+    <link rel="stylesheet" href="./css/pages/detail/detail.css">
+    <link rel="stylesheet" href="css/components/product.css">
+    <link rel="stylesheet" href="css/pages/catalog/components/breadcrumbs.css">
+    <link rel="stylesheet" href="css/components/watched-swiper.css">
+    <link rel="stylesheet" href="./css/components/footer.css">
 
-  <title>Керамические горшки и кашпо для цветов | купить в интернет-магазине Студия-Декор в Ярославле</title>
+    <title>Керамические горшки и кашпо для цветов | купить в интернет-магазине Студия-Декор в Ярославле</title>
+  </head>
 </head>
 <body>
-<div class="container-fluid catalog-page">
+<div class="container-fluid detail-page">
   <!-- Modals -->
   <div class="offcanvas">
     <div class="offcanvas-header">
@@ -222,7 +223,6 @@
                   <path d="M14.7908 0.607249C15.1555 1.01193 15.3742 1.48406 15.3742 2.02363C15.3742 2.5632 15.2284 3.03533 14.8638 3.44001C14.4991 3.84469 13.9887 4.04703 13.4052 4.04703C12.8218 4.04703 12.3113 3.84469 11.9467 3.44001C11.5821 3.03533 11.3633 2.5632 11.3633 2.02363C11.3633 1.48406 11.5821 1.01193 11.9467 0.607249C12.3843 0.202569 12.8218 0.000228882 13.4052 0.000228882C13.9887 0.000228882 14.4262 0.202569 14.7908 0.607249Z" fill="white"/>
                 </svg>
               </a>
-
             </li>
             <li class="d-none d-sm-flex align-self-center">
               <svg width="22" height="30" viewBox="0 0 22 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -234,7 +234,7 @@
                 <path d="M1 0.5L6 5.5L11 0.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </li>
-            <li class="d-none d-xl-flex"><a href="#"> Каталог </a></li>
+            <li class="d-none d-xl-flex"><a href="./catalog.html"> Каталог </a></li>
             <li class="d-none d-xl-flex"><a href="https://dekors.shop/pokupatelyam/" target="_blank"> Покупателям </a></li>
             <li class="d-none d-xl-flex"><a href="#"> О нас </a></li>
             <li class="d-none d-xl-flex"><a href="https://dekors.shop/novosti/" target="_blank"> Новости </a></li>
@@ -350,15 +350,6 @@
 
             <div class="col d-flex align-self-end justify-content-sm-end basket-col">
               <div class="basket text-center">
-
-                <!-- filter burger -->
-                <svg onclick="openMenuFilters()" class="pointer me-3 d-xl-none" width="42" height="31" viewBox="0 0 42 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M41 26.0719H1M41 16.1361H1M41 6.20033H1" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M18.2781 5.56405C18.2781 8.36157 16.0139 10.6281 13.2225 10.6281C10.4312 10.6281 8.16699 8.36157 8.16699 5.56405C8.16699 2.76653 10.4312 0.5 13.2225 0.5C16.0139 0.5 18.2781 2.76653 18.2781 5.56405Z" fill="#381F15" stroke="white"/>
-                  <path d="M37.1668 16.2154C37.1668 19.0129 34.9026 21.2795 32.1112 21.2795C29.3198 21.2795 27.0557 19.0129 27.0557 16.2154C27.0557 13.4179 29.3198 11.1514 32.1112 11.1514C34.9026 11.1514 37.1668 13.4179 37.1668 16.2154Z" fill="#381F15" stroke="white"/>
-                  <path d="M21.6111 25.4361C21.6111 28.2336 19.3469 30.5002 16.5556 30.5002C13.7642 30.5002 11.5 28.2336 11.5 25.4361C11.5 22.6386 13.7642 20.3721 16.5556 20.3721C19.3469 20.3721 21.6111 22.6386 21.6111 25.4361Z" fill="#381F15" stroke="white"/>
-                </svg>
-
                 <!-- basket icon -->
                 <a class="basket-icon d-inline-block align-self-center ms-auto" href="#">
                   <svg class="d-flex my-auto" width="42" height="37" viewBox="0 0 42 37" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -388,7 +379,7 @@
   <!-- Header end-->
 
   <!-- text marque -->
-  <div class="row d-none d-md-block overflow-none">
+  <div class="row overflow-none">
     <div class="col p-0">
 
       <div class="marquee">
@@ -409,6 +400,7 @@
     </div>
   </div>
 
+  <!-- Breadcrumbs -->
   <div class="row d-flex justify-content-center">
     <div class="col-12 col-md-11 col-xxxl-9">
       <!-- Breadcrumbs -->
@@ -416,680 +408,27 @@
         <div class="col">
           <ul class="breadcrumb">
             <li><a href="#">Главная</a></li>
-            <li>Каталог</li>
+            <li>Корзина</li>
           </ul>
         </div>
       </div>
-
-      <!-- Content -->
-      <div class="row">
-        <!-- Filters -->
-        <div class="col-xl-3 filters position-relative offcanvas-filters">
-          <div class="offcanvas-header pb-0 d-xl-none">
-            <button id="closeFilters" onclick="closeFilters()" class="close-btn ms-auto">
-              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.146447 25.1471C-0.0488155 25.3423 -0.0488155 25.6589 0.146447 25.8542C0.341709 26.0494 0.658291 26.0494 0.853553 25.8542L13.0003 13.7075L25.1471 25.8543C25.3423 26.0495 25.6589 26.0495 25.8542 25.8543C26.0494 25.659 26.0494 25.3424 25.8542 25.1472L13.7074 13.0004L25.8542 0.853553C26.0494 0.658291 26.0494 0.341709 25.8542 0.146447C25.6589 -0.0488156 25.3423 -0.0488154 25.1471 0.146447L13.0003 12.2933L0.853553 0.146528C0.658291 -0.0487342 0.341709 -0.0487342 0.146447 0.146528C-0.0488155 0.34179 -0.0488155 0.658373 0.146447 0.853635L12.2932 13.0004L0.146447 25.1471Z" fill="#381F15"/>
-              </svg>
-            </button>
-          </div>
-          <!-- Category -->
-          <div class="select-filter">
-            <p class="__title">Категории</p>
-            <div>
-              <input type="checkbox" id="pot" name="scales" checked />
-              <label for="pot">Горшок</label>
-            </div>
-            <div>
-              <input type="checkbox" id="flowerpots" name="scales" />
-              <label for="flowerpots">Кашпо</label>
-            </div>
-            <div>
-              <input type="checkbox" id="pallets" name="scales" />
-              <label for="pallets">Поддоны</label>
-            </div>
-            <div>
-              <input type="checkbox" id="bonsai" name="scales" />
-              <label for="bonsai">Бонсай</label>
-            </div>
-          </div>
-
-          <!-- Switch -->
-          <div class="switch-filter d-block d-xl-none">
-            <div class="d-flex justify-content-between _box">
-              <span class="__title align-self-center">Новая коллекция</span>
-              <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-              </label>
-            </div>
-
-            <div class="d-flex justify-content-between _box">
-              <span class="__title align-self-center">Хит продаж</span>
-              <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-              </label>
-            </div>
-
-            <div class="d-flex justify-content-between _box">
-              <span class="__title align-self-center">Распродажа</span>
-              <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-              </label>
-            </div>
-          </div>
-
-          <!-- Price -->
-          <div class="filter-range">
-            <p class="__title">Цена</p>
-
-            <div class="range-field">
-              <input type="range"  min="100" max="500" value="100" aria-label="">
-              <input type="range" min="100" max="500" value="500" aria-label="">
-            </div>
-
-            <div class="__box">
-              <div class="__value">от 100</div>
-              <div class="__value">до 1 500</div>
-            </div>
-          </div>
-
-          <!-- Volume  -->
-          <div class="filter-range">
-            <p class="__title">Объем</p>
-
-            <div class="range-field">
-              <input type="range"  min="100" max="500" value="100" aria-label="">
-              <input type="range" min="100" max="500" value="500" aria-label="">
-            </div>
-
-            <div class="__box">
-              <div class="__value">от 0,1 л</div>
-              <div class="__value">до 11 л</div>
-            </div>
-          </div>
-
-          <!-- Diameter  -->
-          <div class="filter-range">
-            <p class="__title">Диаметр</p>
-
-            <div class="range-field">
-              <input type="range"  min="100" max="500" value="100" aria-label="">
-              <input type="range" min="100" max="500" value="500" aria-label="">
-            </div>
-
-            <div class="__box">
-              <div class="__value">от 9,4 см</div>
-              <div class="__value">до 24,5 см</div>
-            </div>
-          </div>
-
-          <!-- Form -->
-          <div class="select-filter">
-            <p class="__title">Форма</p>
-            <div>
-              <input type="checkbox" id="board" name="scales" />
-              <label for="board">
-                <img src="images/icons/board.png" alt="">
-                Готика борт
-              </label>
-            </div>
-            <div>
-              <input type="checkbox" id="shnut" name="scales" />
-              <label for="shnut">
-                <img src="images/icons/shnut.png" alt="">
-                Готика шнут
-              </label>
-            </div>
-            <div>
-              <input type="checkbox" id="square" name="scales" />
-              <label for="square">
-                <img src="images/icons/square.png" alt="">
-                Квадрат
-              </label>
-            </div>
-            <div>
-              <input type="checkbox" id="cone" name="scales" />
-              <label for="cone">
-                <img src="images/icons/cone.png" alt="">
-                Конус
-              </label>
-            </div>
-            <div class="__more-link">
-              <a href=""> Посмотреть все </a>
-            </div>
-          </div>
-
-          <!-- Color -->
-          <div class="select-filter">
-            <p class="__title">Цвет</p>
-            <div>
-              <input type="checkbox" id="beige" name="scales" />
-              <label for="beige">Бежевый</label>
-            </div>
-            <div>
-              <input type="checkbox" id="white" name="scales" />
-              <label for="white">Белый</label>
-            </div>
-            <div>
-              <input type="checkbox" id="turquoise" name="scales" />
-              <label for="turquoise">Бирюза</label>
-            </div>
-            <div>
-              <input type="checkbox" id="blue" name="scales" />
-              <label for="blue">Голубой</label>
-            </div>
-            <div class="__more-link">
-              <a href=""> Посмотреть все </a>
-            </div>
-          </div>
-
-          <!-- Collection -->
-          <div class="select-filter">
-            <p class="__title">Коллекции</p>
-            <div>
-              <input type="checkbox" id="ivory" name="scales" />
-              <label for="ivory">Бежевый</label>
-            </div>
-            <div>
-              <input type="checkbox" id="white2" name="scales" />
-              <label for="white2">Белый</label>
-            </div>
-            <div>
-              <input type="checkbox" id="turquoise2" name="scales" />
-              <label for="turquoise2">Бирюза</label>
-            </div>
-            <div>
-              <input type="checkbox" id="blue2" name="scales" />
-              <label for="blue2">Голубой</label>
-            </div>
-            <div class="__more-link">
-              <a href=""> Посмотреть все </a>
-            </div>
-          </div>
-
-          <!-- Finish coating -->
-          <div class="select-filter">
-            <p class="__title">Финишное покрытие</p>
-            <div>
-              <input type="checkbox" id="uncover" name="scales" />
-              <label for="uncover">Без покрытия</label>
-            </div>
-            <div>
-              <input type="checkbox" id="varnish" name="scales" />
-              <label for="varnish">Глянцевый лак</label>
-            </div>
-            <div>
-              <input type="checkbox" id="lacquer" name="scales" />
-              <label for="lacquer">Матовый лак</label>
-            </div>
-            <div>
-              <input type="checkbox" id="plaster" name="scales" />
-              <label for="plaster">Текстурная штукатурка</label>
-            </div>
-          </div>
-
-          <button class="__set-btn">
-            Сбросить фильтр
-          </button>
-        </div>
-
-        <!-- Products -->
-        <div class="col-12 col-xl-9">
-          <div class="row d-flex justify-content-between px-2 px-md-0">
-            <div class="d-none d-xl-block col-12 mb-3 filtered-product">
-              <div class="switch-filter d-flex">
-                <div class="d-flex">
-                  <span class="__title align-self-center">Новая коллекция</span>
-                  <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider round"></span>
-                  </label>
-                </div>
-
-                <div class="d-flex">
-                  <span class="__title align-self-center">Хит продаж</span>
-                  <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider round"></span>
-                  </label>
-                </div>
-
-                <div class="d-flex">
-                  <span class="__title align-self-center">Распродажа</span>
-                  <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider round"></span>
-                  </label>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-6 col-xl-4 filtered-product">
-              <div class="product position-relative">
-                <div class="d-flex">
-                  <img src="./images/products/img.png" alt="#" class="__img">
-
-                  <div class="badges d-inline-block">
-                    <a href="#" class="badge _sale uppercase">акция</a>
-                    <a href="#" class="badge _new uppercase">новинка!</a>
-                    <a href="#" class="badge _hit uppercase">хит&nbspпродаж!</a>
-                  </div>
-                </div>
-
-                <h2 class="__title">Кашпо керамическое «Ваниль»</h2>
-
-                <div class="__bottom">
-                  <span class="__price">от 214 ₽</span>
-
-                  <a href="./detail.html" class="__btn">Подробнее</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-xl-4 filtered-product">
-              <div class="product position-relative">
-                <div class="d-flex">
-                  <img src="./images/products/img_1.png" alt="#" class="__img">
-
-                  <div class="badges d-inline-block">
-                    <a href="#" class="badge _sale uppercase">акция</a>
-                    <a href="#" class="badge _new uppercase">новинка!</a>
-                    <a href="#" class="badge _hit uppercase">хит&nbspпродаж!</a>
-                  </div>
-                </div>
-
-                <h2 class="__title">Бонсайница «Лунный камень»</h2>
-
-                <div class="__bottom">
-                  <span class="__price">от 220 ₽</span>
-
-                  <a href="./detail.html" class="__btn">Подробнее</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-xl-4 filtered-product">
-              <div class="product position-relative">
-                <div class="d-flex">
-                  <img src="./images/products/img_2.png" alt="#" class="__img">
-
-                  <div class="badges d-inline-block">
-                    <a href="#" class="badge _sale uppercase">акция</a>
-                    <a href="#" class="badge _new uppercase">новинка!</a>
-                    <a href="#" class="badge _hit uppercase">хит&nbspпродаж!</a>
-                  </div>
-                </div>
-
-                <h2 class="__title">Горшок керамический «Модерн»</h2>
-
-                <div class="__bottom">
-                  <span class="__price">от 298 ₽</span>
-
-                  <a href="./detail.html" class="__btn">Подробнее</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-6 col-xl-4 filtered-product">
-              <div class="product position-relative">
-                <div class="d-flex">
-                  <img src="./images/products/img_3.png" alt="#" class="__img">
-
-                  <div class="badges d-inline-block">
-                    <a href="#" class="badge _new uppercase">новинка!</a>
-                    <a href="#" class="badge _hit uppercase">хит&nbspпродаж!</a>
-                  </div>
-                </div>
-
-                <h2 class="__title">Кашпо керамическое «Терра»</h2>
-
-                <div class="__bottom">
-                  <span class="__price">от 140 ₽</span>
-
-                  <a href="./detail.html" class="__btn">Подробнее</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-xl-4 filtered-product">
-              <div class="product position-relative">
-                <div class="d-flex">
-                  <img src="./images/products/img_4.png" alt="#" class="__img">
-
-                  <div class="badges d-inline-block">
-                    <a href="#" class="badge _sale uppercase">акция</a>
-                    <a href="#" class="badge _new uppercase">новинка!</a>
-                    <a href="#" class="badge _hit uppercase">хит&nbspпродаж!</a>
-                  </div>
-                </div>
-
-                <h2 class="__title">Горшок керамический «Модерн»</h2>
-
-                <div class="__bottom">
-                  <span class="__price">от 298 ₽</span>
-
-                  <a href="./detail.html" class="__btn">Подробнее</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-xl-4 filtered-product">
-              <div class="product position-relative">
-                <div class="d-flex">
-                  <img src="./images/products/img_5.png" alt="#" class="__img">
-
-                  <div class="badges d-inline-block">
-                    <a href="#" class="badge _sale uppercase">акция</a>
-                    <a href="#" class="badge _new uppercase">новинка!</a>
-                    <a href="#" class="badge _hit uppercase">хит&nbspпродаж!</a>
-                  </div>
-                </div>
-
-                <h2 class="__title">Горшок керамический «Короед»</h2>
-
-                <div class="__bottom">
-                  <span class="__price">от 229 ₽</span>
-
-                  <a href="./detail.html" class="__btn">Подробнее</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-6 col-xl-4 filtered-product">
-              <div class="product position-relative">
-                <div class="d-flex">
-                  <img src="./images/products/img_6.png" alt="#" class="__img">
-
-                  <div class="badges d-inline-block">
-                    <a href="#" class="badge _sale uppercase">акция</a>
-                    <a href="#" class="badge _new uppercase">новинка!</a>
-                    <a href="#" class="badge _hit uppercase">хит&nbspпродаж!</a>
-                  </div>
-                </div>
-
-                <h2 class="__title">Горшок керамический «Каприфоль»</h2>
-
-                <div class="__bottom">
-                  <span class="__price">от 229 ₽</span>
-
-                  <a href="./detail.html" class="__btn">Подробнее</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-xl-4 filtered-product">
-              <div class="product position-relative">
-                <div class="d-flex">
-                  <img src="./images/products/img_7.png" alt="#" class="__img">
-
-                  <div class="badges d-inline-block">
-                    <a href="#" class="badge _sale uppercase">акция</a>
-                    <a href="#" class="badge _new uppercase">новинка!</a>
-                    <a href="#" class="badge _hit uppercase">хит&nbspпродаж!</a>
-                  </div>
-                </div>
-
-                <h2 class="__title">Бонсайница «Ваниль»</h2>
-
-                <div class="__bottom">
-                  <span class="__price">от 244 ₽</span>
-
-                  <a href="./detail.html" class="__btn">Подробнее</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-6 col-xl-4 filtered-product">
-              <div class="product position-relative">
-                <div class="d-flex">
-                  <img src="./images/products/img_8.png" alt="#" class="__img">
-
-                  <div class="badges d-inline-block">
-                    <a href="#" class="badge _sale uppercase">акция</a>
-                    <a href="#" class="badge _new uppercase">новинка!</a>
-                    <a href="#" class="badge _hit uppercase">хит&nbspпродаж!</a>
-                  </div>
-                </div>
-
-                <h2 class="__title">Цветочная композиция в горшке «Франция»</h2>
-
-                <div class="__bottom">
-                  <span class="__price">400 ₽</span>
-
-                  <a href="./detail.html" class="__btn">Подробнее</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 d-md-flex justify-content-md-between catalog__bottom px-1 px-md-2">
-              <a class="d-block show-more_btn order-md-1" href="#">Показать еще</a>
-              <div class="d-flex justify-content-center order-md-0">
-                <div class="pagination d-flex align-self-center">
-                  <a class="d-none d-md-flex" href="#">
-                    <svg width="11" height="22" viewBox="0 0 11 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M10.3613 21L0.999624 11L10.3613 0.999999" stroke="#CBCAC8" stroke-linecap="round"/>
-                    </svg>
-                  </a>
-                  <a class="active" href="#">1</a>
-                  <a href="#">2</a>
-                  <a href="#">3</a>
-                  <a href="#">-</a>
-                  <a href="#">10</a>
-                  <a class="d-none d-md-flex" href="#">
-                    <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1.36133 1L10.723 11L1.36133 21" stroke="#6D8880" stroke-linecap="round"/>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
-  <!-- Side Bar -->
 
-  <section class="row d-flex justify-content-center position-relative">
-    <div class="col-12 col-lg-11 col-xxxl-9 px-0">
-      <!-- History watched -->
-      <div class="d-flex justify-content-between px-my-12">
-        <h2 class="block-title history_title">Вы смотрели</h2>
-        <svg class="d-flex d-lg-none mt-auto mb-2" width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g opacity="0.4">
-            <path d="M26.3146 10.3748H26.267C25.6086 10.3772 24.9758 10.6209 24.4974 11.0564C24.1242 10.0061 23.134 9.25394 21.9706 9.25394C21.6142 9.25833 21.2624 9.3328 20.9369 9.47278C20.6114 9.61276 20.3191 9.8153 20.0778 10.068C19.6376 9.17313 18.7278 8.57318 17.6793 8.57318H17.6289C17.0254 8.57318 16.4382 8.7462 16.0372 9.08999V2.72764C16.0372 1.22358 14.8258 0 13.3474 0C11.8704 0 10.6637 1.22255 10.6626 2.72565L10.6512 15.3087L9.85837 14.3807C9.54274 14.0023 9.14956 13.6906 8.70332 13.4649C8.25708 13.2392 7.76735 13.1043 7.26464 13.0688C6.77203 13.0363 6.27772 13.1014 5.81225 13.26C5.34678 13.4186 4.92001 13.6674 4.55829 13.991L3.91923 14.5013C3.82514 14.5764 3.76062 14.6803 3.73641 14.7956C3.7122 14.911 3.72976 15.0308 3.78616 15.1352L9.99886 26.6187C11.1289 28.7092 13.2789 30 15.6095 30H22.5776C26.1112 30 28.989 27.0594 28.9926 23.4352C28.9942 21.8162 28.9958 20.6118 28.9971 19.6307C29.0006 16.9893 29.002 16.0017 28.995 13.0942C28.9914 11.5942 27.789 10.3748 26.3146 10.3748ZM27.9278 19.6332C27.9265 20.6143 27.9248 21.8151 27.9232 23.4343C27.9202 26.4911 25.5222 28.9705 22.5776 28.9705H15.6095C13.6788 28.9705 11.8923 27.8921 10.9472 26.1436L4.93369 15.0248L5.25055 14.7739C5.25723 14.7684 5.26432 14.7636 5.271 14.7577C5.52629 14.5263 5.82838 14.3481 6.1584 14.2342C6.48843 14.1203 6.8393 14.0731 7.18912 14.0956C7.54657 14.122 7.89456 14.2189 8.21141 14.3804C8.52826 14.5419 8.80717 14.7644 9.03078 15.0342L10.7693 17.072C10.8392 17.1539 10.9338 17.2131 11.0399 17.2413C11.1461 17.2696 11.2587 17.2656 11.3625 17.2299C11.4662 17.1941 11.5559 17.1285 11.6194 17.0418C11.6829 16.9551 11.717 16.8517 11.7171 16.7456L11.7273 2.72661C11.728 1.79097 12.4597 1.02977 13.3477 1.02977C14.2358 1.02977 14.9678 1.79123 14.9678 2.72764V11.1815C14.9678 11.2105 14.9664 11.2398 14.9664 11.269C14.9664 11.2819 14.9678 11.294 14.9678 11.3063V14.9215C14.9678 15.058 15.0242 15.189 15.1244 15.2855C15.2247 15.382 15.3607 15.4363 15.5025 15.4363C15.6443 15.4363 15.7803 15.382 15.8806 15.2855C15.9809 15.189 16.0372 15.058 16.0372 14.9215V11.1988C16.0372 10.2953 16.7631 9.60269 17.6289 9.60269H17.6793C18.5676 9.60269 19.312 10.3335 19.312 11.2698V14.5765C19.312 14.7131 19.3683 14.844 19.4686 14.9405C19.5689 15.0371 19.7049 15.0913 19.8467 15.0913C19.9885 15.0913 20.1245 15.0371 20.2248 14.9405C20.325 14.844 20.3813 14.7131 20.3813 14.5765V11.982C20.3813 11.0457 21.0945 10.2839 21.9879 10.2839C22.8762 10.2839 23.5894 11.0457 23.5894 11.982V14.4299C23.5894 14.5664 23.6457 14.6974 23.746 14.7939C23.8462 14.8904 23.9822 14.9447 24.124 14.9447C24.2658 14.9447 24.4018 14.8904 24.5021 14.7939C24.6024 14.6974 24.6587 14.5664 24.6587 14.4299V13.1044C24.6587 12.168 25.3787 11.4043 26.267 11.4043H26.3146C27.2007 11.4043 27.9234 12.1648 27.9256 13.0985C27.9326 16.0044 27.9313 16.9931 27.9278 19.6332Z" fill="#2C2C2C"/>
-            <path d="M1.81752 5.09856H8.68545C8.82725 5.09856 8.96324 5.04432 9.06351 4.94779C9.16378 4.85125 9.22011 4.72032 9.22011 4.5838C9.22011 4.44728 9.16378 4.31635 9.06351 4.21981C8.96324 4.12327 8.82725 4.06904 8.68545 4.06904H1.83336L3.05988 2.88818C3.15914 2.79144 3.21461 2.66082 3.21418 2.52484C3.21374 2.38886 3.15744 2.25857 3.05756 2.16242C2.95769 2.06627 2.82235 2.01208 2.68111 2.01167C2.53987 2.01126 2.4042 2.06468 2.30373 2.16025L0.156577 4.22746C0.0563217 4.32399 0 4.45491 0 4.59142C0 4.72793 0.0563217 4.85886 0.156577 4.95539L2.30373 7.02247C2.35327 7.07075 2.41223 7.10912 2.47723 7.13538C2.54222 7.16163 2.61197 7.17526 2.68246 7.17547C2.75294 7.17568 2.82278 7.16246 2.88794 7.13659C2.9531 7.11072 3.01231 7.0727 3.06215 7.02472C3.112 6.97673 3.15149 6.91973 3.17837 6.857C3.20525 6.79426 3.21898 6.72703 3.21877 6.65917C3.21856 6.59131 3.20441 6.52416 3.17714 6.46158C3.14988 6.399 3.11002 6.34223 3.05988 6.29453L1.81752 5.09856Z" fill="#2C2C2C"/>
-          </g>
-        </svg>
+  <div class="row d-flex justify-content-center order-basket">
+    <div class="col-12 col-md-11 col-xxxl-9">
+      <div class="warning-quantity">
+        <span>Минимальная сумма заказа 10 000 ₽</span>
       </div>
 
-      <!-- Swiper -->
-      <div class="swiper watched-swiper px-md-0 px-my-12">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide product position-relative">
-
-            <div class="d-flex">
-              <img src="./images/products/img_5.png" alt="#" class="__img">
-
-              <div class="badges d-inline-block">
-                <a href="" class="badge _sale uppercase">акция</a>
-                <a href="" class="badge _new uppercase">новинка!</a>
-                <a href="" class="badge _hit uppercase">хит&nbspпродаж!</a>
-              </div>
-            </div>
-
-            <h2 class="__title">Горшок керамический «Короед»</h2>
-
-            <div class="__bottom">
-              <span class="__price">от 229 ₽</span>
-
-              <a href="./detail.html" class="__btn">Подробнее</a>
-            </div>
-          </div>
-
-          <div class="swiper-slide product position-relative">
-
-            <div class="d-flex">
-              <img src="./images/products/img_6.png" alt="#" class="__img">
-
-              <div class="badges d-inline-block">
-                <a href="" class="badge _sale uppercase">акция</a>
-                <a href="" class="badge _new uppercase">новинка!</a>
-                <a href="" class="badge _hit uppercase">хит&nbspпродаж!</a>
-              </div>
-            </div>
-
-            <h2 class="__title">Горшок керамический «Каприфоль»</h2>
-
-            <div class="__bottom">
-              <span class="__price">от 229 ₽</span>
-
-              <a href="./detail.html" class="__btn">Подробнее</a>
-            </div>
-          </div>
-
-          <div class="swiper-slide product position-relative">
-
-            <div class="d-flex">
-              <img src="./images/products/img_7.png" alt="#" class="__img">
-
-              <div class="badges d-inline-block">
-                <a href="" class="badge _sale uppercase">акция</a>
-                <a href="" class="badge _new uppercase">новинка!</a>
-                <a href="" class="badge _hit uppercase">хит&nbspпродаж!</a>
-              </div>
-            </div>
-
-            <h2 class="__title">Бонсайница «Ваниль»</h2>
-
-            <div class="__bottom">
-              <span class="__price">от 244 ₽</span>
-
-              <a href="./detail.html" class="__btn">Подробнее</a>
-            </div>
-          </div>
-
-          <div class="swiper-slide product position-relative">
-
-            <div class="d-flex">
-              <img src="./images/products/img_8.png" alt="#" class="__img">
-
-              <div class="badges d-inline-block">
-                <a href="" class="badge _sale uppercase">акция</a>
-                <a href="" class="badge _new uppercase">новинка!</a>
-                <a href="" class="badge _hit uppercase">хит&nbspпродаж!</a>
-              </div>
-            </div>
-
-            <h2 class="__title">Цветочная композиция в горшке «Франция»</h2>
-
-            <div class="__bottom">
-              <span class="__price">400 ₽</span>
-
-              <a href="./detail.html" class="__btn">Подробнее</a>
-            </div>
-          </div>
-
-          <div class="swiper-slide product position-relative">
-
-            <div class="d-flex">
-              <img src="./images/products/img_5.png" alt="#" class="__img">
-
-              <div class="badges d-inline-block">
-                <a href="" class="badge _sale uppercase">акция</a>
-                <a href="" class="badge _new uppercase">новинка!</a>
-                <a href="" class="badge _hit uppercase">хит&nbspпродаж!</a>
-              </div>
-            </div>
-
-            <h2 class="__title">Горшок керамический «Короед»</h2>
-
-            <div class="__bottom">
-              <span class="__price">от 229 ₽</span>
-
-              <a href="./detail.html" class="__btn">Подробнее</a>
-            </div>
-          </div>
-
-          <div class="swiper-slide product position-relative">
-
-            <div class="d-flex">
-              <img src="./images/products/img_6.png" alt="#" class="__img">
-
-              <div class="badges d-inline-block">
-                <a href="" class="badge _sale uppercase">акция</a>
-                <a href="" class="badge _new uppercase">новинка!</a>
-                <a href="" class="badge _hit uppercase">хит&nbspпродаж!</a>
-              </div>
-            </div>
-
-            <h2 class="__title">Горшок керамический «Каприфоль»</h2>
-
-            <div class="__bottom">
-              <span class="__price">от 229 ₽</span>
-
-              <a href="./detail.html" class="__btn">Подробнее</a>
-            </div>
-          </div>
-
-          <div class="swiper-slide product position-relative">
-
-            <div class="d-flex">
-              <img src="./images/products/img_7.png" alt="#" class="__img">
-
-              <div class="badges d-inline-block">
-                <span class="badge _sale uppercase">акция</span>
-                <span class="badge _new uppercase">новинка!</span>
-                <span class="badge _hit uppercase">хит&nbspпродаж!</span>
-              </div>
-            </div>
-
-            <h2 class="__title">Бонсайница «Ваниль»</h2>
-
-            <div class="__bottom">
-              <span class="__price">от 244 ₽</span>
-
-              <a href="./detail.html" class="__btn">Подробнее</a>
-            </div>
-          </div>
-
-          <div class="swiper-slide product position-relative">
-
-            <div class="d-flex">
-              <img src="./images/products/img_8.png" alt="#" class="__img">
-
-              <div class="badges d-inline-block">
-                <span class="badge _sale uppercase">акция</span>
-                <span class="badge _new uppercase">новинка!</span>
-                <span class="badge _hit uppercase">хит&nbspпродаж!</span>
-              </div>
-            </div>
-
-            <h2 class="__title">Цветочная композиция в горшке «Франция»</h2>
-
-            <div class="__bottom">
-              <span class="__price">400 ₽</span>
-
-              <a href="./detail.html" class="__btn">Подробнее</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="swiper-button-next watched-swiper-next d-none d-lg-flex"></div>
-    <div class="swiper-button-prev watched-swiper-prev d-none d-lg-flex"></div>
-  </section>
-
-  <!-- Banner Bottom  -->
-  <div class="row d-flex justify-content-center position-relative banner-footer">
-    <div class="col-12 p-0">
-      <img class="d-none d-xxl-block" src="./images/pages/catalog/img.png" alt="#">
-      <img class="d-none d-md-block d-xxl-none" src="./images/pages/catalog/img_1.png" alt="#">
-      <img class="d-md-none d-block" src="./images/pages/catalog/img_2.png" alt="#">
-    </div>
-
-    <div class="col-12 col-md-11 col-xxxl-9 __box">
-      <h2 class="banner-footer__title banner-title">Украшаем интерьер!</h2>
-      <a class="banner-footer__btn banner-btn" href="#">Посмотреть коллекцию</a>
+      <h1 class="block-title order__title">Оформление заказа</h1>
     </div>
   </div>
+
+   <!--  -->
+   <!--  -->
+   <!--  -->
+   <!--  -->
 
   <!-- Footer -->
   <footer class="row d-flex justify-content-center">
@@ -1333,19 +672,30 @@
   const offcanvas = document.querySelector('.offcanvas');
   const offcanvasCall = document.querySelector('.offcanvas-call');
   const offcanvasPartner = document.querySelector('.offcanvas-partner');
-  const offcanvasFilters = document.querySelector('.offcanvas-filters');
 
   const overlay = document.getElementById('overlay');
-  const overlayFilter = document.getElementById('overlay-filter');
+
+  function showToggle() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  // hide on outside click
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      let dropdowns = document.getElementsByClassName("dropdown-content");
+      let i;
+      for (i = 0; i < dropdowns.length; i++) {
+        let openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
 
   function openOverlay() {
     overlay.style.width = '100%'
     overlay.style.opacity = '1'
-  }
-
-  function openOverlayFilters() {
-    overlayFilter.style.width = '100%'
-    overlayFilter.style.opacity = '1'
   }
 
   function closeOverlay() {
@@ -1364,13 +714,10 @@
   }
 
   function openMenuPartner() {
+    console.log('worked')
+
     offcanvasPartner.style.right = '0'
     openOverlay()
-  }
-
-  function openMenuFilters() {
-    offcanvasFilters.style.right = '0'
-    openOverlayFilters()
   }
 
   function closeMenu() {
@@ -1378,12 +725,6 @@
     offcanvasCall.style.right = '-395px';
     offcanvasPartner.style.right = '-395px';
     closeOverlay()
-  }
-
-  function closeFilters() {
-    offcanvasFilters.style.right = '-395px';
-    overlayFilter.style.width = '0'
-    overlayFilter.style.opacity = '0'
   }
 
   function formatPhoneNumber(input) {
@@ -1411,101 +752,83 @@
     window.open('https://dekors.shop/wp-content/uploads/2022/07/prajsy-studiya-dekor.zip', '_blank')
   }
 
-  function showToggle() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
-
-  $(document).ready(function () {
-    // Close the dropdown if the user clicks outside of it
-    window.onclick = function(event) {
-      if (!event.target.matches('.dropbtn')) {
-        let dropdowns = document.getElementsByClassName("dropdown-content");
-        let i;
-        for (i = 0; i < dropdowns.length; i++) {
-          let openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
-          }
-        }
-      }
-    }
-
-    // Marquee
-    if($('.ticker-2').length)
-    {
-
-      let currentElement = $(".ticker-2 .ticker__track"),
-        maxScroll = $(".ticker-2 .ticker__track img").width()*2,
-        scrolled = 0, tickerSpeed=2;
-
-      $(document).on('scrollstart', function() {
-
-      })
-
-      $(document).on('scrollend', function() {
-        tickerSpeed=2
-      })
-
-      let lastScrollTop = 0, tickerDirection = 'rtl';
-
-      $(document).scroll(function (){
-        var st = window.pageYOffset || document.documentElement.scrollTop;
-
-        let scrollerSpeed = ($(window).width()/1)
-        if($(window).width()<800) {
-          scrollerSpeed = 800;
-        }
-
-        if (st > lastScrollTop){
-          tickerDirection = 'rtl'
-          tickerSpeed = ($(window).scrollTop()/$(window).height())*$(".ticker-2 .ticker__track img").width()/ scrollerSpeed
-        } else {
-          tickerDirection = 'ltr'
-          tickerSpeed = ($(window).scrollTop()/$(window).height())*$(".ticker-2 .ticker__track img").width()/ scrollerSpeed
-        }
-        lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolli
-      });
-
-      function animate(){
-
-        if(tickerDirection == 'rtl')
-        {
-          scrolled -= tickerSpeed;
-
-          if (Math.abs(scrolled) < $(".ticker-2 .ticker__track img").width()*2) {
-            // scrolled += scrolled;
-          }
-          else
-          {
-            scrolled=0;
-          }
-        }
-        else
-        {
-          scrolled += tickerSpeed;
-
-          if (scrolled >= 0) {
-            scrolled= -($(".ticker-2 .ticker__track img").width()*2);
-          }
-        }
-
-        currentElement.css({
-          transform: "translateX(" + scrolled + "px)"
-        });
-
-        window.requestAnimationFrame(animate);
-      }
-
-      window.requestAnimationFrame(animate);
-    }
-  })
-
 </script>
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <!-- Initialize Swiper -->
-</body>
 <script>
+  function openDescription(evt, value) {
+    let i, x, tablinks;
+    x = document.getElementsByClassName("toggle_item");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(value).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+
+
+  let galleryThumbs = new Swiper(".gallery-thumbs", {
+    centeredSlides: true,
+    centeredSlidesBounds: true,
+    direction: "vertical",
+    spaceBetween: 10,
+    slidesPerView: 3,
+    freeMode: false,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+    watchOverflow: true,
+  });
+
+  let galleryTop = new Swiper(".gallery-top", {
+    direction: "horizontal",
+    pagination:{
+      clickable: true,
+      el: ".swiper-pagination",
+      dynamicBullets: true
+    },
+    spaceBetween: 16,
+    keyboard: {
+      enabled: true,
+    },
+    thumbs: {
+      swiper: galleryThumbs
+    }
+  });
+  galleryTop.on("slideChangeTransitionStart", function () {
+    galleryThumbs.slideTo(galleryTop.activeIndex);
+  });
+  galleryThumbs.on("transitionStart", function () {
+    galleryTop.slideTo(galleryThumbs.activeIndex);
+  });
+
+  new Swiper(".similar-swiper", {
+    autoHeight: false,
+    navigation: {
+      nextEl: ".similar-swiper-next",
+      prevEl: ".similar-swiper-prev",
+    },
+    spaceBetween: 10,
+    slidesPerView: 2.1,
+    breakpoints: {
+      768: {
+        spaceBetween: 20,
+      },
+      992: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1400: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      }
+    },
+  });
+
   new Swiper(".watched-swiper", {
     autoHeight: false,
     navigation: {
@@ -1529,4 +852,10 @@
     },
   });
 </script>
+
+<!-- Form -->
+<script src="forms/jquery.js?v=2"></script>
+<script src="forms/main.js?v=3"></script>
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(54974290, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, ecommerce:"dataLayer" }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/54974290" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+</body>
 </html>

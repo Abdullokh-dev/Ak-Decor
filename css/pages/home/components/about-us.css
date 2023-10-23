@@ -143,4 +143,14 @@
         font-size: 36px;
     }
 
+    .our-client .__logos ._md {
+        max-width: 81px;
+        max-height: 35px;
+    }
+
+    .our-client .__logos ._lg {
+        max-width: 89px;
+        max-height: 28px;
+    }
+
 }

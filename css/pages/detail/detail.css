@@ -27,7 +27,7 @@
 .gallery-thumbs, .gallery-top {
     overflow: hidden;
     padding: 0;
-    height: 468px;
+    max-height: 468px;
 }
 
 .gallery-thumbs .swiper-wrapper {
@@ -92,7 +92,7 @@
     border: 1px solid #6D8880;
     border-radius: 19px;
     cursor: pointer;
-    transition: all 0.3s;
+    /*transition: all 0.3s;*/
     display: inline-block;
     margin-right: 6px;
     margin-top: 10px;
@@ -294,9 +294,12 @@
         margin-top: 20px;
     }
 
-    .gallery-top .swiper-slide img,
-    .gallery-thumbs, .gallery-top {
+    .gallery-top .swiper-slide img {
         max-height: 332px;
+    }
+
+    .gallery-thumbs, .gallery-top {
+        max-height: 360px;
     }
 
     .detail-product .__price .__value {
@@ -329,7 +332,6 @@
 
     .gallery-top {
         width: 100%;
-        overflow: unset;
         height: auto;
         margin-left: 0;
         padding: 0;

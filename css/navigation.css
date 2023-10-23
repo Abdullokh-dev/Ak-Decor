@@ -18,7 +18,7 @@
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
     cursor: auto;
-    display: none;
+    /*display: none !important;*/
     pointer-events: none;
 }
 
