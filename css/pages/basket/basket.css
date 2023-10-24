@@ -1,0 +1,292 @@
+.basket-page .breadcrumb {
+    margin-top: 40px;
+}
+
+.warning-quantity {
+    color: #FF3838;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: center;
+    border: 1px solid #FF3838;
+    padding: 18px 15px;
+    border-radius: 22px;
+    margin: 60px 0 20px 0;
+}
+
+.order__title, .total-title {
+    color: #2C2C2C;
+}
+
+.progress-bar {
+    margin: 48px 0 130px 0;
+}
+
+.progress-bar__step {
+    text-align: left;
+    position: relative;
+    width: 100%;
+    height: 106px;
+}
+
+.progress-bar__step:before, .progress-bar__step:after {
+    content: "";
+    height: 2px;
+    background-color: #2C2C2C;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    right: 99%;
+    top: 87%;
+    transform: translateY(-50%);
+    transition: all 0.25s ease-out;
+}
+
+.progress-bar__step:first-child:before, .progress-bar__step:first-child:after {
+    display: none;
+}
+
+.progress-bar__step:after {
+    background-color: #6D8880;
+    width: 0%;
+}
+
+.progress-bar__step.is-complete + .progress-bar__step.is-current:after, .progress-bar__step.is-complete + .progress-bar__step.is-complete:after {
+    width: 100%;
+}
+
+.progress-bar__icon {
+    width: 30px;
+    height: 30px;
+    background-color: #2C2C2C;
+    fill: #6D8880;
+    border-radius: 50%;
+    margin-top: auto;
+    display: flex;
+    max-width: 100%;
+    z-index: 10;
+    position: relative;
+    transition: all 0.25s ease-out;
+}
+
+.is-current .progress-bar__icon {
+    fill: #6D8880;
+    background-color: #6D8880;
+}
+
+.is-complete .progress-bar__icon {
+    fill: #2C2C2C;
+    background-color: #6D8880;
+}
+
+.progress-bar__step-label {
+    font-size: 20px;
+    line-height: 140%;
+    font-weight: 500;
+    color: #2C2C2C;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.order-btn {
+    background-color: #6D8880;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 16px 50px;
+    border: none;
+    border-radius: 12px;
+    text-decoration: none;
+    color: white;
+    line-height: 140%;
+    margin-top: 60px;
+    transition: background-color .3s;
+}
+
+.order-btn .__icon {
+    margin-left: 40px;
+}
+
+.button-add {
+    border: 1px solid #6D8880;
+    color: #6D8880;
+    font-size: 20px;
+    font-weight: 700;
+    width: 256px;
+    border-radius: 8px;
+    padding: 0 22px;
+    height: 40px;
+}
+
+.basked-product {
+    margin-bottom: 40px;
+}
+
+.basked-product__name {
+    color: #2C2C2C;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 18px;
+    line-height: 140%;
+}
+
+.basked-product__price {
+    font-size: 40px;
+    font-weight: 700;
+    color: #DA9819;
+}
+
+.basked-product__price .__info {
+    font-size: 14px;
+    color: #2C2C2C;
+    font-weight: 400;
+}
+
+.total-cost {
+   width: 80%;
+}
+
+.total-cost__warning {
+    font-size: 16px;
+    color: #FF3838;
+    padding-bottom: 7px;
+}
+
+.total-cost__info, .total-cost__info a {
+    font-size: 20px;
+    color: #2C2C2C;
+}
+
+.total-title {
+    margin-bottom: 10px;
+}
+
+.order-basket {
+    margin-bottom: 120px;
+}
+
+@media screen and (max-width: 1199px) {
+    .basket-page .breadcrumb {
+        margin-top: 17px;
+        margin-bottom: 20px;
+    }
+
+    .warning-quantity {
+        margin-top: 10px
+    }
+
+    .progress-bar {
+        margin: 30px 0 55px 0;
+    }
+
+    .basked-product {
+        margin-bottom: 0;
+    }
+
+    .order-basket .__hr {
+        border-bottom: 1px solid #CBCAC8;
+        margin: 16px 0 40px 0;
+        width: 100%;
+    }
+
+    .button-add,
+    .basked-product__del {
+        margin-top: 35px;
+    }
+
+    .total-title {
+        font-size: 26px;
+        font-weight: 800;
+    }
+
+    .total-cost_value {
+        font-size: 44px;
+        line-height: normal;
+        margin-bottom: -10px;
+    }
+
+    .total-cost {
+        width: 100%;
+    }
+
+    .total-cost__warning {
+        padding-bottom: 0;
+    }
+
+    .total-cost__info, .total-cost__info a {
+        font-size: 16px;
+    }
+
+    .order-btn {
+        margin-top: 40px;
+    }
+
+    .order-basket {
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .warning-quantity {
+        margin-top: 0
+    }
+
+    .progress-bar__step-label {
+        font-size: 14px;
+    }
+
+    .progress-bar__step {
+        height: 86px;
+    }
+
+    .progress-bar {
+        margin: 20px 0 32px 0;
+    }
+
+    .progress-bar__step:before, .progress-bar__step:after {
+        top: 79%;
+    }
+
+    .progress-bar__icon {
+        margin-top: auto;
+        margin-bottom: 4px;
+    }
+
+    .basked-product__price {
+        font-size: 32px;
+    }
+
+    .basked-product__name {
+        font-size: 16px;
+        font-weight: 800;
+        margin: 17px 0 20px 0;
+    }
+
+    .total-title {
+        margin-top: 30px;
+    }
+
+    .order-btn {
+        margin-top: 49px;
+        padding: 11px 20px;
+        width: 100%;
+    }
+
+    .order-btn .__icon {
+        margin-left: auto;
+        background-color: pink;
+    }
+
+    .button-add,
+    .basked-product__del {
+        margin-top: 0;
+    }
+
+    .total-cost {
+        width: 90%;
+    }
+
+    .order-basket {
+        margin-bottom: 80px;
+    }
+}
