@@ -2,6 +2,18 @@
     margin-top: 40px;
 }
 
+.step-one {
+    margin-top: 130px;
+}
+
+.step-two {
+    margin-top: 50px;
+}
+
+.step-two, .step-three {
+    display: none;
+}
+
 .warning-quantity {
     color: #FF3838;
     font-size: 20px;
@@ -18,7 +30,7 @@
 }
 
 .progress-bar {
-    margin: 48px 0 130px 0;
+    margin-top: 48px;
 }
 
 .progress-bar__step {
@@ -33,7 +45,7 @@
     height: 2px;
     background-color: #2C2C2C;
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     width: 100%;
     right: 99%;
     top: 87%;
@@ -63,7 +75,7 @@
     margin-top: auto;
     display: flex;
     max-width: 100%;
-    z-index: 10;
+    z-index: 1;
     position: relative;
     transition: all 0.25s ease-out;
 }
@@ -102,8 +114,18 @@
     transition: background-color .3s;
 }
 
+.order-btn.empty {
+    background: none;
+    border: 1px solid #6D8880;
+    color: #6D8880;
+}
+
 .order-btn .__icon {
     margin-left: 40px;
+}
+
+.order-btn .__icon-back {
+    margin-right: 40px;
 }
 
 .button-add {
@@ -165,6 +187,93 @@
     margin-bottom: 120px;
 }
 
+.product-order-form  .__box {
+    border: 1px solid rgba(44, 44, 44, 0.2);
+    border-radius: 22px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.product-order-form .__title {
+    color: #2C2C2C;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 140%;
+}
+
+.product-order-form input {
+    outline: none;
+    border-radius: 8px;
+    background: none;
+    border: 1px solid #2C2C2C;
+    color: #2C2C2C;
+    padding: 5px 10px;
+    width: 100%;
+    line-height: 140%;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.product-order-form .total-cost {
+    width: 100%;
+}
+
+.product-order-form .__address {
+    margin-top: 32px;
+    margin-bottom: 10px;
+}
+
+.product-order-form textarea {
+    width: 100%;
+    max-width: 100%;
+    min-height: 160px;
+    border-radius: 8px;
+    background: none;
+    padding: 6px 10px;
+    font-size: 20px;
+    border-color:  #2C2C2C;
+    color: #2C2C2C;
+    outline: none;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+}
+
+/*------------------------------------------------------------------------------------------------------------------*/
+.file-icon {
+    width: 27px;
+    min-width: 27px;
+    height: 27px;
+    margin-left: 20px;
+    background: url('../../../images/icons/file.svg') center no-repeat;
+    background-size: contain;
+}
+
+.input-file-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.input-file-trigger {
+    color: #6D8880;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 18px;
+    cursor: pointer;
+}
+
+.input-file-trigger .__text:after {
+    content: '';
+    border-bottom: 1px solid #6D8880;
+    width: 100%;
+    display: block;
+    margin-top: 4px;
+}
+
+.input-file {
+    display: none;
+}
+
 @media screen and (max-width: 1199px) {
     .basket-page .breadcrumb {
         margin-top: 17px;
@@ -176,7 +285,11 @@
     }
 
     .progress-bar {
-        margin: 30px 0 55px 0;
+        margin-top: 30px;
+    }
+
+    .step-one {
+        margin-top: 55px;
     }
 
     .basked-product {
@@ -224,6 +337,24 @@
     .order-basket {
         margin-bottom: 100px;
     }
+
+    .product-order-form  .__box {
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+    .product-order-form input {
+        margin-bottom: 10px;
+    }
+
+    .product-order-form .__address {
+        margin-top: 20px;
+    }
+
+    .product-order-form .total-cost__info,
+    .product-order-form .total-cost__info a {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width:767px) {
@@ -239,8 +370,8 @@
         height: 86px;
     }
 
-    .progress-bar {
-        margin: 20px 0 32px 0;
+    .progress-bar, .step-two {
+        margin-top: 20px;
     }
 
     .progress-bar__step:before, .progress-bar__step:after {
@@ -267,14 +398,17 @@
     }
 
     .order-btn {
-        margin-top: 49px;
+        margin-top: 20px;
         padding: 11px 20px;
         width: 100%;
     }
 
     .order-btn .__icon {
         margin-left: auto;
-        background-color: pink;
+    }
+
+    .order-btn .__icon-back {
+        margin-right: auto;
     }
 
     .button-add,
@@ -288,5 +422,24 @@
 
     .order-basket {
         margin-bottom: 80px;
+    }
+
+    .product-order-form .__address {
+        margin-top: 12px;
+        margin-bottom: 10px;
+    }
+
+    .product-order-form  .__box {
+        padding: 10px 0;
+    }
+
+    .file-icon {
+        min-width: 40px;
+        min-height: 40px;
+    }
+
+    .product-order-form textarea {
+        margin: 20px 0;
+        min-height: 187px;
     }
 }

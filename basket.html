@@ -411,7 +411,7 @@
   <div class="row d-flex justify-content-center order-basket">
     <div class="col-12 col-md-11 col-xxxl-9">
       <div class="warning-quantity uppercase">
-        <span>Минимальная сумма заказа 10 000 ₽</span>
+        <span>Минимальная сумма заказа <span class="nowrap">10 000 ₽</span></span>
       </div>
 
       <h1 class="block-title order__title">Оформление заказа</h1>
@@ -432,169 +432,290 @@
         </li>
       </ol>
 
-      <div class="row d-flex justify-content-between basked-product">
-        <!-- price -->
-        <div class="col-12 col-md-6 col-lg order-md-1 order-lg-2 basked-product__price">
-          <div>
-            <span class="d-block">1 670 ₽</span>
-            <span class="__info">цена с НДС</span>
-          </div>
-        </div>
+      <!-- Step 1 -->
+      <div class="row step-one">
+        <div class="col-12">
+          <div class="row d-flex justify-content-between basked-product">
+            <!-- price -->
+            <div class="col-12 col-md-6 col-lg order-md-1 order-lg-2 basked-product__price">
+              <div>
+                <span class="d-block">1 670 ₽</span>
+                <span class="__info">цена с НДС</span>
+              </div>
+            </div>
 
-        <!-- name -->
-        <div class="col-12 col-md-6 col-xl-5 order-md-0 basked-product__name">
-          <span class="d-block">1. Горшок керамический с поддоном «Блэк»</span>
-        </div>
+            <!-- name -->
+            <div class="col-12 col-md-6 col-xl-5 order-md-0 basked-product__name">
+              <span class="d-block">1. Горшок керамический с поддоном «Блэк»</span>
+            </div>
 
-        <!-- delete -->
-        <div class="col-2 col-md-6 col-xl-12 order-md-2 order-xl-3 basked-product__del align-self-center">
-          <svg class="d-flex" width="25" height="32" viewBox="0 0 25 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M16 0H8.88889V3.55556H0V7.11111H24.8889V3.55556H16V0ZM21.3333 32L23.1111 10.6667H1.77778L3.55556 32H21.3333Z" fill="#6D8880"/>
-          </svg>
-        </div>
+            <!-- delete -->
+            <div class="col-2 col-md-6 col-xl-12 order-md-2 order-xl-3 basked-product__del align-self-center">
+              <svg class="d-flex" width="25" height="32" viewBox="0 0 25 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 0H8.88889V3.55556H0V7.11111H24.8889V3.55556H16V0ZM21.3333 32L23.1111 10.6667H1.77778L3.55556 32H21.3333Z" fill="#6D8880"/>
+              </svg>
+            </div>
 
-        <!-- add btn -->
-        <div class="col col-lg-4 d-flex justify-content-end order-md-2 justify-content-lg-start order-xl-1">
-          <div class="d-flex justify-content-between button-add ms-xl-5">
+            <!-- add btn -->
+            <div class="col col-lg-4 d-flex justify-content-end order-md-2 justify-content-lg-start order-xl-1">
+              <div class="d-flex justify-content-between button-add ms-xl-5">
             <span class="pointer">
               <svg width="37" height="1" viewBox="0 0 37 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M36 1C36.2761 1 36.5 0.776142 36.5 0.5C36.5 0.223858 36.2761 0 36 0V1ZM0 1H36V0H0V1Z" fill="#6D8880"/>
               </svg>
             </span>
 
-            <span class="align-self-center">10</span>
+                <span class="align-self-center">10</span>
 
-            <span class="align-self-center pointer">
+                <span class="align-self-center pointer">
               <svg class="d-flex" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M24 13C24.2761 13 24.5 12.7761 24.5 12.5C24.5 12.2239 24.2761 12 24 12V13ZM12.5 0.5C12.5 0.223858 12.2761 0 12 0C11.7239 0 11.5 0.223858 11.5 0.5H12.5ZM0 13H24V12H0V13ZM12.5 24.5V0.5H11.5V24.5H12.5Z" fill="#6D8880"/>
               </svg>
             </span>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <!-- HR -->
-      <div class="row d-xl-none">
-        <div class="__hr"></div>
-      </div>
-
-      <div class="row d-flex justify-content-between basked-product">
-        <!-- price -->
-        <div class="col-12 col-md-6 col-lg order-md-1 order-lg-2 basked-product__price">
-          <div>
-            <span class="d-block">12 050 ₽</span>
-            <span class="__info">цена с НДС</span>
+          <!-- HR -->
+          <div class="row d-xl-none">
+            <div class="__hr"></div>
           </div>
-        </div>
 
-        <!-- name -->
-        <div class="col-12 col-md-6 col-xl-5 order-md-0 basked-product__name">
-          <span class="d-block">2. Горшок керамический с поддоном «Бежевый камень»</span>
-        </div>
+          <div class="row d-flex justify-content-between basked-product">
+            <!-- price -->
+            <div class="col-12 col-md-6 col-lg order-md-1 order-lg-2 basked-product__price">
+              <div>
+                <span class="d-block">12 050 ₽</span>
+                <span class="__info">цена с НДС</span>
+              </div>
+            </div>
 
-        <!-- delete -->
-        <div class="col-2 col-md-6 col-xl-12 order-md-2 order-xl-3 basked-product__del align-self-center">
-          <svg class="d-flex" width="25" height="32" viewBox="0 0 25 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M16 0H8.88889V3.55556H0V7.11111H24.8889V3.55556H16V0ZM21.3333 32L23.1111 10.6667H1.77778L3.55556 32H21.3333Z" fill="#6D8880"/>
-          </svg>
-        </div>
+            <!-- name -->
+            <div class="col-12 col-md-6 col-xl-5 order-md-0 basked-product__name">
+              <span class="d-block">2. Горшок керамический с поддоном «Бежевый камень»</span>
+            </div>
 
-        <!-- add btn -->
-        <div class="col col-lg-4 d-flex justify-content-end order-md-2 justify-content-lg-start order-xl-1">
-          <div class="d-flex justify-content-between button-add ms-xl-5">
+            <!-- delete -->
+            <div class="col-2 col-md-6 col-xl-12 order-md-2 order-xl-3 basked-product__del align-self-center">
+              <svg class="d-flex" width="25" height="32" viewBox="0 0 25 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 0H8.88889V3.55556H0V7.11111H24.8889V3.55556H16V0ZM21.3333 32L23.1111 10.6667H1.77778L3.55556 32H21.3333Z" fill="#6D8880"/>
+              </svg>
+            </div>
+
+            <!-- add btn -->
+            <div class="col col-lg-4 d-flex justify-content-end order-md-2 justify-content-lg-start order-xl-1">
+              <div class="d-flex justify-content-between button-add ms-xl-5">
             <span class="pointer">
               <svg width="37" height="1" viewBox="0 0 37 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M36 1C36.2761 1 36.5 0.776142 36.5 0.5C36.5 0.223858 36.2761 0 36 0V1ZM0 1H36V0H0V1Z" fill="#6D8880"/>
               </svg>
             </span>
 
-            <span class="align-self-center">10</span>
+                <span class="align-self-center">10</span>
 
-            <span class="align-self-center pointer">
+                <span class="align-self-center pointer">
               <svg class="d-flex" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M24 13C24.2761 13 24.5 12.7761 24.5 12.5C24.5 12.2239 24.2761 12 24 12V13ZM12.5 0.5C12.5 0.223858 12.2761 0 12 0C11.7239 0 11.5 0.223858 11.5 0.5H12.5ZM0 13H24V12H0V13ZM12.5 24.5V0.5H11.5V24.5H12.5Z" fill="#6D8880"/>
               </svg>
             </span>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <!-- HR -->
-      <div class="row d-xl-none">
-        <div class="__hr"></div>
-      </div>
-
-      <div class="row d-flex justify-content-between basked-product">
-        <!-- price -->
-        <div class="col-12 col-md-6 col-lg order-md-1 order-lg-2 basked-product__price">
-          <div>
-            <span class="d-block">1 520 ₽</span>
-            <span class="__info">цена с НДС</span>
+          <!-- HR -->
+          <div class="row d-xl-none">
+            <div class="__hr"></div>
           </div>
-        </div>
 
-        <!-- name -->
-        <div class="col-12 col-md-6 col-xl-5 order-md-0 basked-product__name">
-          <span class="d-block">3. Цветочная композиция в горшке «Франция»</span>
-        </div>
+          <div class="row d-flex justify-content-between basked-product">
+            <!-- price -->
+            <div class="col-12 col-md-6 col-lg order-md-1 order-lg-2 basked-product__price">
+              <div>
+                <span class="d-block">1 520 ₽</span>
+                <span class="__info">цена с НДС</span>
+              </div>
+            </div>
 
-        <!-- delete -->
-        <div class="col-2 col-md-6 col-xl-12 order-md-2 order-xl-3 basked-product__del align-self-center">
-          <svg class="d-flex" width="25" height="32" viewBox="0 0 25 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M16 0H8.88889V3.55556H0V7.11111H24.8889V3.55556H16V0ZM21.3333 32L23.1111 10.6667H1.77778L3.55556 32H21.3333Z" fill="#6D8880"/>
-          </svg>
-        </div>
+            <!-- name -->
+            <div class="col-12 col-md-6 col-xl-5 order-md-0 basked-product__name">
+              <span class="d-block">3. Цветочная композиция в горшке «Франция»</span>
+            </div>
 
-        <!-- add btn -->
-        <div class="col col-lg-4 d-flex justify-content-end order-md-2 justify-content-lg-start order-xl-1">
-          <div class="d-flex justify-content-between button-add ms-xl-5">
+            <!-- delete -->
+            <div class="col-2 col-md-6 col-xl-12 order-md-2 order-xl-3 basked-product__del align-self-center">
+              <svg class="d-flex" width="25" height="32" viewBox="0 0 25 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 0H8.88889V3.55556H0V7.11111H24.8889V3.55556H16V0ZM21.3333 32L23.1111 10.6667H1.77778L3.55556 32H21.3333Z" fill="#6D8880"/>
+              </svg>
+            </div>
+
+            <!-- add btn -->
+            <div class="col col-lg-4 d-flex justify-content-end order-md-2 justify-content-lg-start order-xl-1">
+              <div class="d-flex justify-content-between button-add ms-xl-5">
             <span class="pointer">
               <svg width="37" height="1" viewBox="0 0 37 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M36 1C36.2761 1 36.5 0.776142 36.5 0.5C36.5 0.223858 36.2761 0 36 0V1ZM0 1H36V0H0V1Z" fill="#6D8880"/>
               </svg>
             </span>
 
-            <span class="align-self-center">10</span>
+                <span class="align-self-center">10</span>
 
-            <span class="align-self-center pointer">
+                <span class="align-self-center pointer">
               <svg class="d-flex" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M24 13C24.2761 13 24.5 12.7761 24.5 12.5C24.5 12.2239 24.2761 12 24 12V13ZM12.5 0.5C12.5 0.223858 12.2761 0 12 0C11.7239 0 11.5 0.223858 11.5 0.5H12.5ZM0 13H24V12H0V13ZM12.5 24.5V0.5H11.5V24.5H12.5Z" fill="#6D8880"/>
               </svg>
             </span>
+              </div>
+            </div>
+          </div>
+          <!-- HR -->
+          <div class="row d-xl-none">
+            <div class="__hr"></div>
+          </div>
+
+          <div class="row mt-md-4">
+            <!-- price -->
+            <div class="col-12 col-md-6 col-lg basked-product__price order-md-1">
+              <div>
+                <span class="d-block total-cost_value">10 670 000 ₽</span>
+                <span class="__info">цена с НДС</span>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-8 col-xxl-9 pe-md-4 order-md-0">
+              <h1 class="block-title total-title">Общая стоимость</h1>
+              <div class="total-cost">
+                <span class="d-block total-cost__warning uppercase">производство находится в ярославле. ДОСТАВКА НЕ ВХОДИТ В ОБЩУЮ СУММУ заказа и оПЛАЧИВАЕТСЯ ОТДДЕЛЬНО!</span>
+                <span class="total-cost__info"> Цену и срок доставки можно уточнить у менеджера. <a href="https://dekors.shop/contact/" target="_blank">Контакты.</a></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex">
+            <button class="order-btn fill ms-auto d-flex" id="step-one-next">
+              ДАЛЕЕ
+              <svg class="__icon d-flex align-self-center" width="53" height="28" viewBox="0 0 53 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 14L51 14M51 14L39.4444 1.5M51 14L39.4444 26.5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
-      <!-- HR -->
-      <div class="row d-xl-none">
-        <div class="__hr"></div>
-      </div>
 
-      <div class="row mt-md-4">
-        <!-- price -->
-        <div class="col-12 col-md-6 col-lg basked-product__price order-md-1">
-          <div>
-            <span class="d-block total-cost_value">10 670 000 ₽</span>
-            <span class="__info">цена с НДС</span>
+      <!-- Step 2 -->
+      <form class="row step-two">
+        <div class="col-12 px-4">
+          <div class="product-order-form">
+            <div class="row __box">
+              <h2 class="__title">Контактные данные</h2>
+              <div class="col-12 col-md-6 col-xl-4">
+                <input type="text" placeholder="Ваше имя*" aria-label="">
+              </div>
+
+              <div class="col-12 col-md-6 col-xl-4">
+                <input type="text" maxlength="18" placeholder="+7 999 999 99-99*" oninput="formatPhoneNumber(this)" aria-label="">
+              </div>
+
+              <div class="col-12 col-md-6 col-xl-4">
+                <input type="email" placeholder="e-mail*" aria-label="">
+              </div>
+
+              <div class="col-12 __address">
+                <h2 class="__title">Адрес доставки</h2>
+                <div class="total-cost">
+                  <span class="d-block total-cost__warning uppercase p-0">производство находится в ярославле. ДОСТАВКА НЕ ВХОДИТ В ОБЩУЮ СУММУ заказа и оПЛАЧИВАЕТСЯ ОТДДЕЛЬНО!</span>
+                  <span class="total-cost__info"> Цену и срок доставки можно уточнить у менеджера. <a href="https://dekors.shop/contact/" target="_blank">Контакты.</a></span>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-xl-4">
+                <input type="text" placeholder="Индекс*" aria-label="">
+              </div>
+              <div class="col-12 col-md-6 col-xl-4">
+                <input type="text" placeholder="Область, город*" aria-label="">
+              </div>
+              <div class="col-12 col-md-6 col-xl-4">
+                <input type="text" placeholder="Улица, № дома*" aria-label="">
+              </div>
+            </div>
+
+            <div class="row __box">
+              <div class="col-12 col-xl-4">
+                <h2 class="__title">Для юридических лиц</h2>
+                <input type="text" placeholder="Название компании" aria-label="">
+              </div>
+
+              <div class="col-12 col-xl-8 align-self-lg-end">
+                <div class="input-file-container">
+                  <input class="input-file" id="my-file" type="file" onchange="displayFileName(this)">
+                  <label tabindex="0" for="my-file" class="input-file-trigger d-flex">
+                    <span class="__text">Загрузит файл с реквизитами</span>
+                    <span class="file-icon" id="iconLabel"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-12 px-0">
+                <textarea placeholder="Комментарий к заказу" aria-label=""></textarea>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="col-12 col-md-6 col-xl-8 col-xxl-9 pe-md-4 order-md-0">
-          <h1 class="block-title total-title">Общая стоимость</h1>
-          <div class="total-cost">
-            <span class="d-block total-cost__warning uppercase">производство находится в ярославле. ДОСТАВКА НЕ ВХОДИТ В ОБЩУЮ СУММУ заказа и оПЛАЧИВАЕТСЯ ОТДДЕЛЬНО!</span>
-            <span class="total-cost__info"> Цену и срок доставки можно уточнить у менеджера. <a href="https://dekors.shop/contact/" target="_blank">Контакты.</a></span>
+        <div class="d-block d-md-flex">
+          <button class="order-btn fill empty ms-auto d-flex order-md-1" id="step-two-next">
+            ДАЛЕЕ
+            <svg class="__icon d-flex align-self-center" width="53" height="28" viewBox="0 0 53 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 14L51 14M51 14L39.4444 1.5M51 14L39.4444 26.5" stroke="#6D8880" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
+
+          <button class="order-btn un-fill d-flex order-md-0" id="step-two-prev">
+            <svg class="__icon-back" width="53" height="28" viewBox="0 0 53 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M52 14L2 14M2 14L13.5556 1.5M2 14L13.5556 26.5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            НАЗАД
+          </button>
+        </div>
+      </form>
+
+      <!-- Step 3 -->
+      <div class="row step-three">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="step-three__title">Детали заказа</h2>
+            </div>
+            <div class="col-4">
+              Константин Константиномольский
+              <a href="tel:">+7 (999) 999 99-99</a>
+              <a href="mailto:konstantinopolsky@gmal.com">konstantinopolsky@gmal.com</a>
+            </div>
+
+            <div class="col-4">
+              <p>
+                150000
+                Ярославская область, г. Яросалавль ул. Машиностроителей,  25
+              </p>
+            </div>
+
+            <div class="col-4">
+              <div class="total-cost">
+                <span class="d-block total-cost__warning uppercase">производство находится в ярославле. ДОСТАВКА НЕ ВХОДИТ В ОБЩУЮ СУММУ заказа и оПЛАЧИВАЕТСЯ ОТДДЕЛЬНО!</span>
+                <span class="total-cost__info"> Цену и срок доставки можно уточнить у менеджера. <a href="https://dekors.shop/contact/" target="_blank">Контакты.</a></span>
+              </div>
+            </div>
+          </div>
+          <div class="d-block d-md-flex">
+            <button class="order-btn un-fill d-flex order-md-0" id="step-three-prev">
+              <svg class="__icon-back" width="53" height="28" viewBox="0 0 53 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M52 14L2 14M2 14L13.5556 1.5M2 14L13.5556 26.5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              НАЗАД
+            </button>
           </div>
         </div>
-      </div>
-
-      <div class="d-flex">
-        <button id="fill" class="order-btn ms-auto d-flex">
-          ДАЛЕЕ
-          <svg class="__icon d-flex align-self-center" width="53" height="28" viewBox="0 0 53 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 14L51 14M51 14L39.4444 1.5M51 14L39.4444 26.5" stroke="white" stroke-width="2" stroke-linecap="round"/>
-          </svg>
-        </button>
       </div>
     </div>
-
   </div>
 
   <!-- Footer -->
@@ -809,7 +930,7 @@
               </div>
 
               <div class="position-relative">
-                <input type="text" class="footer__input" name="email" maxlength="18" placeholder="e-mail" aria-label="">
+                <input type="text" class="footer__input" name="email" placeholder="e-mail" aria-label="">
               </div>
 
               <button class="footer__btn" type="submit">Отправить</button>
@@ -846,25 +967,50 @@
     document.getElementById("myDropdown").classList.toggle("show");
   }
 
-  //Uses jQuery because it was quick. You'll want to write something that works within the context of your app.
+  function displayFileName(input) {
+    const iconLabel = document.getElementById('iconLabel');
+    const files = input.files;
 
-  $("#fill").on("click", function() {
-    let $bar = $(".progress-bar");
-    if ($bar.children(".is-current").length > 0) {
-      $bar.children(".is-current").removeClass("is-current").addClass("is-complete").next().addClass("is-current");
+    if (files.length > 0) {
+      iconLabel.style.backgroundImage = "url('./images/icons/file-uploaded.svg')";
     } else {
-      $bar.children().first().addClass("is-current");
+      iconLabel.style.backgroundImage = "url('./images/icons/file.svg')";
     }
+  }
+
+  let $stepOne = $(".step-one");
+  let $stepTwo = $(".step-two");
+  let $stepThree = $(".step-three");
+
+  $(".fill").on("click", function() {
+    let $item = $(".progress-bar");
+    $item.children(".is-current").removeClass("is-current").addClass("is-complete").next().addClass("is-current");
   });
 
-  $("#previous").on("click", function() {
-    let $bar = $(".progress-bar");
-    if ($bar.children(".is-current").length > 0) {
-      $bar.children(".is-current").removeClass("is-current").prev().removeClass("is-complete").addClass("is-current");
-    } else {
-      $bar.children(".is-complete").last().removeClass("is-complete").addClass("is-current");
-    }
+  $(".un-fill").on("click", function() {
+    let $item = $(".progress-bar");
+    $item.children(".is-current").removeClass("is-current").prev().removeClass("is-complete").addClass("is-current");
   });
+
+  $("#step-one-next").on("click", function() {
+    $stepOne.css("display", "none");
+    $stepTwo.css("display", "block");
+  })
+
+  $("#step-two-prev").on("click", function() {
+    $stepTwo.css("display", "none");
+    $stepOne.css("display", "block");
+  })
+
+  $("#step-two-next").on("click", function() {
+    $stepTwo.css("display", "none");
+    $stepThree.css("display", "block");
+  })
+
+  $("#step-three-prev").on("click", function() {
+    $stepThree.css("display", "none");
+    $stepTwo.css("display", "block");
+  })
 
   // hide on outside click
   window.onclick = function(event) {
@@ -957,7 +1103,6 @@
     document.getElementById(value).style.display = "block";
     evt.currentTarget.className += " active";
   }
-
 
   let galleryThumbs = new Swiper(".gallery-thumbs", {
     centeredSlides: true,
