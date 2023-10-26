@@ -97,6 +97,10 @@ button:hover {
   position: relative;
 }
 
+.w-100 {
+  width: 100%;
+}
+
 .uppercase {
   text-transform: uppercase;
 }

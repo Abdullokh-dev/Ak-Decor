@@ -114,18 +114,33 @@
     transition: background-color .3s;
 }
 
-.order-btn.empty {
-    background: none;
-    border: 1px solid #6D8880;
-    color: #6D8880;
-}
-
 .order-btn .__icon {
     margin-left: 40px;
 }
 
 .order-btn .__icon-back {
     margin-right: 40px;
+}
+
+.order-btn.empty {
+    background: none;
+    border: 1px solid #6D8880;
+    color: #6D8880;
+}
+
+.order-btn._by-card, .order-btn._by-cash {
+    font-weight: 500;
+    padding: 8px 34px;
+    min-height: 60px;
+    width: 457px;
+}
+
+.order-btn._by-card {
+    background-color: #A34D4D;
+}
+
+.order-btn._by-cash {
+    background-color: #AA791A;
 }
 
 .button-add {
@@ -274,6 +289,53 @@
     display: none;
 }
 
+.step-three__title {
+    color: #2C2C2C;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 140%;
+}
+
+.dotted .name:before {
+    border-bottom: 1px solid #ccc;
+    content: " ";
+    flex-grow: 1;
+    border-bottom: 1px dotted black;
+    order: 2;
+    margin: 0 3px;
+}
+
+.dotted .name {
+    align-items: baseline;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 11px;
+}
+
+.dotted .amount {
+    order: 3;
+}
+
+.step-three p {
+    font-size: 20px;
+    line-height: 220%;
+    margin: 20px 0;
+    font-weight: 500;
+}
+
+.step-three p a {
+    color: #2C2C2C;
+    text-decoration: none;
+}
+
+.step-three__title {
+    margin-top: 30px;
+}
+
+.step-three .__address {
+    max-width: 249px;
+}
+
 @media screen and (max-width: 1199px) {
     .basket-page .breadcrumb {
         margin-top: 17px;
@@ -326,7 +388,7 @@
         padding-bottom: 0;
     }
 
-    .total-cost__info, .total-cost__info a {
+    .step-one .total-cost__info, .step-one .total-cost__info a {
         font-size: 16px;
     }
 
@@ -351,9 +413,16 @@
         margin-top: 20px;
     }
 
-    .product-order-form .total-cost__info,
-    .product-order-form .total-cost__info a {
-        font-size: 20px;
+    .dotted .name {
+        margin-bottom: 40px;
+    }
+
+    .step-three .__address {
+        max-width: 480px;
+    }
+
+    .order-btn._by-card, .order-btn._by-cash {
+        display: block;
     }
 }
 
@@ -370,7 +439,7 @@
         height: 86px;
     }
 
-    .progress-bar, .step-two {
+    .progress-bar, .step-two, .step-three {
         margin-top: 20px;
     }
 
@@ -400,7 +469,7 @@
     .order-btn {
         margin-top: 20px;
         padding: 11px 20px;
-        width: 100%;
+        width: 100% !important;
     }
 
     .order-btn .__icon {
@@ -441,5 +510,28 @@
     .product-order-form textarea {
         margin: 20px 0;
         min-height: 187px;
+    }
+
+    .step-three p {
+        font-size: 16px;
+        line-height: 140%;
+    }
+
+    .step-three .total-cost__info {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .step-three .__address {
+        max-width: 300px;
+    }
+
+    .step-three__title {
+        margin-top: 0;
+    }
+
+    .order-btn._by-card, .order-btn._by-cash {
+        padding: 8px 50px;
+        min-height: 50px;
     }
 }
