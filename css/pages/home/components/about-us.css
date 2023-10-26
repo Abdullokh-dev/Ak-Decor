@@ -41,14 +41,8 @@
 }
 
 .our-client .__logos {
-    float: right;
+    gap: 50px;
     margin-top: 25px;
-}
-
-.our-client .__logos img {
-    width: auto;
-    display: inline-flex;
-    margin: 0 0 50px 50px;
 }
 
 .infographic__box .__title {
@@ -99,8 +93,7 @@
     }
 
     .our-client .__logos img {
-        margin: 0 40px 40px 0;
-        max-width: 141px;
+        gap: 105px 60px;
     }
 }
 
@@ -143,14 +136,16 @@
         font-size: 36px;
     }
 
+    .our-client .__logos {
+        gap: 38px;
+    }
+
     .our-client .__logos ._md {
         max-width: 81px;
-        max-height: 35px;
     }
 
     .our-client .__logos ._lg {
         max-width: 89px;
-        max-height: 28px;
     }
 
 }
