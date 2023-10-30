@@ -1,11 +1,3 @@
-.client-page .breadcrumb {
-    margin-bottom: 40px;
-}
-
-.client-page .breadcrumb li {
-    font-size: 20px;
-}
-
 .client-page__content {
     margin-bottom: 120px;
 }
@@ -16,6 +8,7 @@
     border-radius: 8px;
     padding: 6px 20px;
     text-decoration: none;
+    margin-bottom: 10px;
 }
 
 .arrow-icon {
@@ -49,6 +42,7 @@
     cursor: pointer;
     margin-top: 10px;
     font-size: 20px;
+    line-height: normal;
 }
 
 .tab-group {
@@ -157,7 +151,66 @@
     opacity: .7;
 }
 
+@media screen and (max-width:1199px) {
+    .tab {
+        font-weight: 700;
+        color: #6D8880;
+        font-size: 20px;
+    }
+
+    .tab-group {
+        max-width: 100%;
+    }
+
+    .client-page__content {
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .tab-content .mid-title {
+        font-size: 22px;
+        margin: 30px 0 10px 0;
+        line-height: 140%;
+        font-weight: 400;
+    }
+
+    .tab-content ul,
+    .tab-content p, .tab-content span {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 140%;
+    }
+
+    .tab-content ul {
+        padding-left: 25px;
+    }
+
+    .tab-content ul li:before {
+        font-size: 22px;
+        left: -15px;
+        top: -6px;
+    }
+
+    .tab-content button {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .client-page__content {
+        margin-bottom: 80px;
+    }
+}
+
 @media screen and (min-width:1200px) {
+    .client-page .breadcrumb {
+        margin-bottom: 40px;
+    }
+
+    .client-page .breadcrumb li {
+        font-size: 20px;
+    }
+
     .tab {
         margin-bottom: 60px;
     }
@@ -173,17 +226,5 @@
         color: #2C2C2C;
         line-height: normal;
         text-transform: uppercase;
-    }
-}
-
-@media screen and (max-width:1199px) {
-    .tab {
-        font-weight: 700;
-        color: #6D8880;
-        font-size: 20px;
-    }
-
-    .tab-group {
-        max-width: 100%;
     }
 }

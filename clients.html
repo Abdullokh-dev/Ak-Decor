@@ -433,7 +433,7 @@
               <div class="dropdown-order__option" data-tab="tab1">Как купить</div>
               <div class="dropdown-order__option" data-tab="tab2">Условия оплаты</div>
               <div class="dropdown-order__option" data-tab="tab3">Условия Доставки</div>
-              <div class="dropdown-order__option" data-tab="tab4">Обмен и возврат</div>
+              <div class="dropdown-order__option" data-tab="tab4">обмена и возврата</div>
               <div class="dropdown-order__option" data-tab="tab5">Реквизиты</div>
             </div>
           </div>
@@ -446,7 +446,7 @@
 
             <div class="warned">
               <p>Минимальная сумма заказа 10 000 ₽. Все цены на сайте указаны с НДС.</p>
-              <p>Для юридических лиц отсрочка платежа действует при покупке на сумму от 50 000 ₽ (с НДС).</p>
+              <p>Для юридических лиц отсрочка платежа действует при покупке на сумму от <span class="nowrap">50 000 ₽ (с НДС). </span></p>
               <p>Внимание! Цветовые оттенки готовых изделий могут отличаться от представленных на фото на 2-3 тона!</p>
             </div>
             <p class="mid-title">Физическим и Юридическим лицам</p>
@@ -461,8 +461,8 @@
             <h1 class="tab-title uppercase">условия оплаты</h1>
             <div class="warned">
               <p>Для юридических лиц отсрочка платежа действует при покупке на сумму от 50 000 ₽ (с НДС).</p>
-              <p>При возникновении проблем с оплатой позвоните по номеру <a href="tel:+74852593381">+7 (4852) 59-33-81</a>
-                или напишите <a href="mailto:ekors.shop@mail.ru" class="_mail">ekors.shop@mail.ru</a></p>
+              <p>При возникновении проблем с оплатой позвоните по номеру <a class="nowrap" href="tel:+74852593381">+7 (4852) 59-33-81</a>
+                или напишите <a href="mailto:dekors.shop@mail.ru" class="_mail">dekors.shop@mail.ru</a></p>
             </div>
 
             <p class="mid-title">Юридическим лицам</p>
@@ -504,7 +504,7 @@
 
             <p class="mid-title">Доставка по россии и снг</p>
             <p class="mid-title_info">
-              Доставка производиться транспортной компанией ПЭК. Мы обрешечиваем груз пред отправкой. Расходы по доставке
+              Доставка производится транспортной компанией ПЭК. Мы обрешечиваем груз пред отправкой. Расходы по доставке
               полностью оплачивает покупатель.
             </p>
 
@@ -514,7 +514,7 @@
           <div class="tab-content" id="tab4">
             <h1 class="tab-title">Условия обмена и возврата</h1>
 
-            <p class="mid-title">возврат и обмен товара ненадлежащего качества</p>
+            <p class="mid-title mt-1 mt-4">возврат и обмен товара ненадлежащего качества</p>
 
             <span>
               Обязательные условия:
@@ -536,7 +536,7 @@
           <div class="tab-content" id="tab5">
             <h1 class="tab-title">Реквизиты</h1>
             <div class="row">
-              <div class="col-12 col-xl-4">
+              <div class="col-12 col-xl-4 mt-2 pt-1">
                 <p>
                   ООО «СТУДИЯ-ДЕКОР» <br>
                   ИНН: 7603056165 <br>
@@ -546,66 +546,21 @@
                 </p>
               </div>
 
-              <div class="col-12 col-xl-8">
+              <div class="col-12 col-xl-8 mt-4 pt-1 mt-xl-0 pt-xl-0">
                 <p>
-                  р/с 40702810302000010827 в БАНК ЯРОСЛАВСКИЙ Ф-Л ПАО «ПРОМСВЯЗЬБАНК» Г. ЯРОСЛАВЛЬ
-                  К/СЧ 30101810300000000760
+                  р/с 40702810302000010827 в БАНК ЯРОСЛАВСКИЙ <span class="nowrap">Ф-Л ПАО «ПРОМСВЯЗЬБАНК»</span> <span class="nowrap">Г. ЯРОСЛАВЛЬ</span>
+                  <span class="nowrap">К/СЧ 30101810300000000760</span>
                 </p>
-                <p class="mt-4">
-                  Юридический адрес: 150044, г. Ярославль, пр-т Октября, д. 87А, литера Д, помещение 21, этаж 2.
+                <p class="mt-4 pt-1">
+                  <span class="nowrap">Юридический адрес: 150044, г.</span>
+                  <span class="nowrap">Ярославль, пр-т Октября, д. 87А,</span>
+                  <span class="nowrap">литера Д, помещение 21, этаж 2.</span>
                 </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <script>
-        const dropdown = document.querySelector('.dropdown-order');
-        const selectedOption = dropdown.querySelector('.selected-option');
-        const selectedValue = document.querySelector('.selected-text');
-        const dropdownContent = dropdown.querySelector('.dropdown-order__content');
-        const options = document.querySelectorAll('.dropdown-order__option');
-
-        const tabs = document.querySelectorAll('.tab');
-        const tabContents = document.querySelectorAll('.tab-content');
-
-        dropdown.addEventListener('click', () => {
-          dropdownContent.classList.toggle('active');
-          selectedOption.classList.toggle('open');
-        });
-
-        options.forEach(option => {
-          option.addEventListener('click', () => {
-            const tabId = option.getAttribute('data-tab');
-            const correspondingTab = document.getElementById(tabId);
-
-            // Hide all tab contents
-            tabContents.forEach(content => content.classList.remove('active'));
-
-            // Show the selected tab content
-            correspondingTab.classList.add('active');
-
-            // Update the selected option text
-            selectedValue.textContent = option.textContent;
-            console.log(selectedValue)
-          });
-        });
-
-        tabs.forEach(tab => {
-          tab.addEventListener('click', () => {
-            // Remove active class from all tabs and tab contents
-            tabs.forEach(t => t.classList.remove('active'));
-            tabContents.forEach(content => content.classList.remove('active'));
-
-            // Add active class to the clicked tab and corresponding tab content
-            tab.classList.add('active');
-            const tabId = tab.getAttribute('data-tab');
-            const correspondingTab = document.getElementById(tabId);
-            correspondingTab.classList.add('active');
-          });
-        });
-      </script>
-
     </div>
   </div>
 
@@ -906,9 +861,9 @@
   }
 
   function closeMenu() {
-    offcanvas.style.right = '-375px';
-    offcanvasCall.style.right = '-395px';
-    offcanvasPartner.style.right = '-395px';
+    offcanvas.style.right = '-400px';
+    offcanvasCall.style.right = '-400px';
+    offcanvasPartner.style.right = '-400px';
     closeOverlay()
   }
 
@@ -916,6 +871,62 @@
     window.open('https://dekors.shop/wp-content/uploads/2022/07/prajsy-studiya-dekor.zip', '_blank')
   }
 
+  // Main Order Dropdowns
+  const dropdown = document.querySelector('.dropdown-order');
+  const selectedOption = dropdown.querySelector('.selected-option');
+  const selectedValue = dropdown.querySelector('.selected-text');
+  const dropdownContent = dropdown.querySelector('.dropdown-order__content');
+  const options = dropdown.querySelectorAll('.dropdown-order__option');
+
+  const tabs = document.querySelectorAll('.tab');
+  const tabContents = document.querySelectorAll('.tab-content');
+
+  selectedOption.addEventListener('click', () => {
+    dropdownContent.classList.toggle('active');
+    selectedOption.classList.toggle('open');
+
+    options.forEach(option => {
+      if (selectedValue.textContent === option.textContent) {
+        option.style.display = 'none';
+      } else {
+        option.style.display = 'block';
+      }
+    });
+  });
+
+  //Mobile version
+  options.forEach(option => {
+    option.addEventListener('click', () => {
+      const tabId = option.getAttribute('data-tab');
+      const correspondingTab = document.getElementById(tabId);
+
+      // Hide all tab contents
+      tabContents.forEach(content => content.classList.remove('active'));
+
+      // Show the selected tab content
+      correspondingTab.classList.add('active');
+
+      dropdownContent.classList.remove('active');
+      selectedOption.classList.remove('open');
+
+      // Update the selected option text
+      selectedValue.textContent = option.textContent;
+    });
+  });
+  //Desktop version
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      // Remove active class from all tabs and tab contents
+      tabs.forEach(t => t.classList.remove('active'));
+      tabContents.forEach(content => content.classList.remove('active'));
+
+      // Add active class to the clicked tab and corresponding tab content
+      tab.classList.add('active');
+      const tabId = tab.getAttribute('data-tab');
+      const correspondingTab = document.getElementById(tabId);
+      correspondingTab.classList.add('active');
+    });
+  });
 </script>
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
