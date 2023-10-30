@@ -537,3 +537,10 @@ button:hover {
     padding: 0 20px!important;
   }
 }
+
+@media screen and (max-width: 395px) {
+    .offcanvas, offcanvas-filters, .offcanvas-call {
+        right: -395px;
+        width: 100%;
+    }
+}

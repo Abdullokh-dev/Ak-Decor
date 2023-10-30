@@ -278,7 +278,10 @@
 
     .switch-filter ._box {
         margin-bottom: 20px;
-        padding-right: 95px;
+    }
+
+    .range-field input[type=range] {
+        max-width: calc(100% - 82px);
     }
 
     /*Offcanvas*/
@@ -290,7 +293,7 @@
         transition: right 0.3s ease-in-out;
         z-index: 100;
         overflow-y: scroll;
-        padding: 26px 0 40px 38px;
+        padding: 26px 40px;
     }
 
     .offcanvas-filters {
@@ -300,7 +303,7 @@
 
     .filters .__set-btn {
         display: block;
-        width: calc(100% - 38px);
+        width: 100%;
         margin-top: 46px;
         color: white;
         font-size: 20px;

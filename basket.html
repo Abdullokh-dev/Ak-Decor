@@ -43,7 +43,7 @@
       <div class="__box">
         <a class="item" href="./catalog.html">Каталог</a>
         <div class="__hr"></div>
-        <a class="item" href="https://dekors.shop/pokupatelyam/" target="_blank">Покупателям</a>
+        <a class="item" href="./clients.html">Покупателям</a>
       </div>
 
       <div class="__box">
@@ -227,7 +227,7 @@
               </svg>
             </li>
             <li class="d-none d-xl-flex"><a href="./catalog.html"> Каталог </a></li>
-            <li class="d-none d-xl-flex"><a href="https://dekors.shop/pokupatelyam/" target="_blank"> Покупателям </a></li>
+            <li class="d-none d-xl-flex"><a href="./clients.html"> Покупателям </a></li>
             <li class="d-none d-xl-flex"><a href="#"> О нас </a></li>
             <li class="d-none d-xl-flex"><a href="https://dekors.shop/novosti/" target="_blank"> Новости </a></li>
             <li class="d-none d-xl-flex"><a href="https://dekors.shop/contact/" target="_blank"> Контакты </a></li>
@@ -1117,20 +1117,6 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <!-- Initialize Swiper -->
 <script>
-  function openDescription(evt, value) {
-    let i, x, tablinks;
-    x = document.getElementsByClassName("toggle_item");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < x.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(value).style.display = "block";
-    evt.currentTarget.className += " active";
-  }
-
   let galleryThumbs = new Swiper(".gallery-thumbs", {
     centeredSlides: true,
     centeredSlidesBounds: true,
