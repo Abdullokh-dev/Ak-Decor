@@ -7,17 +7,16 @@
   <link rel="stylesheet" href="./css/bootstrap-grid.css">
   <link rel="stylesheet" href="./css/global.css">
   <link rel="stylesheet" href="./css/components/header.css">
-  <link rel="stylesheet" href="css/components/header-marquee.css">
 
   <link rel="stylesheet" href="css/pages/catalog/components/header.css">
-  <link rel="stylesheet" href="./css/pages/client/client.css">
+  <link rel="stylesheet" href="./css/pages/question-answer/question-answer.css">
   <link rel="stylesheet" href="css/pages/catalog/components/breadcrumbs.css">
   <link rel="stylesheet" href="./css/components/footer.css">
 
   <title>Керамические горшки и кашпо для цветов | купить в интернет-магазине Студия-Декор в Ярославле</title>
 </head>
 <body>
-<div class="container-fluid client-page">
+<div class="container-fluid question-answer">
   <!-- Modals -->
   <div class="offcanvas">
     <div class="offcanvas-header">
@@ -166,8 +165,6 @@
   </div>
 
   <div class="overlay" id="overlay" onclick="closeMenu()"></div>
-
-  <div class="overlay" id="overlay-filter" onclick="closeFilters()"></div>
 
   <!-- Header -->
   <header class="row d-flex justify-content-center not-home-header">
@@ -371,190 +368,40 @@
   </header>
   <!-- Header end-->
 
-  <!-- text marque -->
-  <div class="row overflow-none">
-    <div class="col p-0">
-
-      <div class="marquee">
-        <div>
-          <span>
-            Возможно увеличение сроков поставки, в связи с большой загрузкой производства. • Возможно увеличение сроков
-            поставки, в связи с большой загрузкой производства. • Возможно увеличение сроков поставки, в связи с большой
-            загрузкой производства.
-          </span>
-
-          <span>
-            Возможно увеличение сроков поставки, в связи с большой загрузкой производства. • Возможно увеличение сроков
-            поставки, в связи с большой загрузкой производства. • Возможно увеличение сроков поставки, в связи с большой
-            загрузкой производства.
-          </span>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- Breadcrumbs -->
   <div class="row d-flex justify-content-center">
     <div class="col-12 col-md-11 col-xxxl-9">
-      <!-- Breadcrumbs -->
       <ul class="breadcrumb">
         <li><a href="#">Главная</a></li>
-        <li>Покупателям</li>
+        <li>Вопрос – ответ</li>
       </ul>
     </div>
   </div>
 
   <!-- Content -->
-  <div class="row d-flex justify-content-center client-page__content">
+  <div class="row d-flex justify-content-center question-answer__content">
     <div class="col-12 col-md-11 col-xxxl-9">
-      <div class="row">
-        <div class="d-none d-xl-block col-4 tab-group uppercase">
-          <div class="tab active" data-tab="tab1"><span>Как купить</span></div>
-          <div class="tab" data-tab="tab2"><span>условия оплаты</span></div>
-          <div class="tab" data-tab="tab3"><span>условия Доставки</span></div>
-          <div class="tab" data-tab="tab4"><span>Обмен и возврат</span></div>
-          <div class="tab" data-tab="tab5"><span>Реквизиты</span></div>
+      <h1 class="d-none d-md-block question-answer__title uppercase">вопрос – ответ</h1>
+
+      <div class="row d-flex justify-content-between">
+        <div class="col-12 col-xl-6">
+          <p class="question-title">У нас нет магазинов.</p>
+          <p class="question_answer">Все товары можно преобрести только на нашем сайте.</p>
         </div>
 
-        <div class="col-12 d-xl-none tab-group uppercase">
-          <div class="dropdown-order">
-            <div class="selected-option d-flex justify-content-between">
-              <div class="selected-text">Как купить</div>
-              <svg class="arrow-icon align-self-center" width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 1L11 11L21 1" stroke="#6D8880" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </div>
-
-            <div class="dropdown-order__content">
-              <div class="dropdown-order__option" data-tab="tab1">Как купить</div>
-              <div class="dropdown-order__option" data-tab="tab2">Условия оплаты</div>
-              <div class="dropdown-order__option" data-tab="tab3">Условия Доставки</div>
-              <div class="dropdown-order__option" data-tab="tab4">обмена и возврата</div>
-              <div class="dropdown-order__option" data-tab="tab5">Реквизиты</div>
-            </div>
-          </div>
+        <div class="col-12 col-xl-6 pe-0">
+          <p class="question-title">Не производим по индивидуальному заказу.</p>
+          <p class="question_answer">Вы можете преобрести только продукцию представленную на нашем сайте.</p>
         </div>
 
+        <div class="col-12 col-xl-6">
+          <p class="question-title">10 000₽ минимальная сумма заказа.</p>
+          <p class="question_answer">Чтобы оформить заказ, необходимо в корзину наполнить продукцией на минимальную сумму. Исключение может быть сделано для оптовых клиентов, которые планируют сотрудничать с нашей компанией в будущем, и оформляют заказ для того, чтобы ознакомиться с продукцией.</p>
+        </div>
 
-        <div class="col-12 col-xl">
-          <div class="tab-content active" id="tab1">
-            <h1 class="tab-title uppercase">как купить</h1>
-
-            <div class="warned">
-              <p>Минимальная сумма заказа 10 000 ₽. Все цены на сайте указаны с НДС.</p>
-              <p>Для юридических лиц отсрочка платежа действует при покупке на сумму от <span class="nowrap">50 000 ₽ (с НДС). </span></p>
-              <p>Внимание! Цветовые оттенки готовых изделий могут отличаться от представленных на фото на 2-3 тона!</p>
-            </div>
-            <p class="mid-title">Физическим и Юридическим лицам</p>
-            <ul>
-              <li>Выберите товары на сайте на сумму от 10 000 ₽.</li>
-              <li>Оформите товар через корзину.</li>
-              <li>Ожидайте звонка менеджера в ближайшее время.</li>
-            </ul>
-          </div>
-
-          <div class="tab-content" id="tab2">
-            <h1 class="tab-title uppercase">условия оплаты</h1>
-            <div class="warned">
-              <p>Для юридических лиц отсрочка платежа действует при покупке на сумму от 50 000 ₽ (с НДС).</p>
-              <p>При возникновении проблем с оплатой позвоните по номеру <a class="nowrap" href="tel:+74852593381">+7 (4852) 59-33-81</a>
-                или напишите <a href="mailto:dekors.shop@mail.ru" class="_mail">dekors.shop@mail.ru</a></p>
-            </div>
-
-            <p class="mid-title">Юридическим лицам</p>
-            <p class="mid-title_info">
-              Оплата товара ООО «Студия — Декор» производится по безналичному расчету на основании выставленного счета Вашему юридическому лицу.
-              Для оптовых клиентов возможна отсрочка платежа сроком от 30 до 90 дней. Имеются скидки, которые действуют по договору предоплаты. Условия уточняйте у менеджера.
-            </p>
-
-            <p class="mid-title">Физическим лицам</p>
-            <p class="mid-title_info">
-              Для оплаты (ввода реквизитов Вашей карты) Вы будете перенаправлены на платёжный шлюз ПАО СБЕРБАНК.
-              Соединение с платёжным шлюзом и передача информации осуществляется в защищённом режиме с использованием
-              протокола шифрования SSL. В случае если Ваш банк поддерживает технологию безопасного проведения
-              интернет-платежей Verified By Visa, MasterCard SecureCode, MIR Accept, J-Secure для проведения платежа
-              также может потребоваться ввод специального пароля. Настоящий сайт поддерживает 256-битное шифрование.
-              Конфиденциальность сообщаемой персональной информации обеспечивается ПАО СБЕРБАНК. Введённая информация не
-              будет предоставлена третьим лицам за исключением случаев, предусмотренных законодательством РФ. Проведение
-              платежей по банковским картам осуществляется в строгом соответствии с требованиями платёжных систем МИР,
-              Visa Int., MasterCard Europe Sprl, JCB.
-            </p>
-          </div>
-
-          <div class="tab-content" id="tab3">
-            <h1 class="tab-title">условия Доставки</h1>
-
-            <div class="warned">
-              <p>
-                Все заказы изготавливаются и собираются с нуля. Время сборки зависит от объема и загруженности
-                производства. Уточняйте время ожидания заказа у менеджеров.
-              </p>
-            </div>
-
-            <p class="mid-title">Доставка до Москвы бесплатно</p>
-            <p class="mid-title_info">
-              Заказы от 10 000 до 35 000 — перегруз в Москве, по пути следования водителя. Мы подбираем день, когда наш
-              водитель будет ближе к вам и планируем встречу.
-              <b>Заказы от 35 000 доставляем до адреса!</b>
-            </p>
-
-            <p class="mid-title">Доставка по россии и снг</p>
-            <p class="mid-title_info">
-              Доставка производится транспортной компанией ПЭК. Мы обрешечиваем груз пред отправкой. Расходы по доставке
-              полностью оплачивает покупатель.
-            </p>
-
-            <button>Расчитать стоимость доставки</button>
-          </div>
-
-          <div class="tab-content" id="tab4">
-            <h1 class="tab-title">Условия обмена и возврата</h1>
-
-            <p class="mid-title mt-1 mt-4">возврат и обмен товара ненадлежащего качества</p>
-
-            <span>
-              Обязательные условия:
-            </span>
-            <ul>
-              <li>соблюдение правил транспортировки груза;</li>
-              <li>предоставление фотографий дефектов;</li>
-              <li>составление акта возврата товара поставщику.</li>
-            </ul>
-
-            <p class="mid-title">возврат и обмен товара надлежащего качества</p>
-            <p class="mid-title_info">
-              Срок возврата товара надлежащего качества составляет 14 дней с момента получения товара. Возврат
-              переведённых средств, производится на ваш банковский счёт в течение 5-30 рабочих дней (срок зависит от
-              вашего банка).
-            </p>
-          </div>
-
-          <div class="tab-content" id="tab5">
-            <h1 class="tab-title">Реквизиты</h1>
-            <div class="row">
-              <div class="col-12 col-xl-4 mt-2 pt-1">
-                <p>
-                  ООО «СТУДИЯ-ДЕКОР» <br>
-                  ИНН: 7603056165 <br>
-                  КПП: 760201001 <br>
-                  ОГРН 1137603001249 <br>
-                  БИК: 047888760 <br>
-                </p>
-              </div>
-
-              <div class="col-12 col-xl-8 mt-4 pt-1 mt-xl-0 pt-xl-0">
-                <p>
-                  р/с 40702810302000010827 в БАНК ЯРОСЛАВСКИЙ <span class="nowrap">Ф-Л ПАО «ПРОМСВЯЗЬБАНК»</span> <span class="nowrap">Г. ЯРОСЛАВЛЬ</span>
-                  <span class="nowrap">К/СЧ 30101810300000000760</span>
-                </p>
-                <p class="mt-4 pt-1">
-                  <span class="nowrap">Юридический адрес: 150044, г.</span>
-                  <span class="nowrap">Ярославль, пр-т Октября, д. 87А,</span>
-                  <span class="nowrap">литера Д, помещение 21, этаж 2.</span>
-                </p>
-              </div>
-            </div>
-          </div>
+        <div class="col-12 col-xl-6">
+          <p class="question-title">3-4 недели — срок производства.</p>
+          <p class="question_answer">Более точное информацию уточняйте, пожалуйста, у вашего менеджера. Производству необходимо временя, чтобы сформировать все заказы.Производство некоторых горшков проходит в несколько этапов.</p>
         </div>
       </div>
     </div>
@@ -867,165 +714,11 @@
     window.open('https://dekors.shop/wp-content/uploads/2022/07/prajsy-studiya-dekor.zip', '_blank')
   }
 
-  // Main Order Dropdowns
-  const dropdown = document.querySelector('.dropdown-order');
-  const selectedOption = dropdown.querySelector('.selected-option');
-  const selectedValue = dropdown.querySelector('.selected-text');
-  const dropdownContent = dropdown.querySelector('.dropdown-order__content');
-  const options = dropdown.querySelectorAll('.dropdown-order__option');
-
-  const tabs = document.querySelectorAll('.tab');
-  const tabContents = document.querySelectorAll('.tab-content');
-
-  selectedOption.addEventListener('click', () => {
-    dropdownContent.classList.toggle('active');
-    selectedOption.classList.toggle('open');
-
-    options.forEach(option => {
-      if (selectedValue.textContent === option.textContent) {
-        option.style.display = 'none';
-      } else {
-        option.style.display = 'block';
-      }
-    });
-  });
-
-  //Mobile version
-  options.forEach(option => {
-    option.addEventListener('click', () => {
-      const tabId = option.getAttribute('data-tab');
-      const correspondingTab = document.getElementById(tabId);
-
-      // Hide all tab contents
-      tabContents.forEach(content => content.classList.remove('active'));
-
-      // Show the selected tab content
-      correspondingTab.classList.add('active');
-
-      dropdownContent.classList.remove('active');
-      selectedOption.classList.remove('open');
-
-      // Update the selected option text
-      selectedValue.textContent = option.textContent;
-    });
-  });
-  //Desktop version
-  tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      // Remove active class from all tabs and tab contents
-      tabs.forEach(t => t.classList.remove('active'));
-      tabContents.forEach(content => content.classList.remove('active'));
-
-      // Add active class to the clicked tab and corresponding tab content
-      tab.classList.add('active');
-      const tabId = tab.getAttribute('data-tab');
-      const correspondingTab = document.getElementById(tabId);
-      correspondingTab.classList.add('active');
-    });
-  });
 </script>
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-<!-- Initialize Swiper -->
-<script>
-  function openDescription(evt, value) {
-    let i, x, tablinks;
-    x = document.getElementsByClassName("toggle_item");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < x.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(value).style.display = "block";
-    evt.currentTarget.className += " active";
-  }
-
-  let galleryThumbs = new Swiper(".gallery-thumbs", {
-    centeredSlides: true,
-    centeredSlidesBounds: true,
-    direction: "vertical",
-    spaceBetween: 10,
-    slidesPerView: 3,
-    freeMode: false,
-    watchSlidesVisibility: true,
-    watchSlidesProgress: true,
-    watchOverflow: true,
-  });
-
-  let galleryTop = new Swiper(".gallery-top", {
-    direction: "horizontal",
-    pagination:{
-      clickable: true,
-      el: ".swiper-pagination",
-      dynamicBullets: true
-    },
-    spaceBetween: 16,
-    keyboard: {
-      enabled: true,
-    },
-    thumbs: {
-      swiper: galleryThumbs
-    }
-  });
-  galleryTop.on("slideChangeTransitionStart", function () {
-    galleryThumbs.slideTo(galleryTop.activeIndex);
-  });
-  galleryThumbs.on("transitionStart", function () {
-    galleryTop.slideTo(galleryThumbs.activeIndex);
-  });
-
-  new Swiper(".similar-swiper", {
-    autoHeight: false,
-    navigation: {
-      nextEl: ".similar-swiper-next",
-      prevEl: ".similar-swiper-prev",
-    },
-    spaceBetween: 10,
-    slidesPerView: 2.1,
-    breakpoints: {
-      768: {
-        spaceBetween: 20,
-      },
-      992: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-      },
-      1400: {
-        slidesPerView: 4,
-        spaceBetween: 20,
-      }
-    },
-  });
-
-  new Swiper(".watched-swiper", {
-    autoHeight: false,
-    navigation: {
-      nextEl: ".watched-swiper-next",
-      prevEl: ".watched-swiper-prev",
-    },
-    spaceBetween: 10,
-    slidesPerView: 2.1,
-    breakpoints: {
-      768: {
-        spaceBetween: 20,
-      },
-      992: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-      },
-      1400: {
-        slidesPerView: 4,
-        spaceBetween: 20,
-      }
-    },
-  });
-</script>
-
 <!-- Form -->
 <script src="forms/jquery.js?v=2"></script>
 <script src="forms/main.js?v=3"></script>
-<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(54974290, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, ecommerce:"dataLayer" }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/54974290" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript"> (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(54974290, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, ecommerce:"dataLayer" }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/54974290" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 </body>
 </html>
