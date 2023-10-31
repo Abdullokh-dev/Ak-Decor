@@ -65,7 +65,7 @@
       </div>
 
       <div class="__box">
-        <a class="item" href="https://dekors.shop/contact/" target="_blank">Контакты</a>
+        <a class="item" href="./contact.html">Контакты</a>
         <div class="__hr"></div>
       </div>
 
@@ -229,7 +229,7 @@
             <li class="d-none d-xl-flex"><a href="./clients.html"> Покупателям </a></li>
             <li class="d-none d-xl-flex"><a href="#"> О нас </a></li>
             <li class="d-none d-xl-flex"><a href="https://dekors.shop/novosti/" target="_blank"> Новости </a></li>
-            <li class="d-none d-xl-flex"><a href="https://dekors.shop/contact/" target="_blank"> Контакты </a></li>
+            <li class="d-none d-xl-flex"><a href="./contact.html"> Контакты </a></li>
           </ul>
 
           <div class="header__btn-group d-flex align-self-center col">
@@ -578,7 +578,7 @@
               <h1 class="block-title total-title">Общая стоимость</h1>
               <div class="total-cost">
                 <span class="d-block total-cost__warning uppercase">производство находится в ярославле. ДОСТАВКА НЕ ВХОДИТ В ОБЩУЮ СУММУ заказа и оПЛАЧИВАЕТСЯ ОТДДЕЛЬНО!</span>
-                <span class="total-cost__info"> Цену и срок доставки можно уточнить у менеджера. <a href="https://dekors.shop/contact/" target="_blank">Контакты.</a></span>
+                <span class="total-cost__info"> Цену и срок доставки можно уточнить у менеджера. <a href="./contact.html" target="_blank">Контакты.</a></span>
               </div>
             </div>
           </div>
@@ -616,7 +616,7 @@
                 <h2 class="__title">Адрес доставки</h2>
                 <div class="total-cost">
                   <span class="d-block total-cost__warning uppercase p-0">производство находится в ярославле. ДОСТАВКА НЕ ВХОДИТ В ОБЩУЮ СУММУ заказа и оПЛАЧИВАЕТСЯ ОТДДЕЛЬНО!</span>
-                  <span class="total-cost__info"> Цену и срок доставки можно уточнить у менеджера. <a href="https://dekors.shop/contact/" target="_blank">Контакты.</a></span>
+                  <span class="total-cost__info"> Цену и срок доставки можно уточнить у менеджера. <a href="./contact.html" target="_blank">Контакты.</a></span>
                 </div>
               </div>
 
@@ -702,7 +702,7 @@
 
               <div>
                 <span class="d-block total-cost__warning uppercase">производство находится в ярославле. ДОСТАВКА НЕ ВХОДИТ В ОБЩУЮ СУММУ заказа и оПЛАЧИВАЕТСЯ ОТДДЕЛЬНО!</span>
-                <span class="total-cost__info"> Цену и срок доставки можно уточнить у менеджера. <a href="https://dekors.shop/contact/" target="_blank">Контакты.</a></span>
+                <span class="total-cost__info"> Цену и срок доставки можно уточнить у менеджера. <a href="./contact.html" target="_blank">Контакты.</a></span>
               </div>
             </div>
           </div>
@@ -1069,8 +1069,6 @@
   }
 
   function openMenuPartner() {
-    console.log('worked')
-
     offcanvasPartner.style.right = '0'
     openOverlay()
   }
@@ -1106,91 +1104,6 @@
   function downloadPrice() {
     window.open('https://dekors.shop/wp-content/uploads/2022/07/prajsy-studiya-dekor.zip', '_blank')
   }
-
-</script>
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-<!-- Initialize Swiper -->
-<script>
-  let galleryThumbs = new Swiper(".gallery-thumbs", {
-    centeredSlides: true,
-    centeredSlidesBounds: true,
-    direction: "vertical",
-    spaceBetween: 10,
-    slidesPerView: 3,
-    freeMode: false,
-    watchSlidesVisibility: true,
-    watchSlidesProgress: true,
-    watchOverflow: true,
-  });
-
-  let galleryTop = new Swiper(".gallery-top", {
-    direction: "horizontal",
-    pagination:{
-      clickable: true,
-      el: ".swiper-pagination",
-      dynamicBullets: true
-    },
-    spaceBetween: 16,
-    keyboard: {
-      enabled: true,
-    },
-    thumbs: {
-      swiper: galleryThumbs
-    }
-  });
-  galleryTop.on("slideChangeTransitionStart", function () {
-    galleryThumbs.slideTo(galleryTop.activeIndex);
-  });
-  galleryThumbs.on("transitionStart", function () {
-    galleryTop.slideTo(galleryThumbs.activeIndex);
-  });
-
-  new Swiper(".similar-swiper", {
-    autoHeight: false,
-    navigation: {
-      nextEl: ".similar-swiper-next",
-      prevEl: ".similar-swiper-prev",
-    },
-    spaceBetween: 10,
-    slidesPerView: 2.1,
-    breakpoints: {
-      768: {
-        spaceBetween: 20,
-      },
-      992: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-      },
-      1400: {
-        slidesPerView: 4,
-        spaceBetween: 20,
-      }
-    },
-  });
-
-  new Swiper(".watched-swiper", {
-    autoHeight: false,
-    navigation: {
-      nextEl: ".watched-swiper-next",
-      prevEl: ".watched-swiper-prev",
-    },
-    spaceBetween: 10,
-    slidesPerView: 2.1,
-    breakpoints: {
-      768: {
-        spaceBetween: 20,
-      },
-      992: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-      },
-      1400: {
-        slidesPerView: 4,
-        spaceBetween: 20,
-      }
-    },
-  });
 </script>
 
 <!-- Form -->

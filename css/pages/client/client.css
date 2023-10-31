@@ -203,14 +203,6 @@
 }
 
 @media screen and (min-width:1200px) {
-    .client-page .breadcrumb {
-        margin-bottom: 40px;
-    }
-
-    .client-page .breadcrumb li {
-        font-size: 20px;
-    }
-
     .tab {
         margin-bottom: 60px;
     }

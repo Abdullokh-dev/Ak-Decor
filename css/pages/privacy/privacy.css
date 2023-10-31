@@ -60,14 +60,3 @@
         padding-left: 23px;
     }
 }
-
-
-@media screen and (min-width:1200px) {
-    .privacy .breadcrumb {
-        margin-bottom: 40px;
-    }
-
-    .privacy .breadcrumb li {
-        font-size: 20px;
-    }
-}

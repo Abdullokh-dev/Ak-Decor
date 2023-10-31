@@ -65,7 +65,7 @@
       </div>
 
       <div class="__box">
-        <a class="item" href="https://dekors.shop/contact/" target="_blank">Контакты</a>
+        <a class="item" href="./contact.html">Контакты</a>
         <div class="__hr"></div>
       </div>
 
@@ -231,7 +231,7 @@
             <li class="d-none d-xl-flex"><a href="./clients.html"> Покупателям </a></li>
             <li class="d-none d-xl-flex"><a href="#"> О нас </a></li>
             <li class="d-none d-xl-flex"><a href="https://dekors.shop/novosti/" target="_blank"> Новости </a></li>
-            <li class="d-none d-xl-flex"><a href="https://dekors.shop/contact/" target="_blank"> Контакты </a></li>
+            <li class="d-none d-xl-flex"><a href="./contact.html"> Контакты </a></li>
           </ul>
 
           <div class="header__btn-group d-flex align-self-center col">
@@ -397,7 +397,7 @@
   <div class="row d-flex justify-content-center">
     <div class="col-12 col-md-11 col-xxxl-9">
       <!-- Breadcrumbs -->
-      <ul class="breadcrumb">
+      <ul class="breadcrumb breadcrumb-lg">
         <li><a href="#">Главная</a></li>
         <li>Покупателям</li>
       </ul>
@@ -434,7 +434,6 @@
             </div>
           </div>
         </div>
-
 
         <div class="col-12 col-xl">
           <div class="tab-content active" id="tab1">
@@ -850,8 +849,6 @@
   }
 
   function openMenuPartner() {
-    console.log('worked')
-
     offcanvasPartner.style.right = '0'
     openOverlay()
   }
@@ -922,104 +919,6 @@
       const correspondingTab = document.getElementById(tabId);
       correspondingTab.classList.add('active');
     });
-  });
-</script>
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-<!-- Initialize Swiper -->
-<script>
-  function openDescription(evt, value) {
-    let i, x, tablinks;
-    x = document.getElementsByClassName("toggle_item");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < x.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(value).style.display = "block";
-    evt.currentTarget.className += " active";
-  }
-
-  let galleryThumbs = new Swiper(".gallery-thumbs", {
-    centeredSlides: true,
-    centeredSlidesBounds: true,
-    direction: "vertical",
-    spaceBetween: 10,
-    slidesPerView: 3,
-    freeMode: false,
-    watchSlidesVisibility: true,
-    watchSlidesProgress: true,
-    watchOverflow: true,
-  });
-
-  let galleryTop = new Swiper(".gallery-top", {
-    direction: "horizontal",
-    pagination:{
-      clickable: true,
-      el: ".swiper-pagination",
-      dynamicBullets: true
-    },
-    spaceBetween: 16,
-    keyboard: {
-      enabled: true,
-    },
-    thumbs: {
-      swiper: galleryThumbs
-    }
-  });
-  galleryTop.on("slideChangeTransitionStart", function () {
-    galleryThumbs.slideTo(galleryTop.activeIndex);
-  });
-  galleryThumbs.on("transitionStart", function () {
-    galleryTop.slideTo(galleryThumbs.activeIndex);
-  });
-
-  new Swiper(".similar-swiper", {
-    autoHeight: false,
-    navigation: {
-      nextEl: ".similar-swiper-next",
-      prevEl: ".similar-swiper-prev",
-    },
-    spaceBetween: 10,
-    slidesPerView: 2.1,
-    breakpoints: {
-      768: {
-        spaceBetween: 20,
-      },
-      992: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-      },
-      1400: {
-        slidesPerView: 4,
-        spaceBetween: 20,
-      }
-    },
-  });
-
-  new Swiper(".watched-swiper", {
-    autoHeight: false,
-    navigation: {
-      nextEl: ".watched-swiper-next",
-      prevEl: ".watched-swiper-prev",
-    },
-    spaceBetween: 10,
-    slidesPerView: 2.1,
-    breakpoints: {
-      768: {
-        spaceBetween: 20,
-      },
-      992: {
-        slidesPerView: 3,
-        spaceBetween: 20,
-      },
-      1400: {
-        slidesPerView: 4,
-        spaceBetween: 20,
-      }
-    },
   });
 </script>
 

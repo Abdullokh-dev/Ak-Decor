@@ -62,7 +62,7 @@
       </div>
 
       <div class="__box">
-        <a class="item" href="https://dekors.shop/contact/" target="_blank">Контакты</a>
+        <a class="item" href="./contact.html">Контакты</a>
         <div class="__hr"></div>
       </div>
 
@@ -186,7 +186,7 @@
             <li><a href="./clients.html"> Покупателям </a></li>
             <li><a href="#"> О нас </a></li>
             <li><a href="https://dekors.shop/novosti/" target="_blank"> Новости </a></li>
-            <li><a href="https://dekors.shop/contact/" target="_blank"> Контакты </a></li>
+            <li><a href="./contact.html"> Контакты </a></li>
           </ul>
 
           <div class="header__btn-group d-flex align-self-center col">
@@ -557,8 +557,6 @@
   }
 
   function openMenuPartner() {
-    console.log('worked')
-
     offcanvasPartner.style.right = '0'
     openOverlay()
   }
@@ -568,6 +566,27 @@
     offcanvasCall.style.right = '-400px';
     offcanvasPartner.style.right = '-400px';
     closeOverlay()
+  }
+
+  function formatPhoneNumber(input) {
+    let value = input.value.replace(/\D/g, "");
+
+    if (value.length > 0) {
+      if (!value.startsWith("7")) {
+        value = "7" + value.substring(1); // Ensure number starts with "7"
+      }
+    }
+
+    const formattedValue = value.replace(/(\d{1})(\d{0,3})(\d{0,3})(\d{0,2})(\d{0,2})/, function(_, g1, g2, g3, g4, g5) {
+      let formatted = "+7 ";
+      if (g2) formatted += "(" + g2;
+      if (g3) formatted += ") " + g3;
+      if (g4) formatted += "-" + g4;
+      if (g5) formatted += "-" + g5;
+      return formatted;
+    });
+
+    input.value = formattedValue;
   }
 
   function downloadPrice() {
