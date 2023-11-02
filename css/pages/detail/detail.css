@@ -12,7 +12,6 @@
     width: 100%;
 }
 
-
 .gallery-top .swiper-slide img {
     height: auto !important;
     width: auto;
@@ -164,11 +163,6 @@
     opacity: .7;
 }
 
-.tablink-bar {
-    display: flex;
-    margin-top: 59px;
-}
-
 .full-description {
     margin: 20px 0 0;
     font-size: 20px;
@@ -180,19 +174,6 @@
     font-weight: 600;
 }
 
-.tablink-bar .tablink {
-    width: 100%;
-    background-color: white;
-    border: 2px solid transparent;
-    font-size: 20px;
-    line-height: 140%;
-    padding: 15px 0;
-    color: #2C2C2C;
-}
-
-.tablink-bar .tablink.active {
-    border-bottom: 2px solid #6D8880;
-}
 .full-description .wrapper {
     width: 100%;
     margin: 0 auto;
@@ -226,6 +207,10 @@
 
 .recommend-title {
     margin-top: 120px;
+}
+
+.detail-page .tablink-bar {
+    margin-top: 59px;
 }
 
 .tab input {
@@ -316,7 +301,7 @@
         margin-top: 10px;
     }
 
-    .tablink-bar {
+    .detail-page .tablink-bar {
         margin-top: 30px;
     }
 }

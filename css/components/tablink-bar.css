@@ -1,0 +1,19 @@
+.tablink-bar {
+    display: flex;
+}
+
+.tablink-bar .tablink {
+    width: 100%;
+    background-color: white;
+    border: 2px solid transparent;
+    font-size: 20px;
+    line-height: 140%;
+    padding: 15px 0;
+    color: #2C2C2C;
+    text-align: center;
+    text-decoration: none;
+}
+
+.tablink-bar .tablink.active {
+    border-bottom: 2px solid #6D8880;
+}

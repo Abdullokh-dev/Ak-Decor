@@ -56,15 +56,6 @@
     background-color: #E3ED73;
 }
 
-.banner-footer .__box {
-    position: absolute;
-    top: 26px;
-}
-
-.banner-footer__btn {
-    width: 288px;
-}
-
 @media screen and (max-width:767px) {
     .product .__title, .product .__price {
         font-size: 12px;
