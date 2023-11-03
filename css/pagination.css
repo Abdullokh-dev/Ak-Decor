@@ -18,6 +18,7 @@
 .swiper-pagination-bullets-dynamic {
     overflow: hidden;
     font-size: 0;
+    width: 100% !important;
 }
 
 .swiper-pagination-bullet {

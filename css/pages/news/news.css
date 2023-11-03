@@ -244,6 +244,7 @@
 
   .card-news {
     padding: 10px;
+    margin-top: 10px;
     height: 324px;
   }
 
@@ -259,7 +260,7 @@
     padding-bottom: 10px;
   }
 
-  .card-news._pink .card-news__bottom{
+  .card-news._pink .card-news__bottom {
     margin-bottom: 23px;
   }
 
@@ -297,6 +298,10 @@
 
   .news-page .show-more_btn {
     margin-bottom: 30px;
+  }
+
+  .news__bottom {
+    margin-top: 30px;
   }
 }
 

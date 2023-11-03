@@ -15,6 +15,7 @@
   <!-- Css Component -->
   <link rel="stylesheet" href="css/pages/home/components/home-main.css">
   <link rel="stylesheet" href="./css/components/header.css">
+  <link rel="stylesheet" href="./css/components/swiper-flex-img.css">
   <link rel="stylesheet" href="css/pages/home/components/banner.css">
   <link rel="stylesheet" href="css/pages/home/components/category-item.css">
   <link rel="stylesheet" href="css/pages/home/components/home-banner.css">
@@ -88,7 +89,7 @@
           </div>
 
           <div class="__box">
-            <a class="item" href="https://dekors.shop/novosti/" target="_blank">Новости</a>
+            <a class="item" href="news-all.html">Новости</a>
             <div class="__hr"></div>
           </div>
 
@@ -215,7 +216,7 @@
                 <li><a href="./catalog.html"> Каталог </a></li>
                 <li><a href="./clients.html"> Покупателям </a></li>
                 <li><a href="#"> О нас </a></li>
-                <li><a href="./news.html"> Новости </a></li>
+                <li><a href="news-all.html"> Новости </a></li>
                 <li><a href="./contact.html"> Контакты </a></li>
               </ul>
 
@@ -376,10 +377,9 @@
           </div>
         </div>
 
+        <div class="swiper-pagination mt-2"></div>
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
-
-        <div class="swiper-pagination"></div>
       </div>
     </div>
   </section>
@@ -508,27 +508,26 @@
             </div>
           </div>
 
+          <div class="d-flex w-100">
+            <a class="link-title animated-link" href="https://dekors.shop/proizvodstvo/" target="_blank">
+              <span class="nowrap">Узнать <b>подробнее</b></span> о производстве и нашей истории</a>
+            <!-- sm -->
+            <svg width="48" height="17" viewBox="0 0 48 17" fill="none" xmlns="http://www.w3.org/2000/svg" class="__arrow-more ms-auto d-md-none">
+              <path d="M1 8.23913L46 8.23913M46 8.23913L39.2174 1M46 8.23913L39.2174 15.4783" stroke="#586C3E" stroke-width="2" stroke-linecap="round"/>
+              <path d="M1 8.23913L46 8.23913M46 8.23913L39.2174 1M46 8.23913L39.2174 15.4783" stroke="black" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round"/>
+            </svg>
 
-            <div class="d-flex w-100">
-              <a class="link-title animated-link" href="https://dekors.shop/proizvodstvo/" target="_blank">
-                <span class="nowrap">Узнать <b>подробнее</b></span> о производстве и нашей истории</a>
-              <!-- sm -->
-              <svg width="48" height="17" viewBox="0 0 48 17" fill="none" xmlns="http://www.w3.org/2000/svg" class="__arrow-more ms-auto d-md-none">
-                <path d="M1 8.23913L46 8.23913M46 8.23913L39.2174 1M46 8.23913L39.2174 15.4783" stroke="#586C3E" stroke-width="2" stroke-linecap="round"/>
-                <path d="M1 8.23913L46 8.23913M46 8.23913L39.2174 1M46 8.23913L39.2174 15.4783" stroke="black" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round"/>
-              </svg>
+            <!-- md -->
+            <svg width="118" height="39" viewBox="0 0 118 39" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-none d-md-flex d-xl-none __arrow-more ms-auto">
+              <path d="M1 19.5L116 19.5M116 19.5L98.6667 1M116 19.5L98.6667 38" stroke="#586C3E" stroke-width="2" stroke-linecap="round"/>
+            </svg>
 
-              <!-- md -->
-              <svg width="118" height="39" viewBox="0 0 118 39" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-none d-md-flex d-xl-none __arrow-more ms-auto">
-                <path d="M1 19.5L116 19.5M116 19.5L98.6667 1M116 19.5L98.6667 38" stroke="#586C3E" stroke-width="2" stroke-linecap="round"/>
-              </svg>
-
-              <!-- pc -->
-              <svg width="238" height="39" viewBox="0 0 238 39" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-none d-xl-flex __arrow-more ms-auto">
-                <path d="M1 19.5L236 19.5M236 19.5L218.667 1M236 19.5L218.667 38" stroke="#586C3E" stroke-width="2" stroke-linecap="round"/>
-                <path d="M1 19.5L236 19.5M236 19.5L218.667 1M236 19.5L218.667 38" stroke="black" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round"/>
-              </svg>
-            </div>
+            <!-- pc -->
+            <svg width="238" height="39" viewBox="0 0 238 39" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-none d-xl-flex __arrow-more ms-auto">
+              <path d="M1 19.5L236 19.5M236 19.5L218.667 1M236 19.5L218.667 38" stroke="#586C3E" stroke-width="2" stroke-linecap="round"/>
+              <path d="M1 19.5L236 19.5M236 19.5L218.667 1M236 19.5L218.667 38" stroke="black" stroke-opacity="0.2" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
 
         </div>
       </div>
@@ -536,8 +535,8 @@
       <!-- Company Swiper -->
       <div class="row">
         <div class="col p-0">
-          <div class="swiper company-swiper">
-            <div class="swiper-wrapper">
+          <div class="swiper swiper-flex-img">
+            <div class="swiper-wrapper" style="height: 93% !important;">
               <div class="swiper-slide">
                 <img src="./images/about-banner/banner-1.png" alt="">
               </div>
@@ -563,6 +562,7 @@
 
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination mt-2"></div>
           </div>
         </div>
       </div>
@@ -655,7 +655,7 @@
 
         <div class="d-none d-md-block d-flex m-0 align-self-center">
           <div class="d-flex align-self-center animated-link">
-            <a href="https://dekors.shop/novosti/" target="_blank" class="news__info-text">прочитать все</a>
+            <a href="news-all.html" class="news__info-text">прочитать все</a>
             <a href="https://dekors.shop/shop/" class="d-flex">
               <svg class="pointer ms-3 align-self-center" width="32" height="18" viewBox="0 0 32 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 9L31 9M31 9L23 0.5M31 9L23 17.5" stroke="#2C2C2C" stroke-linecap="round"/>
@@ -663,7 +663,7 @@
             </a>
           </div>
         </div>
-        <a href="https://dekors.shop/novosti/" target="_blank" class="d-md-none d-block align-self-center underline">открыть все</a>
+        <a href="news-all.html" class="d-md-none d-block align-self-center underline">открыть все</a>
       </div>
 
       <div class="d-flex d-md-none">
@@ -1150,19 +1150,23 @@
     spaceBetween: 30,
   });
 
-  new Swiper(".company-swiper", {
+  new Swiper(".swiper-flex-img", {
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-    pagination: false,
+    pagination:{
+      clickable: true,
+      el: ".swiper-pagination",
+      dynamicBullets: true
+    },
     slidesPerView: .9,
     loopedSlides: 3,
     spaceBetween: 6,
     loop: true,
     breakpoints: {
       768 : {
-        slidesPerView: 2.5,
+        slidesPerView: 1.7,
         spaceBetween: 6
       },
       1400: {
