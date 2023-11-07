@@ -1,0 +1,252 @@
+.about-page {
+    color: #381F15;
+}
+
+.about-page_banner-img {
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.about-page__logo {
+    width: 492px;
+    margin: 165px 0 26px 0;
+}
+
+.about-page__title {
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    line-height: 135%;
+    width: 100%;
+}
+
+.about-page__info {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: white;
+    line-height: 150%;
+    margin: 7px 0 170px 0;
+}
+
+.about-us__card {
+    margin-top: 46px;
+}
+
+.about-us__card * {
+    color: #381F15;
+    line-height: 140%;
+}
+
+.about-us__card-title {
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.about-us__card-info {
+    font-size: 20px;
+    margin: 20px 0 0;
+}
+
+.about-us__card-img {
+    width: 100%;
+    top: 0;
+    object-fit: cover;
+    object-position: 78% 0;
+}
+
+.about-us__card-img._first {
+    height: 384px;
+}
+
+.about-us__card-img._second {
+    height: 312px;
+}
+
+.about-us__card-img._third {
+    height: 746px;
+    object-position: center;
+}
+
+.about-us__card-img._fourth {
+    height: 474px;
+}
+
+.about-us__card-img._fifth {
+    height: 424px;
+    object-position: center;
+}
+
+.about-us-theme__title {
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 140%;
+    text-transform: uppercase;
+}
+
+.about-us__info, .about-us-theme__info {
+    font-size: 20px;
+    line-height: 140%;
+    text-transform: uppercase;
+}
+
+.about-us-theme {
+    margin-bottom: 65px;
+}
+
+.about-us-theme__title, .about-us-theme__info {
+    text-align: right;
+    margin: 0 48px 0;
+}
+
+.about-us-theme__description {
+    text-align: left;
+    max-width: 428px;
+    margin: 0 0 0 33px;
+    font-size: 20px;
+    line-height: 140%;
+}
+
+.center-flex-arrow {
+    position: absolute;
+    height: 100%;
+    top: 29px;
+    left: 0;
+    right: 0;
+    width: 37px;
+    margin: 0 auto;
+}
+
+.about-us-theme-additional {
+    border: 1px solid #AA791A;
+    width: 310px;
+    height: 310px;
+    border-radius: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+.about-us-theme-additional._left {
+    left: 0;
+}
+
+.about-us-theme-additional._right {
+    top: 100px;
+    right: 0;
+    bottom: 0;
+}
+
+.about-us-theme-additional._sm {
+    width: 204px;
+    height: 204px;
+}
+
+.about-us-theme-additional p {
+    text-align: left;
+    color: #AA791A;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 140%;
+}
+
+@media screen and (max-width:1399px) {
+    .about-us-theme-additional p {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .about-us-theme-additional._right {
+        position: initial;
+        margin-left: auto;
+        margin-top: auto;
+    }
+
+    .about-us-theme-additional._sm {
+        width: 118px;
+        height: 118px;
+    }
+}
+
+@media screen and (max-width:1199px) {
+    .about-page__logo {
+        width: 354px;
+        margin: 33px 0 30px 0;
+    }
+
+    .about-page__title {
+        max-width: 483px;
+        margin: 0 auto;
+    }
+
+    .about-page__info {
+        font-size: 16px;
+        line-height: 140%;
+        margin: 14px 0 60px 0;
+    }
+
+    .about-us-theme__title {
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .about-us-theme__title, .about-us-theme__info {
+        margin: 0 20px 0 0;
+    }
+
+    .about-us-theme__description {
+        margin: 0 0 0 21px;
+    }
+
+    .center-flex-arrow {
+        top: 0;
+    }
+
+    /*todo*/
+    .center-flex-arrow svg {
+        height: auto;
+        display: block !important;
+        background-color: red;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .about-us-theme {
+        margin-bottom: 28px;
+    }
+
+    .about-page__logo {
+        width: 304px;
+        margin: 80px 0 20px 0;
+    }
+
+    .about-page__title {
+        font-size: 34px;
+        line-height: 130%;
+    }
+
+    .about-page__info {
+        margin: 4px 0 76px 0;
+    }
+
+    .about-us-theme__title, .about-us-theme__info, .about-us-theme__description {
+        text-align: initial;
+        margin-left: 0;
+    }
+
+    .about-us-theme__info, .about-us-theme__description {
+        font-size: 16px;
+    }
+
+    .about-us-theme__description {
+        font-weight: 500;
+        margin-top: 10px;
+        max-width: 100%;
+    }
+}
