@@ -7,6 +7,12 @@
     background-color: #DEEEE8;
 }
 
+.marquee._content {
+    height: 126px;
+    background: none;
+    margin: 40px 0 20px 0;
+}
+
 .track {
     position: absolute;
     white-space: nowrap;
@@ -21,7 +27,40 @@
     color: #2C2C2C;
 }
 
+.marquee._content .content {
+    color: #381F15;
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 140%;
+}
+
 @keyframes marquee {
     from { transform: translateX(0); }
     to { transform: translateX(-50%); }
+}
+
+@media screen and (max-width: 1199px) {
+    .marquee._content {
+        height: 56px;
+    }
+
+    .marquee._content .content {
+        font-size: 40px;
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .marquee._content .track {
+        animation: marquee 20s linear infinite;
+    }
+    .marquee._content {
+        height: 36px;
+        margin: 20px 0;
+    }
+
+    .marquee._content .content {
+        font-size: 26px;
+        font-weight: 800;
+    }
 }

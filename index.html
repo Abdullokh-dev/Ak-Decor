@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="css/pages/home/components/about-us.css">
   <link rel="stylesheet" href="css/pages/home/components/our-clients.css">
   <link rel="stylesheet" href="./css/components/marquee.css">
+  <link rel="stylesheet" href="./css/components/header-marquee.css">
   <link rel="stylesheet" href="css/pages/home/components/news.css">
   <link rel="stylesheet" href="./css/components/footer.css">
 
@@ -570,12 +571,14 @@
       </div>
 
       <!-- Marques -->
-      <div class="row marque">
-        <div class="col-12 p-0 ticker-2">
-          <div class="ticker__track" style="transform: translateX(-0px);">
-            <img src="./images/marque/img.png" alt="">
-            <img src="./images/marque/img.png" alt="">
-            <img src="./images/marque/img.png" alt="">
+      <div class="row overflow-none">
+        <div class="col p-0">
+          <div class="marquee _content">
+            <div class="track">
+              <div class="content">
+                РАБОТАЕМ С 1999 ГОДА • СОБСТВЕННОЕ ПРОИЗВОДСТВО • РАБОТАЕМ С 1999 ГОДА • РАБОТАЕМ С 1999 ГОДА • СОБСТВЕННОЕ ПРОИЗВОДСТВО • РАБОТАЕМ С 1999 ГОДА •
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1062,74 +1065,6 @@
   function downloadPrice() {
     window.open('https://dekors.shop/wp-content/uploads/2022/07/prajsy-studiya-dekor.zip', '_blank')
   }
-
-  $(document).ready(function () {
-    if($('.ticker-2').length)
-    {
-
-      let currentElement = $(".ticker-2 .ticker__track")
-      let scrolled = 0;
-      let tickerSpeed = 2;
-
-      $(document).on('scrollstart', function() {
-        console.log('scrollstart')
-      })
-
-      $(document).on('scrollend', function() {
-        console.log('scrollend')
-
-      })
-
-      let lastScrollTop = 0, tickerDirection = 'rtl';
-
-      $(document).scroll(function (){
-        let st = window.pageYOffset || document.documentElement.scrollTop;
-
-        let scrollerSpeed = ($(window).width()/1)
-
-        if($(window).width()<800) {
-          scrollerSpeed = 800;
-        }
-
-        if (st > lastScrollTop){
-          tickerDirection = 'rtl'
-          tickerSpeed = ($(window).scrollTop()/$(window).height())*$(".ticker-2 .ticker__track img").width()/ scrollerSpeed
-        } else {
-          tickerDirection = 'ltr'
-          tickerSpeed = ($(window).scrollTop()/$(window).height())*$(".ticker-2 .ticker__track img").width()/ scrollerSpeed
-        }
-        lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolli
-      });
-
-      function animate(){
-
-        if (tickerDirection == 'rtl') {
-          scrolled -= tickerSpeed;
-
-          if (Math.abs(scrolled) < $(".ticker-2 .ticker__track img").width() * 2) {
-            // scrolled += scrolled;
-          } else {
-            scrolled = 0;
-          }
-        } else {
-          scrolled += tickerSpeed;
-
-          if (scrolled >= 0) {
-            scrolled = -($(".ticker-2 .ticker__track img").width() * 2);
-          }
-        }
-
-        currentElement.css({
-          transform: "translateX(" + scrolled + "px)"
-        });
-
-        window.requestAnimationFrame(animate);
-      }
-
-      window.requestAnimationFrame(animate);
-    }
-  })
-
 </script>
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
