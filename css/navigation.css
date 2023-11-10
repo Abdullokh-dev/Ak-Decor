@@ -18,8 +18,15 @@
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
     cursor: auto;
-    /*display: none !important;*/
     pointer-events: none;
+}
+
+.swiper-button-prev.swiper-button-disabled:before {
+    content: url('../images/banner/arrow-prev-disabled.svg') !important;
+}
+
+.swiper-button-next.swiper-button-disabled:before {
+    content: url('../images/banner/arrow-next-disabled.svg') !important;
 }
 
 .swiper-button-prev.swiper-button-hidden,
@@ -70,6 +77,14 @@
 
     .swiper-button-next:before {
         content: url('../images/banner/mobile-arrow-next.svg');
+    }
+
+    .swiper-button-prev.swiper-button-disabled:before {
+        content: url('../images/banner/mobile-arrow-prev-disabled.svg') !important;
+    }
+
+    .swiper-button-next.swiper-button-disabled:before {
+        content: url('../images/banner/mobile-arrow-next-disabled.svg') !important;
     }
 }
 

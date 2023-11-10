@@ -24,12 +24,15 @@
 .swiper__banner .__info {
     font-size: 20px;
     font-weight: 500;
-    color: var(--grey-text);
+    color: #2c2c2c;
     margin: 8px 0;
+    width: 350px;
 }
 
 .swiper__banner .__address {
     font-size: 14px;
+    width: 370px;
+    margin: 0;
 }
 
 .swiper-btn {
@@ -39,12 +42,12 @@
     font-weight: 500;
     text-align: center;
     max-width: 157px;
-    margin-top: 45px;
+    margin-top: 31px;
     border: none;
     border-radius: 8px;
-    color: white;
+    color: #fff;
     padding: 6px 18px;
-    transition: opacity .3s;
+    transition: opacity .3s
 }
 
 .swiper-btn:hover {
@@ -53,7 +56,20 @@
 
 @media screen and (max-width:1399px) {
     .swiper__banner img {
+        height: auto;
+        width: 64%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+@media screen and (max-width:1199px) {
+    .swiper__banner img {
         height: 289px;
+        position: absolute;
+        right: 0;
+        width: unset;
     }
 }
 
@@ -72,16 +88,11 @@
 
     .swiper__banner .__title {
         margin-top: 21px;
+        letter-spacing: -1px;
     }
+}
 
-    .swiper__banner .__info {
-        margin: 3px 0 0;
-    }
-
-    .swiper__banner .__address {
-        display: none;
-    }
-
+@media screen and (max-width: 575px) {
     .swiper-btn {
         position: absolute;
         bottom: 20px;
@@ -90,6 +101,15 @@
         margin: 0 auto;
         z-index: 1;
         max-width: 93%;
-        background-color: #381F15;
+        background-color: #381f15;
+    }
+
+    .swiper__banner .__info {
+        margin: 3px 0 0;
+        max-width: 200px;
+    }
+
+    .swiper__banner .__address {
+        display: none;
     }
 }

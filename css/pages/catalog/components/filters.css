@@ -271,6 +271,20 @@
     position: unset;
 }
 
+.offcanvas-filters::-webkit-scrollbar {
+    width: 8px;
+}
+
+.offcanvas-filters::-webkit-scrollbar-track {
+    background: #eaeae5;
+    border-radius: 8px;
+}
+
+.offcanvas-filters::-webkit-scrollbar-thumb {
+    background: #6d8880;
+    border-radius: 8px;
+}
+
 @media screen and (max-width: 1199px) {
     .switch-filter .__title {
         margin: 0 ;
