@@ -12,9 +12,6 @@
   <link rel="stylesheet" href="./css/swiper-bundle.css">
   <link rel="stylesheet" href="./css/navigation.css">
   <link rel="stylesheet" href="./css/pagination.css">
-  <!--  todo-->
-  <!--  <link rel="stylesheet" href="css/pages/home/components/about-us.css">-->
-
   <link rel="stylesheet" href="css/pages/catalog/components/header.css">
   <link rel="stylesheet" href="./css/pages/news/single-news.css">
   <link rel="stylesheet" href="css/pages/catalog/components/breadcrumbs.css">
@@ -53,10 +50,10 @@
       </div>
 
       <div class="__box">
-        <a class="info" href="https://dekors.shop/pokupatelyam/kak-kupit/" target="_blank">Как купить</a>
-        <a class="info" href="https://dekors.shop/pokupatelyam/dostavka-i-oplata/" target="_blank">Доставка и оплата</a>
-        <a class="info" href="https://dekors.shop/pokupatelyam/garantiya-i-vozvrat-tovara/" target="_blank">Обмен и возврат товара</a>
-        <a class="info mb-2" href="https://dekors.shop/rekvizity/" target="_blank">Реквизиты</a>
+        <a class="info" href="./clients.html">Как купить</a>
+        <a class="info" href="./clients.html">Доставка и оплата</a>
+        <a class="info" href="./clients.html">Обмен и возврат товара</a>
+        <a class="info mb-2" href="./clients.html">Реквизиты</a>
         <div class="__hr"></div>
       </div>
 
@@ -137,7 +134,7 @@
         <span class="required-label">Укажите, пожалуйста, номер телефона.</span>
 
         <button type="submit" class="modal-submit-btn d-block">Отправить заявку</button>
-        <p class="bottom-info">Нажимая кнопку, я принимаю <a class="privacy-link" href="https://dekors.shop/politika-konfidentsialnosti-i-obrabotki-personalnyh-dannyh/" target="_blank">Политику в отношении обработки персональных данных</a></p>
+        <p class="bottom-info">Нажимая кнопку, я принимаю <a class="privacy-link" href="./privacy.html" target="_blank">Политику в отношении обработки персональных данных</a></p>
       </form>
     </div>
   </div>
@@ -166,7 +163,7 @@
         <span class="required-label">Пожалуйста, укажите свой e-mail</span>
 
         <button type="submit" class="modal-submit-btn d-block">Отправить заявку</button>
-        <p class="bottom-info">Нажимая кнопку, я принимаю <a class="privacy-link" href="https://dekors.shop/politika-konfidentsialnosti-i-obrabotki-personalnyh-dannyh/" target="_blank">Политику в отношении обработки персональных данных</a></p>
+        <p class="bottom-info">Нажимая кнопку, я принимаю <a class="privacy-link" href="./privacy.html" target="_blank">Политику в отношении обработки персональных данных</a></p>
       </form>
     </div>
   </div>
@@ -440,7 +437,7 @@
     </div>
   </div>
 
-  <div class="row">
+  <div class="row pb-3 pb-md-0">
     <div class="col p-0">
       <div class="swiper swiper-flex-img">
         <div class="swiper-wrapper">
@@ -466,6 +463,7 @@
 
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination mt-2"></div>
       </div>
     </div>
   </div>
@@ -695,7 +693,7 @@
             </div>
 
             <p class="form-bottom-text">Нажимая кнопку, я принимаю
-              <a class="privacy-link" href="https://dekors.shop/politika-konfidentsialnosti-i-obrabotki-personalnyh-dannyh/" target="_blank">Политику в отношении обработки персональных данных</a>
+              <a class="privacy-link" href="./privacy.html" target="_blank">Политику в отношении обработки персональных данных</a>
             </p>
           </form>
         </div>
@@ -775,20 +773,25 @@
   }
 
   new Swiper(".swiper-flex-img", {
-    slidesPerView: 'auto',
-    spaceBetween: 6,
-    loop: true,
-    loopedSlides: 'auto',
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    pagination:{
+      clickable: true,
+      el: ".swiper-pagination",
+      dynamicBullets: true
+    },
+    slidesPerView: 'auto',
+    spaceBetween: 6,
+    loop: true,
     breakpoints: {
       768 : {
-        spaceBetween: 6
+        loop: false
       },
       1400: {
-        spaceBetween: 20
+        spaceBetween: 20,
+        loop: false
       }
     }
   });

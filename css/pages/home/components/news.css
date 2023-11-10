@@ -165,10 +165,6 @@
 }
 
 @media screen and (max-width:1199px) {
-    .main-title {
-        margin-top: 80px;
-    }
-
     .news__info, .news__text {
         width: 45%;
     }

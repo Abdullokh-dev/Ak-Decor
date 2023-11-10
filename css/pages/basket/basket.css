@@ -336,6 +336,71 @@
     max-width: 249px;
 }
 
+.thanks-block {
+    margin-bottom: 208px;
+}
+
+.thanks-title {
+    color: #2C2C2C;
+    font-size: 40px !important;
+    font-weight: 600 !important;
+    line-height: 140%;
+    margin-top: 60px;
+}
+
+.thanks-block__info {
+    color: #2C2C2C;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 140%;
+    margin: 30px 0 0 0;
+    max-width: 600px;
+}
+
+.thanks-block__info a {
+    color: #2C2C2C;
+    text-decoration: none;
+}
+
+.thanks-block__info a:hover {
+    text-decoration: underline;
+}
+
+.thanks-block__img {
+    width: 480px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.thanks-btn-box {
+    margin-top: 60px;
+    gap: 80px;
+}
+
+.thanks-btn {
+    color: #6D8880;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 140%;
+    background: none;
+    border: 1px solid #6D8880;
+    border-radius: 12px;
+    padding: 16px 0;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    max-width: 380px;
+    transition: background-color, color, .3s;
+}
+
+.thanks-btn:hover {
+    color: white;
+    background-color: #6D8880;
+}
+
 @media screen and (max-width: 1199px) {
     .basket-page .breadcrumb {
         margin-top: 17px;
@@ -424,6 +489,23 @@
     .order-btn._by-card, .order-btn._by-cash {
         display: block;
     }
+
+    .thanks-block {
+        margin-bottom: 100px;
+    }
+
+    .thanks-block__img {
+        width: 316px;
+        top: 68px;
+    }
+
+    .thanks-title {
+        margin-top: 0;
+    }
+
+    .thanks-block__info {
+        max-width: 60%;
+    }
 }
 
 @media screen and (max-width:767px) {
@@ -464,20 +546,6 @@
 
     .total-title {
         margin-top: 30px;
-    }
-
-    .order-btn {
-        margin-top: 20px;
-        padding: 11px 20px;
-        width: 100% !important;
-    }
-
-    .order-btn .__icon {
-        margin-left: auto;
-    }
-
-    .order-btn .__icon-back {
-        margin-right: auto;
     }
 
     .button-add,
@@ -533,5 +601,49 @@
     .order-btn._by-card, .order-btn._by-cash {
         padding: 8px 50px;
         min-height: 50px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .order-btn {
+        width: 100% !important;
+        margin-top: 20px;
+        padding: 11px 40px;
+    }
+
+    .order-btn .__icon {
+        margin-left: auto;
+    }
+
+    .order-btn .__icon-back {
+        margin-right: auto;
+    }
+
+    .thanks-block {
+        margin-bottom: 55px;
+    }
+
+    .thanks-title {
+        margin-bottom: 30px;
+    }
+
+    .thanks-block__img {
+        width: 215px;
+        top: 4px;
+    }
+
+    .thanks-block__info {
+        margin-top: 20px;
+        font-size: 16px;
+        max-width: 335px;
+    }
+
+    .thanks-btn-box {
+        margin-top: 30px;
+    }
+
+    .thanks-btn {
+        margin-bottom: 20px;
+        max-width: 100%;
     }
 }

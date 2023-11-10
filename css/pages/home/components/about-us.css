@@ -18,20 +18,6 @@
     font-weight: 600;
 }
 
-.our-client {
-    margin-bottom: 40px;
-}
-
-.our-client .__title {
-    font-size: 90px;
-    line-height: 140%;
-}
-
-.our-client .__logos {
-    gap: 50px;
-    margin-top: 25px;
-}
-
 .infographic__box .__title {
     font-size: 56px;
     font-weight: 600;
@@ -43,6 +29,7 @@
     font-size: 20px;
     line-height: 140%;
     margin: 0;
+    max-width: 261px;
 }
 
 .link-title {
@@ -58,6 +45,10 @@
     font-weight: 600;
 }
 
+.our-client {
+    margin-bottom: 40px;
+}
+
 @media screen and (max-width: 1199px) {
     .about-title {
         font-size: 40px;
@@ -71,16 +62,6 @@
 
     .link-title b {
         font-weight: 700;
-    }
-
-    .our-client .__title {
-        font-size: 40px;
-        font-weight: 600;
-        margin-bottom: 20px;
-    }
-
-    .our-client .__logos img {
-        gap: 105px 60px;
     }
 }
 
@@ -113,22 +94,10 @@
 
     .infographic__box .__info {
         font-size: 16px;
+        max-width: 159px;
     }
 
-    .our-client .__title {
-        font-size: 36px;
+    .our-client {
+        margin-bottom: 30px;
     }
-
-    .our-client .__logos {
-        gap: 38px;
-    }
-
-    .our-client .__logos ._md {
-        max-width: 81px;
-    }
-
-    .our-client .__logos ._lg {
-        max-width: 89px;
-    }
-
 }

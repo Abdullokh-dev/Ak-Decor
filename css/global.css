@@ -506,6 +506,19 @@ button:hover {
   align-self: center;
 }
 
+.lg-title {
+  font-size: 90px;
+  line-height: 140%;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1199px) {
+  .lg-title {
+    font-size: 40px;
+    font-weight: 600;
+  }
+}
+
 @media screen and (max-width: 991px) {
   .px-my-12 {
     padding: 0 5.33333%;
@@ -525,6 +538,10 @@ button:hover {
 
   .px-my-12 {
     padding: 0 12px;
+  }
+
+  .lg-title {
+    font-size: 36px;
   }
 }
 

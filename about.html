@@ -15,13 +15,8 @@
   <!-- Css Component -->
   <link rel="stylesheet" href="./css/components/header.css">
   <link rel="stylesheet" href="./css/components/swiper-flex-img.css">
-
-<!--  todo make global form style-->
-  <link rel="stylesheet" href="css/pages/home/components/bottom-block.css">
-
-  <!-- todo About us our clients -->
-  <link rel="stylesheet" href="css/pages/home/components/about-us.css">
-
+  <link rel="stylesheet" href="css/pages/home/components/form-partner.css">
+  <link rel="stylesheet" href="css/pages/home/components/our-clients.css">
   <link rel="stylesheet" href="css/pages/about/about-us.css">
   <link rel="stylesheet" href="css/pages/catalog/components/breadcrumbs.css">
   <link rel="stylesheet" href="./css/components/marquee.css">
@@ -47,7 +42,7 @@
 <body>
 <div class="container-fluid about-page">
 
-  <div class="row home-main position-relative">
+  <div class="row position-relative">
     <div class="col position-relative">
       <!-- Modals -->
       <div class="offcanvas">
@@ -78,10 +73,10 @@
           </div>
 
           <div class="__box">
-            <a class="info" href="https://dekors.shop/pokupatelyam/kak-kupit/" target="_blank">Как купить</a>
-            <a class="info" href="https://dekors.shop/pokupatelyam/dostavka-i-oplata/" target="_blank">Доставка и оплата</a>
-            <a class="info" href="https://dekors.shop/pokupatelyam/garantiya-i-vozvrat-tovara/" target="_blank">Обмен и возврат товара</a>
-            <a class="info mb-2" href="https://dekors.shop/rekvizity/" target="_blank">Реквизиты</a>
+            <a class="info" href="./clients.html">Как купить</a>
+            <a class="info" href="./clients.html">Доставка и оплата</a>
+            <a class="info" href="./clients.html">Обмен и возврат товара</a>
+            <a class="info mb-2" href="./clients.html">Реквизиты</a>
             <div class="__hr"></div>
           </div>
 
@@ -162,7 +157,7 @@
             <span class="required-label">Укажите, пожалуйста, номер телефона.</span>
 
             <button type="submit" class="modal-submit-btn d-block">Отправить заявку</button>
-            <p class="bottom-info">Нажимая кнопку, я принимаю <a class="privacy-link" href="https://dekors.shop/politika-konfidentsialnosti-i-obrabotki-personalnyh-dannyh/" target="_blank">Политику в отношении обработки персональных данных</a></p>
+            <p class="bottom-info">Нажимая кнопку, я принимаю <a class="privacy-link" href="./privacy.html" target="_blank">Политику в отношении обработки персональных данных</a></p>
           </form>
         </div>
       </div>
@@ -191,7 +186,7 @@
             <span class="required-label">Пожалуйста, укажите свой e-mail</span>
 
             <button type="submit" class="modal-submit-btn d-block">Отправить заявку</button>
-            <p class="bottom-info">Нажимая кнопку, я принимаю <a class="privacy-link" href="https://dekors.shop/politika-konfidentsialnosti-i-obrabotki-personalnyh-dannyh/" target="_blank">Политику в отношении обработки персональных данных</a></p>
+            <p class="bottom-info">Нажимая кнопку, я принимаю <a class="privacy-link" href="./privacy.html" target="_blank">Политику в отношении обработки персональных данных</a></p>
           </form>
         </div>
       </div>
@@ -299,54 +294,78 @@
       </ul>
 
       <div class="row">
-        <div class="col-3" style="background-color: pink">
-          <div class="about-us__card">
-            <h2 class="about-us__card-title"> Керамические, бетонные и гипсовые </h2>
-            <p class="about-us__card-info">Основное направление производства – горшки с поддонами и кашпо ручной работы.</p>
+        <div class="col-12 col-md-5 col-xl-3">
+          <div class="about-us__card _first">
+            <h2 class="about-us-title">
+              Фабрика «Студия-Декор» – одно из крупнейших производств керамики для
+              <span class="flex-text">комнатных растений</span>
+              <span class="flex-text">в России с 1999 года.</span>
+            </h2>
             <div class="row">
-              <div class="col-8">
-                <img class="about-us__card-img _first" src="https://s3-alpha-sig.figma.com/img/11a8/41f6/33e98e65b67040a05b5a318157fdc757?Expires=1700438400&Signature=fZQBSrZuTgBNxELoG-sip9YKYJlvSVOambWv2r0gvno9~CZuK6j94S5vcFqvsunVEgN7HeBtGAoB3ZqdABw1M-akk918gU9GokqsEvwCm-jXyPkGHZYUGsDmzqfKB2GMQ-3OrQrMBNcm50hrrDFpl3NTLA-UO-7uxT77yiDK1lx0h~RwMH~C3yQMmERQs8XcvCnNHbotYo58RH~o-Ozd4amZkIzA2qvL2Yfv5WDeeuzIAcXKV1IAp7igvNy-IhjiRYXGd3hvYxtvD-hRb8EF-1raqSzknDnNanxbtM1tR9DiTndXjWrdhMUm74adOg7-S6s6AI7YUkzKJ86MJh0HYA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+              <div class="d-none d-md-flex col-md-10 col-xxl-8">
+                <img class="about-us-img" src="https://s3-alpha-sig.figma.com/img/99dc/545b/6ed4ca88784139d21b0d19b3ebeb2ff9?Expires=1700438400&Signature=dOS7fA58R4JsIfWDfJlfEjU4lb5cLQ7QWuNGdt4QuigLDSZJgNJNQw-4Vd4AnWb0hVdc9AfJP-6WS0R242c2QihMR2jtte7uSKwZDwNqoLTVnDFOK0uGaAJnf2RCIUeSTiL8IqXFCobc4LDI9huyIqCGXHs7t6yr3lEJiupebIUEKjFVySTarBtXMuaXQl4-Xos7CY1xLE2c8jX-SjnNQRm6WP7TcRpvE0Fm0XceZ5qP8dEJK5aRKE3RQJ8pIRIzTWIKhxG9N4PFVGh0Vvc4IOi0V5iyQY~dGLS98H0rKjRSiS2hCtLesyPEzQdGhVT3Pqmb5pL0gPlGt30XFVY0FQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
               </div>
             </div>
           </div>
-        </div >
+        </div>
 
-        <div class="col-3" style="background-color: green">
-          <div class="about-us__card">
+        <div class="col-12 col-md-7 col-xl-3">
+          <div class="about-us__card _second">
             <div class="position-relative">
-              <img class="about-us__card-img _second" src="https://s3-alpha-sig.figma.com/img/ca4a/8639/ac434abac896e62510c016e20d4a1647?Expires=1700438400&Signature=Sx~v5WwnaHy0I43bWUvgVBYksyfuLRUeqLwIPMcCa1LDf4VTL0DhlB0tVnatya1ycA9d~ujJlqDTo9qiXSpDHOOwtiKpF0njbqKdXOSgQVIrWaJ14SgK8FyWOzKmBcqususPI4dyCvziO49iGPHxvkw0e1Gv~8BNLEzCN91OwD2YweirVRQuuUI4cckH5tCuqlcnnUOWMYOKsmm01Jyo1RCqvq0gNPe70NoxiAXNjZpckEa1iHe6R1m9pqRenCXUXqVdatSCDcJ4gonFd2EBhCrasDkoHKPW~8N~Di34ojLdno~XyiahqO6ly1WgLkFYRNReTGnoyhm3jKKnXKpxJA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+              <img class="about-us-img" src="https://s3-alpha-sig.figma.com/img/ca4a/8639/ac434abac896e62510c016e20d4a1647?Expires=1700438400&Signature=Sx~v5WwnaHy0I43bWUvgVBYksyfuLRUeqLwIPMcCa1LDf4VTL0DhlB0tVnatya1ycA9d~ujJlqDTo9qiXSpDHOOwtiKpF0njbqKdXOSgQVIrWaJ14SgK8FyWOzKmBcqususPI4dyCvziO49iGPHxvkw0e1Gv~8BNLEzCN91OwD2YweirVRQuuUI4cckH5tCuqlcnnUOWMYOKsmm01Jyo1RCqvq0gNPe70NoxiAXNjZpckEa1iHe6R1m9pqRenCXUXqVdatSCDcJ4gonFd2EBhCrasDkoHKPW~8N~Di34ojLdno~XyiahqO6ly1WgLkFYRNReTGnoyhm3jKKnXKpxJA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
             </div>
-            <p class="about-us__card-info">Наши дизайнеры и художники-керамисты создают современные коллекции цветочной керамики с уникальной формой изделий, необычными текстурами, сложной цветовой палитрой и высоким качеством.</p>
+            <p class="about-us-info">Основное направление – промышленное производство горшков и кашпо из глины.</p>
           </div>
         </div>
 
-        <div class="col-6" style="background-color: pink">
-          <div class="about-us__card">
+        <div class="col-12 col-xl-6">
+          <div class="about-us__card _third row flex-row-reverse">
+            <div class="d-none d-md-flex col-7 col-xl-12">
+              <div class="position-relative">
+                <img class="about-us-img" src="https://s3-alpha-sig.figma.com/img/52d6/19b4/bdfea25a52223442fdea875850db226d?Expires=1700438400&Signature=o-hAVV-4umkDXz09JsZQUKmdJ4fjNn6gFO8P7BtjyNerTMPfQJb~gMPVaF6tLY~3dgmGuw0Gvl1SNp5HWtpcTguM29~uc8d2rW1potOTT~1dhQ4jMoKa4w-Awbx7YaTBtp1odIjYNd6JT0SfxYzamDNfY~-yxuX6N3~LLVGBQUezS5ysXHyBrxIW4OziI3b-AI8DJygI0cdzScJ3VzCSzWJq3Uvm16dgmrQ8TAMIiwluakJcDmqLDPvZpjcwnFv7iq8uRJQMDR-~zzTalTs7AZgpzQnALeff-T4syffKO-UNdNJlsTfXvkY9C4R2NIQbwF~8I7DAGJEseF1TXKrHbQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+              </div>
+            </div>
+            <div class="col-12 col-md-5 col-xl-12 d-flex">
+              <p class="about-us-info">
+                Благодаря постоянному совершенствованию технологий и автоматизации производства мы можем изготавливать
+                изделия самых разных размеров, форм и отделок.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 d-md-none">
+          <img class="about-us-img_mobile" src="https://s3-alpha-sig.figma.com/img/99dc/545b/6ed4ca88784139d21b0d19b3ebeb2ff9?Expires=1700438400&Signature=dOS7fA58R4JsIfWDfJlfEjU4lb5cLQ7QWuNGdt4QuigLDSZJgNJNQw-4Vd4AnWb0hVdc9AfJP-6WS0R242c2QihMR2jtte7uSKwZDwNqoLTVnDFOK0uGaAJnf2RCIUeSTiL8IqXFCobc4LDI9huyIqCGXHs7t6yr3lEJiupebIUEKjFVySTarBtXMuaXQl4-Xos7CY1xLE2c8jX-SjnNQRm6WP7TcRpvE0Fm0XceZ5qP8dEJK5aRKE3RQJ8pIRIzTWIKhxG9N4PFVGh0Vvc4IOi0V5iyQY~dGLS98H0rKjRSiS2hCtLesyPEzQdGhVT3Pqmb5pL0gPlGt30XFVY0FQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+        </div>
+
+        <div class="d-none d-md-flex col-md-6 col-xl-5">
+          <div class="about-us__card _fourth">
             <div class="position-relative">
-              <img class="about-us__card-img _third" src="https://s3-alpha-sig.figma.com/img/52d6/19b4/bdfea25a52223442fdea875850db226d?Expires=1700438400&Signature=o-hAVV-4umkDXz09JsZQUKmdJ4fjNn6gFO8P7BtjyNerTMPfQJb~gMPVaF6tLY~3dgmGuw0Gvl1SNp5HWtpcTguM29~uc8d2rW1potOTT~1dhQ4jMoKa4w-Awbx7YaTBtp1odIjYNd6JT0SfxYzamDNfY~-yxuX6N3~LLVGBQUezS5ysXHyBrxIW4OziI3b-AI8DJygI0cdzScJ3VzCSzWJq3Uvm16dgmrQ8TAMIiwluakJcDmqLDPvZpjcwnFv7iq8uRJQMDR-~zzTalTs7AZgpzQnALeff-T4syffKO-UNdNJlsTfXvkY9C4R2NIQbwF~8I7DAGJEseF1TXKrHbQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+              <img class="about-us-img" src="https://s3-alpha-sig.figma.com/img/be93/59b3/12ee60d1fd115c5ab21d7a6b39cb98db?Expires=1700438400&Signature=B26fHg7tn3S4G7-u7WgY-CgXbtZHleYV6OcV5gAdsPGn2xCp8TdN1LJavmrlk2aRZnB3D3oAOkb7TCsbykrVGnAT-11upX9K2dSCQ5miJP~5rW7VSDw~zZGAu1YTnFUwDiFW5MYh1j9qE66~VdOCPCAFRHDjlnau~TbTSQmUNXuc-KS1ah2sXmeuDgTSNXqC8rKqiXNCclFm32JAm2tnqpnwzMtlgQ5jf7M50Vcr5HERV4GgqPbv-PrC~0XArhw0uEdsP1JtLbi6lTSl6GJrN8E4ruJRPVc96KCnVwrpFaNxFo1SqKQhzsLssGiZlagSfG9oWEEdptnhWUNLJe1SPA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
             </div>
-            <p class="about-us__card-info">В основе — экологически чистая глина и тепло человеческих рук на всех этапах производсва.</p>
+            <p class="about-us-info">Тщательная упаковка готовой продукции позволяет без потерь доставить товар до точки продажи.</p>
           </div>
         </div>
 
-        <div class="col-5" style="background-color: green">
-          <div class="about-us__card">
-            <div class="position-relative">
-              <img class="about-us__card-img _fourth" src="https://s3-alpha-sig.figma.com/img/af74/12b4/0c9665c2eec50c222352cca6664fed5f?Expires=1700438400&Signature=ERtuS0W~PsLnmjmP3U7hfZ3u-XFpNroaY3uqpNvWB6zC-KmujD3TP-hg0EaX5VXbzNuDr9m8ItR5~1BIKFQIUJbFpViyTS4pBC9-EDr9PMiqHmJ-o7LUeJC08hO9LYoBl71--jd8XwWzhinTCH8u2kC7D5JLi9tySjmI0JYmJVGFAy7ESwhkGzgHUpcsVylY-QV0EyAUKXcUIJehgfdd7I6tW5xJ7Sa4vynSZKF0mkKUFW5zG-XFA0sAEtegyu~ORzm45wh6o2iOmy~6-7QGPekpbHE7caeA9xd77AI7I7LOMyjWhfzXrSrNBEiDBnHgc97EcaXb5s~5x3pxFOrKuQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+        <div class="col-12 col-md-6 col-xl-7">
+          <div class="row about-us__card _fifth flex-md-column-reverse flex-xl-row">
+            <div class="col-12 col-xl-6">
+              <p class="about-us-info">
+                Мы используем экологичную гончарную глину. Собственный цех по подготовке сырья позволяет добиваться
+                высочайшего качества материала для изготовления горшков и кашпо.
+              </p>
             </div>
-            <p class="about-us__card-info">Работаем с торговыми сетями, бизнес-центрами, гостиничными комплексами и частными клиентами.</p>
+
+            <div class="col-12 col-xl-6">
+              <div class="position-relative">
+                <img class="about-us-img" src="https://s3-alpha-sig.figma.com/img/fbd7/22b0/45b07b9b99a1bcfac5b436dd914de26e?Expires=1700438400&Signature=E4Q3eMeE51tOPxxzx5-IRwel65G4a6D4tNYQmuo0~jQ7aNRB8ic-G0RZQEffNgamyYutCY-5TT83dO0mH0ZOk4dngvYTT7oyRxtaiMp3mMUZ2I7psWj6XlxgNWIGI0hk9NQhMDDiaqL~Ozx7KhmorkIzxYEQGQK3OZzPdyeUaFcBL0Fa7-PgwPMI88GGQoTJYCBxtCqd11GU-DRM0xtMpx5dJUwzUhU02c2ZY8qN-MTqvDIO7OIl4FB11LUOqhcR4sQcCxu3NNi4Rnbqk~u3S1LSGrYmTd79SVj79nYGU9cFPnPRKXDboG3~kxX~~Ylu1IHaUveSPwIrncGjf5176A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="col-3">
-          <p class="about-us__card-info">Наше производство находится в Ярославле.</p>
-          <p class="about-us__card-info">Доставляем горшки и кашпо для цветов по всей России.</p>
-        </div>
-
-        <div class="col-4">
-          <div class="position-relative">
-            <img class="about-us__card-img _fifth" src="https://s3-alpha-sig.figma.com/img/252f/da9d/875d0b0b97c7f0a7e3efafc09ca90645?Expires=1700438400&Signature=RDp-OkBJsTF8Iava6KDACihHmF1n-GM8mwE0rly1F1H14tQQm9pBRTTtlcXZGxyagN2RKrX5U6tnglcWsd5OG6YCcwH1Fpvz~0atDFTFEvwbP0Xf7gZznWoB9FLvFqh78wAPAjreXNXT7nnvf3sAjbsEvubz-gaMfRhHeK-oMb4Roj0274vsg-0rMh6OQJQHm982gBrNkTEph~obJG2UhWExUnC76OljuFHveoxId6U~5qmtsxmhhknoVRm7SeqoM3sVkOKgWui8Z8FI3DeRTDHTnmjLGaPm98fQob3F8PqD07qL~HNBgHvzciSU-Hc2K6eBk-Oa12kHEVSVUnkQGA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
-          </div>
+        <div class="col-12 d-md-none">
+          <p class="about-us-info">Тщательная упаковка готовой продукции позволяет без потерь доставить товар до точки продажи.</p>
         </div>
       </div>
     </div>
@@ -386,7 +405,7 @@
             </p>
           </div>
           <h2 class="about-us-theme__title">Eco</h2>
-          <p class="about-us-theme__info"><span class="d-block">экологически</span> чистое сырье</p>
+          <p class="about-us-theme__info"><span class="d-md-block">экологически</span> чистое сырье</p>
         </div>
         <div class="col align-self-center">
           <p class="about-us-theme__description">Компания «Студия-Декор» – это современный взгляд на цветочную керамику. Более 20 лет мы производим и продаём уникальные цветочные</p>
@@ -396,7 +415,7 @@
       <div class="row about-us-theme">
         <div class="col-12 col-md-6 align-self-md-center align-self-xl-auto">
           <h2 class="about-us-theme__title">Tech</h2>
-          <p class="about-us-theme__info"><span class="nowrap d-block">уникальные технологии</span> производства</p>
+          <p class="about-us-theme__info"><span class="nowrap d-md-block">уникальные технологии</span> производства</p>
         </div>
         <div class="col align-self-center">
           <p class="about-us-theme__description">Компания «Студия-Декор» – это современный взгляд на цветочную керамику. Более 20 лет мы производим и продаём уникальные цветочные горшки и кашпо, которые отличаются нетрадиционной</p>
@@ -406,7 +425,7 @@
       <div class="row about-us-theme">
         <div class="col-12 col-md-6 align-self-md-center align-self-xl-auto">
           <h2 class="about-us-theme__title">Service</h2>
-          <p class="about-us-theme__info"><span class="d-block">доставка</span> по всей России и СНГ</p>
+          <p class="about-us-theme__info"><span class="d-md-block">доставка</span> по всей России и СНГ</p>
         </div>
         <div class="col align-self-center">
           <p class="about-us-theme__description">Компания «Студия-Декор» – это современный взгляд на цветочную керамику. Более 20 лет мы производим и продаём уникальные цветочные горшки и кашпо, которые отличаются нетрадиционной</p>
@@ -414,14 +433,14 @@
       </div>
 
       <div class="row about-us-theme position-relative">
-        <div class="about-us-theme-additional _sm _left text-center d-none d-md-flex" style="top: -60px">
+        <div class="about-us-theme-additional _sm _left text-center d-none d-md-flex">
           <p>
             Применяем <br> российское <br> сырье
           </p>
         </div>
         <div class="col-12 col-md-6 align-self-md-center align-self-xl-auto">
           <h2 class="about-us-theme__title">Style</h2>
-          <p class="about-us-theme__info"><span class="d-block">современные</span> стилистические решения</p>
+          <p class="about-us-theme__info"><span class="d-md-block">современные</span> стилистические решения</p>
         </div>
         <div class="col align-self-center">
           <p class="about-us-theme__description">Компания «Студия-Декор» – это современный взгляд на цветочную керамику. Более 20 лет мы производим и продаём уникальные цветочные горшки и кашпо, которые отличаются нетрадиционной</p>
@@ -435,13 +454,11 @@
     </div>
   </div>
 
-  <div class="row d-flex justify-content-center mt-5">
+  <!-- Our Clients -->
+  <div class="row d-flex justify-content-center">
     <div class="col-12 col-md-11 col-xxxl-9 position-relative">
-      <!-- Our Clients -->
       <div class="our-client d-xl-flex">
-        <h2 class="__title">
-          Наши клиенты
-        </h2>
+        <h2 class="lg-title">Наши клиенты</h2>
 
         <div class="__logos d-flex flex-wrap">
           <div>
@@ -467,6 +484,7 @@
     </div>
   </div>
 
+  <!-- Form -->
   <div class="row d-flex justify-content-center position-relative form-bottom">
     <div class="col-12 col-md-11 col-xxl-11 col-xxxl-9 position-relative">
       <form class="row order-form partner-form">
@@ -492,7 +510,7 @@
               </div>
               <div class="col-xxl-6 ps-xxl-2 ms-xxl-auto">
                 <p class="form-submit-info ms-xxl-3">
-                  Нажимая кнопку, я принимаю <a class="privacy-link yellow" href="https://dekors.shop/politika-konfidentsialnosti-i-obrabotki-personalnyh-dannyh/" target="_blank">Политику в отношении обработки персональных данных</a>
+                  Нажимая кнопку, я принимаю <a class="privacy-link yellow" href="./privacy.html" target="_blank">Политику в отношении обработки персональных данных</a>
                 </p>
               </div>
             </div>
@@ -506,7 +524,7 @@
   <div class="row">
     <div class="col p-0">
       <div class="swiper swiper-flex-img">
-        <div class="swiper-wrapper" style="height: 93% !important;">
+        <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img src="./images/about-banner/banner-1.png" alt="">
           </div>
@@ -534,6 +552,64 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-pagination mt-2"></div>
       </div>
+    </div>
+  </div>
+
+  <!-- Awards Title-->
+  <div class="row d-flex justify-content-center mt-5 pt-3 pt-md-4 d-xl-none">
+    <div class="col-12 col-md-11 col-xxxl-9">
+      <div class="d-flex justify-content-between our-client__title">
+        <h2 class="lg-title">Наши награды</h2>
+        <div class="swiper-certificate__pagination">
+          <div class="swiper-button-prev certificate-prev-btn align-self-center"></div>
+          <div class="swiper-button-next certificate-next-btn align-self-center"></div>
+        </div>
+      </div>
+      <p class="our-awards-text">Работаем с торговыми сетями, бизнес-центрами, гостиничными комплексами и частными клиентами</p>
+    </div>
+  </div>
+
+  <!-- Awards -->
+  <div class="row d-flex justify-content-center position-relative">
+    <div class="col-12 col-xl-11 col-xxxl-9 px-0 ps-xl-2">
+
+      <div class="row swiper-certificate-content">
+        <div class="col-12 col-xl-5 d-none d-xl-block position-relative">
+          <div class="swiper-certificate__pagination">
+            <div class="swiper-button-prev certificate-prev-btn"></div>
+            <div class="swiper-button-next certificate-next-btn"></div>
+          </div>
+            <h2 class="lg-title">Наши награды</h2>
+          <p class="our-awards-text">Работаем с торговыми сетями, бизнес-центрами, гостиничными комплексами и частными клиентами</p>
+        </div>
+
+        <div class="col">
+          <div class="swiper swiper-certificate">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="https://s3-alpha-sig.figma.com/img/5ddc/1909/a3200b6b268fa1bbbbb39e3016345917?Expires=1700438400&Signature=U35XObz4kwnt1g47YIr~R6oRmadyGEceUP4r-NnSTu7vMpxABIonORjeM2dTuN8gXmrJ1n4y-qi9f0L3ZFAj5aNEKPHaaEJCnDgXl2BNx6YCIxAv12vBol896~s0V7EbQlj~6C7KjbtXfVKIoghmKPxPwDnw1fusDQVDNn0DLTfQ4Kdv2UB2AaLnOjaQA2fN0V6pySMY8zEnylQ5pMUNs6B1LDhrlc~jZXw0zMSEIhhCjT0ip7zE17TTmsTIdeQfiZ3NRQygt1m6VgJZ6fu14BBJY6lnjCSWOU2-zjMQLzY3yeKgVX~W073643gxk3Upk2hz58fMwxZto5sq5gmUuA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="https://s3-alpha-sig.figma.com/img/391b/ebe2/4b5d022ecf02b4bbe59deba68e3af324?Expires=1700438400&Signature=L2Y80BqDvNcurCAzIdOJXX4qaRf0489NPXgZE4YAUtHXb8mKVAfh1Nq81yTE6QmO7JilQL9DXZDCAbvWAX1p5~UhmpBPQHe1bz9fOFC55ij8DP7O3cMu8k7R4hY1tUhNdFEhBSNpHIn7oJiONc9tOr2ILBqcZPsbq996USce0wOvm8XVPXWZq4P5hkpl-k1zSd~jEzFgKFVIi06QxpoOHfRLGnkmdCEeN1OR0KyNhRGBswOu0s7sYsuyJqGso9t8kywDhli~vyF~9FtJEbBTltlJbKAbdodE1fA9KpMQNokVp4eROFlx3P10azhk1uFp3~2LgS-~nDxWAWqXXQINEg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="https://s3-alpha-sig.figma.com/img/be7d/cc04/58eb17824bef6887d5a1989aaaadfe35?Expires=1700438400&Signature=CNgOF~FZgBc42R2NGxUOGpYKYrhsVoIcoZW3lYT6xPNAbVRNqCrFHmB~f5nA~fUO~l1QDdoOsmoVkrEl4FXPvsD4zds4TP~gz3csIrL-EMQr24KmyPDxl3~LSJ01G5K1Lvk4scr2qIS~uImidltDM4KkhG65V8HJXzklg7aiail5eSC3EhMpX6E6AsYjgtmQj9UOE89SU1u66pvPKIWU-G0oTFqex9wWP1XxFc1F3anvzMduZ~ZWM~UlXJbjuSOT-Kga0lQxzgpYCeq3K6MVHRqHXnjrmxHZEJ0F2ZmBOH2dAUxyVf7dWZbhJfJhxulKp45cw4GiI1ZTwA2liE4mtg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="https://s3-alpha-sig.figma.com/img/b63a/043b/bf772ed720c55ab46684c1ce5f47d192?Expires=1700438400&Signature=NSMY9jA8f2FlmGSvQhm3pdnatfok98WkvGWYZ1-EIOXXAil52ILV5kmU-EweJvGyT39uNPbpnJILcAPr9ag3QkWvtnLT1dFlkyqV6X-kbHIjdL3WL~HJMePFxtU4r5EXIPKt7VZacDXnJ1U3nBWpnWZkzAHHJNQ-y8Vhvko-ksW1b4WDEWdl-zFS9S3-L1aITWmFY3eEJxuh-pWeid0PSMdxwiGZsTwXlLZnL5-woMoouU8z7VPOUoAyb0-S4BuvYNvDFOpTKec3V8D8G0689-mpkjr98HEpCg3h-cmNaltCunkjM7M1nx6r-l32V9Gtsmh4kyUaqK3jEPb6AYLTvg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="https://s3-alpha-sig.figma.com/img/b824/4952/a8412ae54ea520929c4aadd8b0caf357?Expires=1700438400&Signature=lH4xQD8il8nlACXIDwVCtEcNmc~2BDeLBmAicG1bCsAqqH53w6A31nGW966xq0QcWcUS02SvDShGmr4bOr8nFFtVWlDBpH5o~pAGKuqKlJ7c6K5VU3vO9m49FEKTwbTaWd44RDOUoA8IJkj05yhwfwuR3faLmfNkKpqFL0ANiDb3vHZKzzDzhIEL5Enx0NHCm5iK14tJGxPfBk9mf9oDDQE1SGbINL9zZ7edXciYGma2XxP0piL1hmaXoHEqpE3n6Xk28KShfrEmLFG3G14Cbb8AlB0yRJRBQn0PsbC963SwOyALBHnCHXGSeezc~yteMQ1OPtsliYGR7kXeUWZYNQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="https://s3-alpha-sig.figma.com/img/7a6b/ea2a/683d81cd8d2adfab3755d1e2891da2ca?Expires=1700438400&Signature=Z8UN0c9AgWcgWX1OnvPQCCGpHKmm4Go7HI-EGVnJsfgiRh6q8qFAgTKuGHSncYienZ1GAd7YsNybRmqN~YRVXlI7oUER~ti62EqwDowijPRnaX2gkzNKB3xLAcdpMe80Vg~gZc8MsMsJ2PbwJWhJK4yLb0mT2YLqnAjW4itgdfWWa33oZBA4ymSI5KXPLdBirf3o0rU62uwBtLA8wgIkL2OaaPAMiBV1OZKVHFAvid5DQM-k2tOfnPQOQtRg2ri45vBtGKjdLEcDY4Q1KatDoul2hYYpvAXBqX7femPFG6F2Ag81F8qW9r~AxnYz5PnD-ElMAP3KOI6NEbAPyuGcrA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 
@@ -762,7 +838,7 @@
             </div>
 
             <p class="form-bottom-text">Нажимая кнопку, я принимаю
-              <a class="privacy-link" href="https://dekors.shop/politika-konfidentsialnosti-i-obrabotki-personalnyh-dannyh/" target="_blank">Политику в отношении обработки персональных данных</a>
+              <a class="privacy-link" href="./privacy.html" target="_blank">Политику в отношении обработки персональных данных</a>
             </p>
           </form>
         </div>
@@ -882,7 +958,6 @@
       });
 
       function animate(){
-
         if(tickerDirection == 'rtl')
         {
           scrolled -= tickerSpeed;
@@ -935,29 +1010,36 @@
   });
 
   new Swiper(".swiper-flex-img", {
+    pagination:{
+      clickable: true,
+      el: ".swiper-pagination",
+      dynamicBullets: true
+    },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
+    },
+    slidesPerView: 'auto',
+    loop: true,
+    breakpoints: {
+      768 : {
+        loop: false,
+      }
+    }
+  });
+
+  new Swiper(".swiper-certificate", {
+    navigation: {
+      nextEl: ".certificate-next-btn",
+      prevEl: ".certificate-prev-btn",
     },
     pagination:{
       clickable: true,
       el: ".swiper-pagination",
       dynamicBullets: true
     },
-    slidesPerView: .9,
-    loopedSlides: 3,
-    spaceBetween: 6,
-    loop: true,
-    breakpoints: {
-      768 : {
-        slidesPerView: 1.7,
-        spaceBetween: 6
-      },
-      1400: {
-        slidesPerView: 3,
-        spaceBetween: 20
-      }
-    }
+    slidesPerView: 'auto',
+    spaceBetween: 20,
   });
 </script>
 

@@ -46,6 +46,14 @@
     left: 85px !important;
 }
 
+.certificate-next-btn:before {
+    content: url('../images/banner/mobile-arrow-next.svg');
+}
+
+.certificate-prev-btn:before {
+    content: url('../images/banner/mobile-arrow-prev.svg');
+}
+
 
 @media (max-width: 1700px) {
     .swiper-button-next {

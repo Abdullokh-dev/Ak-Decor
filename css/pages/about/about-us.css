@@ -2,6 +2,10 @@
     color: #381F15;
 }
 
+.about-page .our-client {
+    margin: 60px 0 80px 0;
+}
+
 .about-page_banner-img {
     z-index: -1;
     position: absolute;
@@ -33,54 +37,74 @@
     line-height: 150%;
     margin: 7px 0 170px 0;
 }
-
-.about-us__card {
-    margin-top: 46px;
+/************************************************/
+.about-us-title {
+    font-size: 26px;
+    font-weight: 800;
 }
 
+/*Cards */
 .about-us__card * {
     color: #381F15;
     line-height: 140%;
 }
 
-.about-us__card-title {
-    font-size: 26px;
-    font-weight: 800;
+.about-us__card._first {
+    margin-top: 67px;
 }
 
-.about-us__card-info {
-    font-size: 20px;
-    margin: 20px 0 0;
+.about-us__card._third {
+    margin-top: 46px;
 }
 
-.about-us__card-img {
-    width: 100%;
+.about-us__card._fourth {
+    margin-top: -111px;
+}
+
+.about-us__card._fifth {
+    margin-top: 65px;
+}
+
+/*Images */
+.about-us-img {
     top: 0;
     object-fit: cover;
+}
+
+.about-us__card._first .about-us-img {
+    height: 384px;
+    margin-top: 40px;
+}
+
+.about-us__card._second .about-us-img {
+    height: 312px;
+    margin-bottom: 48px;
     object-position: 78% 0;
 }
 
-.about-us__card-img._first {
-    height: 384px;
-}
-
-.about-us__card-img._second {
-    height: 312px;
-}
-
-.about-us__card-img._third {
+.about-us__card._third .about-us-img {
     height: 746px;
     object-position: center;
+    margin-bottom: 20px;
 }
 
-.about-us__card-img._fourth {
+.about-us__card._fourth .about-us-img {
     height: 474px;
+    margin-bottom: 20px;
+    object-position: 68% 0;
 }
 
-.about-us__card-img._fifth {
+.about-us__card._fifth .about-us-img {
     height: 424px;
-    object-position: center;
+    object-position: 5% 0;
 }
+
+/*Paragraph*/
+.about-us-info {
+    font-size: 20px;
+    margin: 0;
+}
+/************************************************/
 
 .about-us-theme__title {
     font-size: 90px;
@@ -156,6 +180,49 @@
     line-height: 140%;
 }
 
+.swiper-certificate-content {
+    margin-top: 120px;
+    margin-bottom: 110px;
+}
+
+.swiper-certificate {
+    position: absolute;
+    right: 0;
+    height: 310px;
+    width: 55.111%;
+    max-width: 1058px;
+    padding-right: 20px;
+}
+
+.swiper-certificate .swiper-slide {
+    width: 210px;
+}
+
+.certificate-next-btn, .certificate-prev-btn {
+    position: unset;
+    margin: 0;
+}
+
+.swiper-certificate__pagination {
+    display: flex;
+    float: right;
+    gap: 65px;
+    margin-top: 40px;
+    position: absolute;
+    left: 390px;
+}
+
+.our-awards-text {
+    font-size: 18px;
+    line-height: 160%;
+    margin: 10px 0 0;
+    max-width: 500px;
+}
+
+.about-us-theme > .about-us-theme-additional {
+    top: -60px;
+}
+
 @media screen and (max-width:1399px) {
     .about-us-theme-additional p {
         text-align: center;
@@ -174,7 +241,78 @@
     }
 }
 
+@media screen and (max-width: 1250px) {
+    .swiper-certificate {
+        width: 53%;
+    }
+
+    .swiper-certificate__pagination {
+        margin-right: -40px;
+    }
+}
+
 @media screen and (max-width:1199px) {
+    .about-us-title .flex-text {
+        white-space: nowrap;
+    }
+
+    .about-us-info {
+        font-size: 16px;
+    }
+
+    .about-us-title {
+        position: relative;
+    }
+
+    .about-us__card._third {
+        margin-top: -160px;
+    }
+
+    .about-us__card._fourth {
+        margin-top: 55px;
+    }
+
+    .about-us__card._fifth {
+        margin-top: 22px;
+    }
+
+    .about-us__card._first .about-us-img {
+        margin-top: 18px;
+    }
+
+    .about-us__card._second .about-us-img {
+        margin-bottom: 30px;
+        width: 85%;
+        margin-left: 15%;
+    }
+
+    .about-us__card._third .about-us-img {
+        height: 351px;
+        margin-bottom: 0;
+    }
+
+    .about-us__card._fifth .about-us-img {
+        height: 300px;
+    }
+
+    .about-us__card._fourth .about-us-img {
+        height: 441px;
+    }
+
+    .about-us__card._third .about-us-info {
+        margin-top: 185px;
+        max-width: 82%;
+    }
+
+    .about-us__card._fourth .about-us-info {
+        margin-top: 0;
+    }
+
+    .about-us__card._fifth .about-us-info {
+        margin-top: 30px;
+    }
+    /*****************/
+
     .about-page__logo {
         width: 354px;
         margin: 33px 0 30px 0;
@@ -208,15 +346,100 @@
         top: 0;
     }
 
-    /*todo*/
     .center-flex-arrow svg {
         height: auto;
         display: block !important;
-        background-color: red;
+    }
+
+    .swiper-certificate-content {
+        margin-top: 0;
+    }
+
+    .swiper-certificate__pagination {
+        margin: 0;
+        align-self: center;
+        position: unset;
+    }
+
+    .certificate-next-btn, .certificate-prev-btn {
+        display: block;
+    }
+
+    .swiper-certificate {
+        position: initial;
+        right: initial;
+        width: 100%;
+        max-width: 100%;
+        padding-left: 5.4%;
+    }
+
+    .our-awards-text {
+        font-size: 16px;
+        line-height: 140%;
+        margin: 20px 0 30px 0;
     }
 }
 
 @media screen and (max-width:767px) {
+    .about-page .marque {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .about-us-title .flex-text {
+        white-space: unset;
+    }
+
+    .about-page .our-client {
+        margin: 0 0 30px 0;
+    }
+
+    .swiper-certificate__pagination .swiper-wrapper {
+        height: 93%;
+    }
+
+    .about-us-img, .about-us-img_mobile {
+        width: calc(100% + 24px) !important;
+        margin-left: -12px !important;
+        margin-right: -12px !important;
+    }
+
+    .about-us-info {
+        font-weight: 500;
+    }
+
+    .about-us__card._first {
+        margin-top: 0;
+    }
+
+    .about-us__card._second .about-us-img {
+        margin: 30px 0 25px 0;
+        height: 47vw;
+        object-position: center;
+    }
+
+    .about-us__card._third {
+        margin-top: 0;
+    }
+
+    .about-us__card._third .about-us-info {
+        margin: 30px 0;
+        max-width: 100%;
+    }
+
+    .about-us__card._fifth .about-us-info {
+        margin: 0;
+    }
+
+    .about-us-img_mobile {
+        height: 37vw;
+    }
+
+    .about-us__card._fifth .about-us-img {
+        height: 310px;
+        margin: 28px 0 28px 0;
+    }
+
     .about-us-theme {
         margin-bottom: 28px;
     }
@@ -248,5 +471,19 @@
         font-weight: 500;
         margin-top: 10px;
         max-width: 100%;
+    }
+
+    .swiper-certificate {
+        padding: 0 14px;
+    }
+
+    .swiper-certificate .swiper-pagination {
+        position: absolute;
+        margin-top: 10px;
+    }
+
+    .our-awards-text {
+        margin: 10px 0 20px 0;
+        font-weight: 500;
     }
 }

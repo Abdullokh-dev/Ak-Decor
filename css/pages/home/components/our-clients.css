@@ -1,0 +1,28 @@
+.our-client .__logos {
+    gap: 50px;
+    margin-top: 25px;
+}
+
+@media screen and (max-width: 1199px) {
+    .our-client .lg-title {
+        margin-bottom: 20px;
+    }
+
+    .our-client .__logos img {
+        gap: 105px 60px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .our-client .__logos {
+        gap: 38px;
+    }
+
+    .our-client .__logos ._md {
+        max-width: 81px;
+    }
+
+    .our-client .__logos ._lg {
+        max-width: 89px;
+    }
+}
