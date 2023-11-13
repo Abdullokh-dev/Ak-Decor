@@ -37,6 +37,10 @@
     width: 100%;
     margin-bottom: 15px;
 }
+.partner-form--green .form-input {
+    border: 1px solid white;
+}
+
 .form-input::placeholder {
     color: white;
     opacity: .6;
@@ -55,9 +59,13 @@
     height: 40px;
 }
 
+.partner-form--green__btn {
+    color: #6D8880;
+}
+
 .btn-form:hover {
     background-color: #E3ED73;
-    color: var(--brown);
+    color: #381F15;
 }
 
 .form-submit-info {
@@ -126,10 +134,16 @@
 
     .form-input, .btn-form {
         margin-top: 16px;
+        font-weight: 500;
     }
 
     .form-submit-info {
         max-width: 100%;
         margin: 16px 0 0;
+    }
+
+    .partner-form--green .form-submit-info,
+    .partner-form--green .form-submit-info a  {
+        color: #CBCAC8;
     }
 }

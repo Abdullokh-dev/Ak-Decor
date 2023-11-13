@@ -45,61 +45,6 @@
     line-height: normal;
 }
 
-.order-form__info {
-    font-size: 18px;
-    margin: 5px 0 0;
-}
-
-.form-input {
-    font-weight: 500;
-    font-size: 18px;
-    color: var(--grey-1);
-    border-radius: 8px;
-    border: 1px solid var(--grey-1);
-    padding: 0 13px;
-    height: 40px;
-    line-height: 140%;
-    background: none;
-    outline: none;
-    width: 100%;
-    margin-bottom: 15px;
-}
-.form-input::placeholder {
-    color: var(--grey-1);
-    opacity: .6;
-}
-
-.btn-form {
-    background-color: white;
-    transition-property: background-color, color;
-    transition-duration: .3s;
-    color: var(--green-1);
-    border: none;
-    border-radius: 8px;
-    padding: 0 0;
-    width: 100%;
-    font-size: 18px;
-    height: 40px;
-}
-
-.btn-form:hover {
-    background-color: #E3ED73;
-    color: var(--brown);
-}
-
-.form-submit-info {
-    color: var(--grey-1);
-    opacity: 0.8;
-    font-size: 12px;
-    line-height: normal;
-    margin: 0;
-    width: 100%;
-}
-
-.form-submit-info a {
-    color: var(--grey-1);
-}
-
 .col-box {
     padding: 0;
 }
@@ -107,14 +52,6 @@
 @media screen and (max-width:1399px) {
     .col-box {
         padding: 0 10px;
-    }
-
-    .form-input {
-        margin-bottom: 15px;
-    }
-
-    .btn-form {
-        margin-bottom: 9px;
     }
 }
 @media screen and (max-width:1199px) {
@@ -133,18 +70,6 @@
         line-height: 140%;
         margin: 30px 0 125px 0;
     }
-
-    .form-input, .btn-form {
-        margin-top: 20px;
-    }
-
-    .form-input {
-        margin-bottom: 0;
-    }
-
-    .order-form {
-        padding: 40px 0;
-    }
 }
 
 @media screen and (max-width:767px) {
@@ -160,27 +85,5 @@
 
     .home-main__info {
         margin: 4px 0 76px 0;
-    }
-
-    .order-form {
-        padding: 20px 0 24px 0;
-    }
-
-    .order-form__title {
-        font-size: 22px;
-    }
-
-    .order-form__info {
-        font-size: 14px;
-        margin: 5px 0 4px;
-    }
-
-    .form-input, .btn-form {
-        margin-top: 16px;
-    }
-
-    .form-submit-info {
-        max-width: 100%;
-        margin: 16px 0 0;
     }
 }
