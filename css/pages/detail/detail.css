@@ -151,6 +151,10 @@
 .detail-product .__buttons .__add-basket {
     width: 354px;
     font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
     color: white;
     font-weight: 500;
     background-color: #6D8880;

@@ -29,6 +29,14 @@
     content: url('../images/banner/arrow-next-disabled.svg') !important;
 }
 
+.certificate-prev-btn.swiper-button-disabled:before {
+    content: url('../images/banner/mobile-arrow-prev-disabled.svg') !important;
+}
+
+.certificate-next-btn.swiper-button-disabled:before {
+    content: url('../images/banner/mobile-arrow-next-disabled.svg') !important;
+}
+
 .swiper-button-prev.swiper-button-hidden,
 .swiper-button-next.swiper-button-hidden {
     opacity: 0;
