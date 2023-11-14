@@ -134,7 +134,7 @@
         <input type="text" name="name" placeholder="Ваше имя" aria-label="" />
         <span class="required-label">Укажите, пожалуйста, ваше имя.</span>
 
-        <input type="text" name="phone" maxlength="18" placeholder="+7 999 999 99-99" oninput="formatPhoneNumber(this)" aria-label="" />
+        <input class="masked" type="text" name="phone" maxlength="18" placeholder="+7 999 999 99-99" aria-label="" />
         <span class="required-label">Укажите, пожалуйста, номер телефона.</span>
 
         <button type="submit" class="modal-submit-btn d-block">Отправить заявку</button>
@@ -160,7 +160,7 @@
         <input type="text" name="name" placeholder="Ваше имя" aria-label="">
         <span class="required-label">Укажите, пожалуйста, ваше имя.</span>
 
-        <input type="text" name="phone" maxlength="18" placeholder="+7 999 999 99-99" oninput="formatPhoneNumber(this)" aria-label="">
+        <input class="masked" type="text" name="phone" maxlength="18" placeholder="+7 999 999 99-99" aria-label="">
         <span class="required-label">Укажите, пожалуйста, номер телефона.</span>
 
         <input type="text" name="email" placeholder="e-mail" aria-label="">
@@ -383,10 +383,10 @@
       <div class="marquee">
         <div class="track">
           <div class="content">
-            Возможно увеличение сроков поставки в связи с большой загрузкой производства.
-            • Возможно увеличение сроков поставки в связи с большой загрузкой производства.
-            • Возможно увеличение сроков поставки в связи с большой загрузкой производства.
-            • Возможно увеличение сроков поставки в связи с большой загрузкой производства.
+            Возможно увеличение сроков поставки в связи с большой загрузкой производства
+            • Возможно увеличение сроков поставки в связи с большой загрузкой производства
+            • Возможно увеличение сроков поставки в связи с большой загрузкой производства
+            • Возможно увеличение сроков поставки в связи с большой загрузкой производства
           </div>
         </div>
       </div>
@@ -1276,7 +1276,7 @@
               </div>
 
               <div class="position-relative">
-                <input type="text" class="footer__input" name="phone" maxlength="18" placeholder="+7 999 999 99-99" oninput="formatPhoneNumber(this)" aria-label="">
+                <input type="text" class="footer__input masked" name="phone" maxlength="18" placeholder="+7 999 999 99-99" aria-label="">
               </div>
 
               <div class="position-relative">
@@ -1363,27 +1363,6 @@
     closeOverlay()
   }
 
-  function formatPhoneNumber(input) {
-    let value = input.value.replace(/\D/g, "");
-
-    if (value.length > 0) {
-      if (!value.startsWith("7")) {
-        value = "7" + value.substring(1); // Ensure number starts with "7"
-      }
-    }
-
-    const formattedValue = value.replace(/(\d{1})(\d{0,3})(\d{0,3})(\d{0,2})(\d{0,2})/, function(_, g1, g2, g3, g4, g5) {
-      let formatted = "+7 ";
-      if (g2) formatted += "(" + g2;
-      if (g3) formatted += ") " + g3;
-      if (g4) formatted += "-" + g4;
-      if (g5) formatted += "-" + g5;
-      return formatted;
-    });
-
-    input.value = formattedValue;
-  }
-
   function downloadPrice() {
     window.open('https://dekors.shop/wp-content/uploads/2022/07/prajsy-studiya-dekor.zip', '_blank')
   }
@@ -1391,7 +1370,6 @@
 </script>
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-<!-- Initialize Swiper -->
 <script>
   function openDescription(evt, value) {
     let i, x, tablinks;
@@ -1406,7 +1384,6 @@
     document.getElementById(value).style.display = "block";
     evt.currentTarget.className += " active";
   }
-
 
   let galleryThumbs = new Swiper(".gallery-thumbs", {
     centeredSlides: true,
@@ -1486,6 +1463,12 @@
         spaceBetween: 20,
       }
     },
+  });
+</script>
+<script src="./js/maskedinput.js"></script>
+<script type="text/javascript">
+  jQuery(function($){
+    $(".masked").mask("+7(999) 999-9999");
   });
 </script>
 

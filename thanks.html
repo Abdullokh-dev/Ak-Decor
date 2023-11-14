@@ -127,7 +127,7 @@
         <input type="text" name="name" placeholder="Ваше имя" aria-label="" />
         <span class="required-label">Укажите, пожалуйста, ваше имя.</span>
 
-        <input type="text" name="phone" maxlength="18" placeholder="+7 999 999 99-99" oninput="formatPhoneNumber(this)" aria-label="" />
+        <input class="masked" type="text" name="phone" maxlength="18" placeholder="+7 999 999 99-99" aria-label="" />
         <span class="required-label">Укажите, пожалуйста, номер телефона.</span>
 
         <button type="submit" class="modal-submit-btn d-block">Отправить заявку</button>
@@ -153,7 +153,7 @@
         <input type="text" name="name" placeholder="Ваше имя" aria-label="">
         <span class="required-label">Укажите, пожалуйста, ваше имя.</span>
 
-        <input type="text" name="phone" maxlength="18" placeholder="+7 999 999 99-99" oninput="formatPhoneNumber(this)" aria-label="">
+        <input class="masked" type="text" name="phone" maxlength="18" placeholder="+7 999 999 99-99" aria-label="">
         <span class="required-label">Укажите, пожалуйста, номер телефона.</span>
 
         <input type="text" name="email" placeholder="e-mail" aria-label="">
@@ -374,10 +374,10 @@
       <div class="marquee">
         <div class="track">
           <div class="content">
-            Возможно увеличение сроков поставки в связи с большой загрузкой производства.
-            • Возможно увеличение сроков поставки в связи с большой загрузкой производства.
-            • Возможно увеличение сроков поставки в связи с большой загрузкой производства.
-            • Возможно увеличение сроков поставки в связи с большой загрузкой производства.
+            Возможно увеличение сроков поставки в связи с большой загрузкой производства
+            • Возможно увеличение сроков поставки в связи с большой загрузкой производства
+            • Возможно увеличение сроков поставки в связи с большой загрузкой производства
+            • Возможно увеличение сроков поставки в связи с большой загрузкой производства
           </div>
         </div>
       </div>
@@ -629,7 +629,7 @@
               </div>
 
               <div class="position-relative">
-                <input type="text" class="footer__input" name="phone" maxlength="18" placeholder="+7 999 999 99-99" oninput="formatPhoneNumber(this)" aria-label="">
+                <input type="text" class="footer__input masked" name="phone" maxlength="18" placeholder="+7 999 999 99-99" aria-label="">
               </div>
 
               <div class="position-relative">
@@ -722,6 +722,13 @@
 <!-- Form -->
 <script src="forms/jquery.js?v=2"></script>
 <script src="forms/main.js?v=3"></script>
+
+<script src="./js/maskedinput.js"></script>
+<script type="text/javascript">
+  jQuery(function($){
+    $(".masked").mask("+7(999) 999-9999");
+  });
+</script>
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript"> (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(54974290, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, ecommerce:"dataLayer" }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/54974290" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 </body>

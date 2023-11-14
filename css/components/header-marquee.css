@@ -8,7 +8,7 @@
 }
 
 .marquee._content {
-    height: 126px;
+    height: 140px;
     background: none;
     margin: 40px 0 20px 0;
 }
@@ -41,7 +41,7 @@
 
 @media screen and (max-width: 1199px) {
     .marquee._content {
-        height: 56px;
+        height: 62px;
     }
 
     .marquee._content .content {
@@ -55,7 +55,7 @@
         animation: marquee 20s linear infinite;
     }
     .marquee._content {
-        height: 36px;
+        height: 45px;
         margin: 20px 0;
     }
 

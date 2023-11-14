@@ -28,7 +28,8 @@
     padding: 9px 135px 9px 20px;
     width: 100%;
     outline: none;
-    color: var(--brown, #381F15);;
+    color: var(--brown, #381F15);
+    cursor: auto;
 }
 
 .not-home-header .search-input input::placeholder {
