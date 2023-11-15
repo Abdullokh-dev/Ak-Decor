@@ -635,7 +635,7 @@
                 <div class="input-file-container">
                   <input class="input-file" id="my-file" type="file" onchange="displayFileName(this)">
                   <label tabindex="0" for="my-file" class="input-file-trigger d-flex">
-                    <span class="__text">Загрузит файл с реквизитами</span>
+                    <span class="input-file-trigger__text" id="file-text">Загрузит файл с реквизитами</span>
                     <span class="file-icon" id="iconLabel"></span>
                   </label>
                 </div>
@@ -644,7 +644,7 @@
 
             <div class="row">
               <div class="col-12 px-0">
-                <textarea placeholder="Комментарий к заказу" aria-label=""></textarea>
+                <textarea placeholder="Комментарий к заказу" aria-label="" maxlength="1000"></textarea>
               </div>
             </div>
           </div>
@@ -984,10 +984,12 @@
 
   function displayFileName(input) {
     const iconLabel = document.getElementById('iconLabel');
-    const files = input.files;
+    const text = document.getElementById('file-text');
+    const file = input.files;
 
-    if (files.length > 0) {
+    if (file.length > 0) {
       iconLabel.style.backgroundImage = "url('./images/icons/file-uploaded.svg')";
+      text.innerText = file[0].name
     } else {
       iconLabel.style.backgroundImage = "url('./images/icons/file.svg')";
     }
@@ -1010,21 +1012,25 @@
   $("#step-one-next").on("click", function() {
     $stepOne.css("display", "none");
     $stepTwo.css("display", "block");
+    window.scrollTo(0, 0);
   })
 
   $("#step-two-prev").on("click", function() {
     $stepTwo.css("display", "none");
     $stepOne.css("display", "block");
+    window.scrollTo(0, 0);
   })
 
   $("#step-two-next").on("click", function() {
     $stepTwo.css("display", "none");
     $stepThree.css("display", "block");
+    window.scrollTo(0, 0);
   })
 
   $("#step-three-prev").on("click", function() {
     $stepThree.css("display", "none");
     $stepTwo.css("display", "block");
+    window.scrollTo(0, 0);
   })
 
   // hide on outside click

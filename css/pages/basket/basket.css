@@ -277,7 +277,7 @@
     cursor: pointer;
 }
 
-.input-file-trigger .__text:after {
+.input-file-trigger__text:after {
     content: '';
     border-bottom: 1px solid #6D8880;
     width: 100%;
