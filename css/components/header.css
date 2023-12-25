@@ -6,6 +6,12 @@ header * {
     font-family: 'Montserrat', sans-serif;
 }
 
+.main-header {
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
 .slider-btn-box button {
     display: flex;
     justify-content: center;

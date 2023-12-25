@@ -404,11 +404,11 @@
     <div class="col-12 col-md-11 col-xxxl-9">
       <div class="row">
         <div class="d-none d-xl-block col-4 tab-group uppercase">
-          <div class="tab active" data-tab="tab1"><span>Как купить</span></div>
-          <div class="tab" data-tab="tab2"><span>условия оплаты</span></div>
-          <div class="tab" data-tab="tab3"><span>условия Доставки</span></div>
-          <div class="tab" data-tab="tab4"><span>Обмен и возврат</span></div>
-          <div class="tab" data-tab="tab5"><span>Реквизиты</span></div>
+          <div class="tab active" data-tab="how-to-buy"><span>Как купить</span></div>
+          <div class="tab" data-tab="terms-of-payment"><span>условия оплаты</span></div>
+          <div class="tab" data-tab="delivery"><span class="nowrap">условия Доставки</span></div>
+          <div class="tab" data-tab="exchange"><span>Обмен и возврат</span></div>
+          <div class="tab" data-tab="requisits"><span>Реквизиты</span></div>
         </div>
 
         <div class="col-12 d-xl-none tab-group uppercase">
@@ -421,17 +421,17 @@
             </div>
 
             <div class="dropdown-order__content">
-              <div class="dropdown-order__option" data-tab="tab1">Как купить</div>
-              <div class="dropdown-order__option" data-tab="tab2">Условия оплаты</div>
-              <div class="dropdown-order__option" data-tab="tab3">Условия Доставки</div>
-              <div class="dropdown-order__option" data-tab="tab4">обмена и возврата</div>
-              <div class="dropdown-order__option" data-tab="tab5">Реквизиты</div>
+              <div class="dropdown-order__option" data-tab="how-to-buy">Как купить</div>
+              <div class="dropdown-order__option" data-tab="terms-of-payment">Условия оплаты</div>
+              <div class="dropdown-order__option" data-tab="delivery">Условия Доставки</div>
+              <div class="dropdown-order__option" data-tab="exchange">обмена и возврата</div>
+              <div class="dropdown-order__option" data-tab="requisits">Реквизиты</div>
             </div>
           </div>
         </div>
 
         <div class="col-12 col-xl">
-          <div class="tab-content active" id="tab1">
+          <div class="tab-content active" id="how-to-buy">
             <h1 class="tab-title uppercase">как купить</h1>
 
             <div class="warned">
@@ -447,7 +447,7 @@
             </ul>
           </div>
 
-          <div class="tab-content" id="tab2">
+          <div class="tab-content" id="terms-of-payment">
             <h1 class="tab-title uppercase">условия оплаты</h1>
             <div class="warned">
               <p>Для юридических лиц отсрочка платежа действует при покупке на сумму от 50 000 ₽ (с НДС).</p>
@@ -475,7 +475,7 @@
             </p>
           </div>
 
-          <div class="tab-content" id="tab3">
+          <div class="tab-content" id="delivery">
             <h1 class="tab-title">условия Доставки</h1>
 
             <div class="warned">
@@ -501,7 +501,7 @@
             <button>Расчитать стоимость доставки</button>
           </div>
 
-          <div class="tab-content" id="tab4">
+          <div class="tab-content" id="exchange">
             <h1 class="tab-title">Условия обмена и возврата</h1>
 
             <p class="mid-title mt-1 mt-4">возврат и обмен товара ненадлежащего качества</p>
@@ -523,7 +523,7 @@
             </p>
           </div>
 
-          <div class="tab-content" id="tab5">
+          <div class="tab-content" id="requisits">
             <h1 class="tab-title">Реквизиты</h1>
             <div class="row">
               <div class="col-12 col-xl-4 mt-2 pt-1">
@@ -881,39 +881,66 @@
     });
   });
 
-  //Mobile version
+  const urlParams = new URLSearchParams(window.location.search);
+  const activeTabParam = urlParams.get('tab');
+
+  function activateTabFromUrl() {
+    if (activeTabParam) {
+      const activeTab = document.getElementById(activeTabParam);
+      if (activeTab) {
+        tabs.forEach(t => {
+          t.classList.remove('active')
+          if (t.getAttribute('data-tab') === activeTabParam) {
+            t.classList.add('active')
+          }
+        });
+
+        tabContents.forEach(content => content.classList.remove('active'));
+        activeTab.classList.add('active');
+
+        const activeOption = Array.from(options).find(opt => opt.getAttribute('data-tab') === activeTabParam);
+        if (activeOption) {
+          options.forEach(opt => opt.classList.remove('active'));
+          activeOption.classList.add('active');
+          selectedValue.textContent = activeOption.textContent;
+        }
+      }
+    }
+  }
+
+  activateTabFromUrl();
+
   options.forEach(option => {
     option.addEventListener('click', () => {
       const tabId = option.getAttribute('data-tab');
       const correspondingTab = document.getElementById(tabId);
-
-      // Hide all tab contents
       tabContents.forEach(content => content.classList.remove('active'));
-
-      // Show the selected tab content
       correspondingTab.classList.add('active');
-
       dropdownContent.classList.remove('active');
       selectedOption.classList.remove('open');
-
-      // Update the selected option text
       selectedValue.textContent = option.textContent;
+      window.history.pushState(null, null, `?tab=${tabId}`);
     });
   });
-  //Desktop version
+
   tabs.forEach(tab => {
     tab.addEventListener('click', () => {
-      // Remove active class from all tabs and tab contents
       tabs.forEach(t => t.classList.remove('active'));
       tabContents.forEach(content => content.classList.remove('active'));
-
-      // Add active class to the clicked tab and corresponding tab content
       tab.classList.add('active');
       const tabId = tab.getAttribute('data-tab');
       const correspondingTab = document.getElementById(tabId);
       correspondingTab.classList.add('active');
+      window.history.pushState(null, null, `?tab=${tabId}`);
+      const activeOption = Array.from(options).find(opt => opt.getAttribute('data-tab') === tabId);
+      if (activeOption) {
+        options.forEach(opt => opt.classList.remove('active'));
+        activeOption.classList.add('active');
+        selectedValue.textContent = activeOption.textContent;
+      }
     });
   });
+
 </script>
 
 <!-- Form -->

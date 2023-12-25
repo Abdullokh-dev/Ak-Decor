@@ -288,8 +288,87 @@ button:hover {
 }
 
 /*Modal*/
+.search-bar * {
+  color: #381F15;
+}
+
+.search-bar {
+  display: none;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  color: #381F15;
+  z-index: 9999;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.search-bar-city__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.search-bar-city__item * {
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.search-bar__box {
+  margin-bottom: 30px;
+  padding-right: 10px;
+  width: 12.5%;
+}
+
+.search-bar__inner {
+  max-height: 100vh;
+  overflow-x: scroll !important;
+  background-color: white;
+  border-radius: 22px;
+  padding: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: zoomIn 0.3s ease-in-out;
+}
+
+.search-bar__close {
+  cursor: pointer;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+
+.search-bar__input {
+  border: 1px solid #381F15;
+  background: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 140%;
+  padding: 9px 13px;
+  margin-bottom: 22px;
+  width: calc(100% - 43px);
+  max-width: 515px;
+}
+
+.search-bar__input::placeholder {
+  color: #381F15;
+  opacity: .5;
+}
+
+.search-bar__alphabet {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.search-bar__alphabet.hide {
+  display: none;
+}
+
 .modal-container {
-  display: block;
+  display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -567,7 +646,22 @@ button:hover {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 1399px) {
+  .search-bar__box {
+    width: 13.285%;
+  }
+
+  .search-bar {
+    top: 0;
+    position: fixed;
+  }
+}
+
 @media screen and (max-width: 1199px) {
+  .search-bar__box {
+    width: 20%;
+  }
+
   .lg-title {
     font-size: 40px;
     font-weight: 600;
@@ -581,6 +675,25 @@ button:hover {
 }
 
 @media screen and (max-width:767px) {
+  .search-bar {
+    width: 100%;
+    left: 0;
+  }
+
+  .search-bar__inner {
+    border-radius: 0;
+    padding: 20px;
+  }
+
+  .search-bar__close {
+    top: 32px;
+    right: 20px;
+  }
+
+  .search-bar__box {
+    width: 25%;
+  }
+
   .block-title {
     font-size: 26px;
     font-weight: 800;
@@ -601,14 +714,22 @@ button:hover {
 }
 
 @media screen and (max-width:575px) {
+  .search-bar__box {
+    width: 33.333%;
+  }
+
   .offcanvas-call .offcanvas-content {
     padding: 0 20px!important;
   }
 }
 
 @media screen and (max-width: 395px) {
-    .offcanvas, .offcanvas-filters, .offcanvas-call {
-        right: -400px;
-        width: 100%;
-    }
+  .offcanvas, .offcanvas-filters, .offcanvas-call {
+    right: -400px;
+    width: 100%;
+  }
+
+  .search-bar__box {
+    width: 50%;
+  }
 }

@@ -10,7 +10,7 @@
 
 .home-main__logo {
     width: 492px;
-    margin: 220px 0 26px 0;
+    margin: 284px 0 26px 0;
 }
 
 .home-main__title {
@@ -57,7 +57,7 @@
 @media screen and (max-width:1199px) {
     .home-main__logo {
         width: 354px;
-        margin: 125px 0 20px 0;
+        margin: 180px 0 20px 0;
     }
 
     .home-main__title {
@@ -75,7 +75,7 @@
 @media screen and (max-width:767px) {
     .home-main__logo {
         width: 304px;
-        margin: 81px 0 13px 0;
+        margin: 150px 0 13px 0;
     }
 
     .home-main__title {
