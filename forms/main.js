@@ -10,7 +10,7 @@ $(document).on("click", '.partner-form button:not(.partner-button_disable)', fun
 		let name = $(this).closest('.partner-form').find('input[name="name"]'),
 			phone = $(this).closest('.partner-form').find('input[name="phone"]'),
 			email = $(this).closest('.partner-form').find('input[name="email"]');
-		
+
 		$.ajax({
 			url: "forms/partner.php",
 			type: "post",
@@ -67,7 +67,7 @@ $(document).on("click", '.partner-form button:not(.partner-button_disable)', fun
 
 		});
 
-	}	
+	}
 
 });
 
@@ -75,7 +75,7 @@ $(document).on("click", ".consultation-form button:not(.consultation-button_disa
 
 	let name = $(this).closest('.consultation-form').find('input[name="name"]'),
 		phone = $(this).closest('.consultation-form').find('input[name="phone"]');
-		
+
 
 	$.ajax({
 		url: "forms/consultation.php",
@@ -129,7 +129,7 @@ $(document).on("click", ".offcanvas-content form button:not(.callback-button_dis
 
 	let name = $(this).closest('form').find('input[name="name"]'),
 		phone = $(this).closest('form').find('input[name="phone"]');
-		
+
 
 	$.ajax({
 		url: "forms/callback.php",

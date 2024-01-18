@@ -670,22 +670,212 @@
   <!-- Category Products end -->
 
   <!-- Home Banner -->
-  <section class="row home-banner">
-    <div class="col p-0 position-relative">
-      <img class="d-none d-xl-block" src="images/new-collection/banner-main.png" alt="">
-      <img class="d-none d-sm-block d-xl-none" src="images/new-collection/banner-md.png" alt="">
-      <img class="d-sm-none" src="images/new-collection/banner-sm.png" alt="">
+  <div class="row">
+    <div class="col-12 p-0">
 
-      <div class="row d-flex justify-content-center">
-        <div class="col-12 col-md-11 col-xxl-11 col-xxxl-9 px-4">
-          <div class="home-banner-box">
-            <h3 class="home-banner-title banner-title">Новая коллекция!</h3>
-            <a href="./catalog.html" class="home-banner-btn banner-btn"> В каталог </a>
+      <div class="swiper new-collection-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="position-relative">
+              <img class="d-none d-xxl-block" src="images/new-collection/new-collection-desktop.png" alt="" width="1920" height="800">
+              <img class="d-none d-lg-block d-xxl-none" src="images/new-collection/new-collection-lg.png" alt="" width="992" height="500">
+              <img class="d-none d-md-block d-lg-none" src="images/new-collection/new-collection-md.png" alt="" width="768" height="644">
+              <img class="d-md-none" src="images/new-collection/new-collection-mobile.png" alt="" width="375" height="414">
+
+              <div class="row d-flex justify-content-center">
+                <div class="col-12 col-md-11 col-xxl-11 col-xxxl-9 px-4">
+                  <div class="home-banner-box">
+                    <h3 class="home-banner-title banner-title">Новая коллекция!</h3>
+                    <a href="./catalog.html" class="home-banner-btn banner-btn"> В каталог </a>
+                  </div>
+
+                  <div class="dots-wrapper">
+                    <!-- 1 -->
+                    <div class="dot-block dot-block-1">
+                      <button class="dot-btn" onclick="showText('dot-block__body-1')" onmouseover="showText('dot-block__body-1')">
+                        <span class="dot-btn__icon"></span>
+                      </button>
+                    </div>
+
+                    <div class="dot-block__body dot-block__body-1" id="dot-block__body-1">
+                      <button class="dot-close-btn" onclick="hideAllPopovers()">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-flex">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.146447 13.1486C-0.0488155 13.3439 -0.0488155 13.6605 0.146447 13.8557C0.341709 14.051 0.658291 14.051 0.853553 13.8557L7.00104 7.70825L13.1486 13.8558C13.3439 14.0511 13.6605 14.0511 13.8557 13.8558C14.051 13.6606 14.051 13.344 13.8557 13.1487L7.70815 7.00114L13.8557 0.853553C14.051 0.658291 14.051 0.341709 13.8557 0.146447C13.6605 -0.0488156 13.3439 -0.0488154 13.1486 0.146447L7.00104 6.29404L0.853553 0.146549C0.658291 -0.048713 0.341709 -0.0487131 0.146447 0.146549C-0.0488155 0.341811 -0.0488155 0.658394 0.146447 0.853656L6.29393 7.00114L0.146447 13.1486Z" fill="#381F15"/>
+                        </svg>
+                      </button>
+                      <span>Керамический горшок с поддоном «Блэк» <a class="dot-block__body__link" href="#" target="_blank">посмотреть подробнее 1</a></span>
+                    </div>
+                    <!-- /1 -->
+
+                    <!-- 2 -->
+                    <div class="dot-block dot-block-2">
+                      <button class="dot-btn" onclick="showText('dot-block__body-2')" onmouseover="showText('dot-block__body-2')">
+                        <span class="dot-btn__icon"></span>
+                      </button>
+                    </div>
+
+                    <div class="dot-block__body dot-block__body-2" id="dot-block__body-2">
+                      <button class="dot-close-btn" onclick="hideAllPopovers()">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-flex">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.146447 13.1486C-0.0488155 13.3439 -0.0488155 13.6605 0.146447 13.8557C0.341709 14.051 0.658291 14.051 0.853553 13.8557L7.00104 7.70825L13.1486 13.8558C13.3439 14.0511 13.6605 14.0511 13.8557 13.8558C14.051 13.6606 14.051 13.344 13.8557 13.1487L7.70815 7.00114L13.8557 0.853553C14.051 0.658291 14.051 0.341709 13.8557 0.146447C13.6605 -0.0488156 13.3439 -0.0488154 13.1486 0.146447L7.00104 6.29404L0.853553 0.146549C0.658291 -0.048713 0.341709 -0.0487131 0.146447 0.146549C-0.0488155 0.341811 -0.0488155 0.658394 0.146447 0.853656L6.29393 7.00114L0.146447 13.1486Z" fill="#381F15"/>
+                        </svg>
+                      </button>
+                      <span>Керамический горшок с поддоном «Блэк» <a class="dot-block__body__link" href="#" target="_blank">посмотреть подробнее 2</a></span>
+                    </div>
+                    <!-- /2 -->
+
+                    <!-- 3 -->
+                    <div class="dot-block dot-block-3">
+                      <button class="dot-btn _active" onclick="showText('dot-block__body-3')" onmouseover="showText('dot-block__body-3')">
+                        <span class="dot-btn__icon"></span>
+                      </button>
+                    </div>
+
+                    <div class="dot-block__body dot-block__body-3" id="dot-block__body-3">
+                      <button class="dot-close-btn" onclick="hideAllPopovers()">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-flex">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.146447 13.1486C-0.0488155 13.3439 -0.0488155 13.6605 0.146447 13.8557C0.341709 14.051 0.658291 14.051 0.853553 13.8557L7.00104 7.70825L13.1486 13.8558C13.3439 14.0511 13.6605 14.0511 13.8557 13.8558C14.051 13.6606 14.051 13.344 13.8557 13.1487L7.70815 7.00114L13.8557 0.853553C14.051 0.658291 14.051 0.341709 13.8557 0.146447C13.6605 -0.0488156 13.3439 -0.0488154 13.1486 0.146447L7.00104 6.29404L0.853553 0.146549C0.658291 -0.048713 0.341709 -0.0487131 0.146447 0.146549C-0.0488155 0.341811 -0.0488155 0.658394 0.146447 0.853656L6.29393 7.00114L0.146447 13.1486Z" fill="#381F15"/>
+                        </svg>
+                      </button>
+                      <span>Керамический горшок с поддоном «Блэк» <a class="dot-block__body__link" href="#" target="_blank">посмотреть подробнее 3</a></span>
+                    </div>
+                    <!-- /3 -->
+
+                    <!-- 4 -->
+                    <div class="dot-block dot-block-4">
+                      <button class="dot-btn" onclick="showText('dot-block__body-4')" onmouseover="showText('dot-block__body-4')">
+                        <span class="dot-btn__icon"></span>
+                      </button>
+                    </div>
+
+                    <div class="dot-block__body dot-block__body-4" id="dot-block__body-4">
+                      <button class="dot-close-btn" onclick="hideAllPopovers()">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-flex">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.146447 13.1486C-0.0488155 13.3439 -0.0488155 13.6605 0.146447 13.8557C0.341709 14.051 0.658291 14.051 0.853553 13.8557L7.00104 7.70825L13.1486 13.8558C13.3439 14.0511 13.6605 14.0511 13.8557 13.8558C14.051 13.6606 14.051 13.344 13.8557 13.1487L7.70815 7.00114L13.8557 0.853553C14.051 0.658291 14.051 0.341709 13.8557 0.146447C13.6605 -0.0488156 13.3439 -0.0488154 13.1486 0.146447L7.00104 6.29404L0.853553 0.146549C0.658291 -0.048713 0.341709 -0.0487131 0.146447 0.146549C-0.0488155 0.341811 -0.0488155 0.658394 0.146447 0.853656L6.29393 7.00114L0.146447 13.1486Z" fill="#381F15"/>
+                        </svg>
+                      </button>
+                      <span>Керамический горшок с поддоном «Блэк» <a class="dot-block__body__link" href="#" target="_blank">посмотреть подробнее 4</a></span>
+                    </div>
+                    <!-- /4 -->
+
+                    <!-- 5 -->
+                    <div class="dot-block dot-block-5">
+                      <button class="dot-btn" onclick="showText('dot-block__body-5')" onmouseover="showText('dot-block__body-5')">
+                        <span class="dot-btn__icon"></span>
+                      </button>
+                    </div>
+
+                    <div class="dot-block__body dot-block__body-5" id="dot-block__body-5">
+                      <button class="dot-close-btn" onclick="hideAllPopovers()">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-flex">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.146447 13.1486C-0.0488155 13.3439 -0.0488155 13.6605 0.146447 13.8557C0.341709 14.051 0.658291 14.051 0.853553 13.8557L7.00104 7.70825L13.1486 13.8558C13.3439 14.0511 13.6605 14.0511 13.8557 13.8558C14.051 13.6606 14.051 13.344 13.8557 13.1487L7.70815 7.00114L13.8557 0.853553C14.051 0.658291 14.051 0.341709 13.8557 0.146447C13.6605 -0.0488156 13.3439 -0.0488154 13.1486 0.146447L7.00104 6.29404L0.853553 0.146549C0.658291 -0.048713 0.341709 -0.0487131 0.146447 0.146549C-0.0488155 0.341811 -0.0488155 0.658394 0.146447 0.853656L6.29393 7.00114L0.146447 13.1486Z" fill="#381F15"/>
+                        </svg>
+                      </button>
+                      <span>Керамический горшок с поддоном «Блэк» <a class="dot-block__body__link" href="#" target="_blank">посмотреть подробнее 5</a></span>
+                    </div>
+                    <!-- /5 -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="position-relative">
+              <img class="d-none d-xxl-block" src="images/new-collection/new-collection-desktop-2.png" alt="" width="1920" height="800">
+              <img class="d-none d-lg-block d-xxl-none" src="images/new-collection/new-collection-lg-2.png" alt="" width="992" height="500">
+              <img class="d-none d-md-block d-lg-none" src="images/new-collection/new-collection-md-2.png" alt="" width="768" height="644">
+              <img class="d-md-none" src="images/new-collection/new-collection-mobile-2.png" alt="" width="375" height="414">
+
+              <div class="row d-flex justify-content-center">
+                <div class="col-12 col-md-11 col-xxl-11 col-xxxl-9 px-4">
+                  <div class="home-banner-box _light">
+                    <h3 class="home-banner-title banner-title">Новая коллекция!</h3>
+                    <a href="./catalog.html" class="home-banner-btn banner-btn"> В каталог </a>
+                  </div>
+
+                  <div class="dots-wrapper">
+                    <!-- 6 -->
+                    <div class="dot-block dot-block-6">
+                      <button class="dot-btn" onclick="showText('dot-block__body-6')" onmouseover="showText('dot-block__body-6')">
+                        <span class="dot-btn__icon"></span>
+                      </button>
+                    </div>
+
+                    <div class="dot-block__body dot-block__body-6" id="dot-block__body-6">
+                      <button class="dot-close-btn" onclick="hideAllPopovers()">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-flex">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.146447 13.1486C-0.0488155 13.3439 -0.0488155 13.6605 0.146447 13.8557C0.341709 14.051 0.658291 14.051 0.853553 13.8557L7.00104 7.70825L13.1486 13.8558C13.3439 14.0511 13.6605 14.0511 13.8557 13.8558C14.051 13.6606 14.051 13.344 13.8557 13.1487L7.70815 7.00114L13.8557 0.853553C14.051 0.658291 14.051 0.341709 13.8557 0.146447C13.6605 -0.0488156 13.3439 -0.0488154 13.1486 0.146447L7.00104 6.29404L0.853553 0.146549C0.658291 -0.048713 0.341709 -0.0487131 0.146447 0.146549C-0.0488155 0.341811 -0.0488155 0.658394 0.146447 0.853656L6.29393 7.00114L0.146447 13.1486Z" fill="#381F15"/>
+                        </svg>
+                      </button>
+                      <span>Керамический горшок с поддоном «Блэк» <a class="dot-block__body__link" href="#" target="_blank">посмотреть подробнее 1</a></span>
+                    </div>
+                    <!-- /6 -->
+
+                    <!-- 7 -->
+                    <div class="dot-block dot-block-7">
+                      <button class="dot-btn" onclick="showText('dot-block__body-7')" onmouseover="showText('dot-block__body-7')">
+                        <span class="dot-btn__icon"></span>
+                      </button>
+                    </div>
+
+                    <div class="dot-block__body dot-block__body-7" id="dot-block__body-7">
+                      <button class="dot-close-btn" onclick="hideAllPopovers()">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-flex">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.146447 13.1486C-0.0488155 13.3439 -0.0488155 13.6605 0.146447 13.8557C0.341709 14.051 0.658291 14.051 0.853553 13.8557L7.00104 7.70825L13.1486 13.8558C13.3439 14.0511 13.6605 14.0511 13.8557 13.8558C14.051 13.6606 14.051 13.344 13.8557 13.1487L7.70815 7.00114L13.8557 0.853553C14.051 0.658291 14.051 0.341709 13.8557 0.146447C13.6605 -0.0488156 13.3439 -0.0488154 13.1486 0.146447L7.00104 6.29404L0.853553 0.146549C0.658291 -0.048713 0.341709 -0.0487131 0.146447 0.146549C-0.0488155 0.341811 -0.0488155 0.658394 0.146447 0.853656L6.29393 7.00114L0.146447 13.1486Z" fill="#381F15"/>
+                        </svg>
+                      </button>
+                      <span>Керамический горшок с поддоном «Блэк» <a class="dot-block__body__link" href="#" target="_blank">посмотреть подробнее 2</a></span>
+                    </div>
+                    <!-- /7 -->
+
+                    <!-- 8 -->
+                    <div class="dot-block dot-block-8">
+                      <button class="dot-btn _active" onclick="showText('dot-block__body-8')" onmouseover="showText('dot-block__body-8')">
+                        <span class="dot-btn__icon"></span>
+                      </button>
+                    </div>
+
+                    <div class="dot-block__body dot-block__body-8" id="dot-block__body-8">
+                      <button class="dot-close-btn" onclick="hideAllPopovers()">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-flex">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.146447 13.1486C-0.0488155 13.3439 -0.0488155 13.6605 0.146447 13.8557C0.341709 14.051 0.658291 14.051 0.853553 13.8557L7.00104 7.70825L13.1486 13.8558C13.3439 14.0511 13.6605 14.0511 13.8557 13.8558C14.051 13.6606 14.051 13.344 13.8557 13.1487L7.70815 7.00114L13.8557 0.853553C14.051 0.658291 14.051 0.341709 13.8557 0.146447C13.6605 -0.0488156 13.3439 -0.0488154 13.1486 0.146447L7.00104 6.29404L0.853553 0.146549C0.658291 -0.048713 0.341709 -0.0487131 0.146447 0.146549C-0.0488155 0.341811 -0.0488155 0.658394 0.146447 0.853656L6.29393 7.00114L0.146447 13.1486Z" fill="#381F15"/>
+                        </svg>
+                      </button>
+                      <span>Керамический горшок с поддоном «Блэк» <a class="dot-block__body__link" href="#" target="_blank">посмотреть подробнее 3</a></span>
+                    </div>
+                    <!-- /8 -->
+
+                    <!-- 9 -->
+                    <div class="dot-block dot-block-9">
+                      <button class="dot-btn" onclick="showText('dot-block__body-9')" onmouseover="showText('dot-block__body-9')">
+                        <span class="dot-btn__icon"></span>
+                      </button>
+                    </div>
+
+                    <div class="dot-block__body dot-block__body-9" id="dot-block__body-9">
+                      <button class="dot-close-btn" onclick="hideAllPopovers()">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-flex">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.146447 13.1486C-0.0488155 13.3439 -0.0488155 13.6605 0.146447 13.8557C0.341709 14.051 0.658291 14.051 0.853553 13.8557L7.00104 7.70825L13.1486 13.8558C13.3439 14.0511 13.6605 14.0511 13.8557 13.8558C14.051 13.6606 14.051 13.344 13.8557 13.1487L7.70815 7.00114L13.8557 0.853553C14.051 0.658291 14.051 0.341709 13.8557 0.146447C13.6605 -0.0488156 13.3439 -0.0488154 13.1486 0.146447L7.00104 6.29404L0.853553 0.146549C0.658291 -0.048713 0.341709 -0.0487131 0.146447 0.146549C-0.0488155 0.341811 -0.0488155 0.658394 0.146447 0.853656L6.29393 7.00114L0.146447 13.1486Z" fill="#381F15"/>
+                        </svg>
+                      </button>
+                      <span>Керамический горшок с поддоном «Блэк» <a class="dot-block__body__link" href="#" target="_blank">посмотреть подробнее 4</a></span>
+                    </div>
+                    <!-- /9 -->
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+
+        <div class="swiper-pagination mt-2"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
+
     </div>
-  </section>
+  </div>
   <!-- Home Banner end-->
 
   <!-- Bottom Block -->
@@ -1218,6 +1408,35 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script>
+  /* -------- DOTS ------  */
+  // let currentPopover = 'dot-block__body-1';
+  let allPopoversBody = document.querySelectorAll('.dot-block__body');
+  let allPopoversButtons = document.querySelectorAll('.dot-btn');
+
+  function showText(textId) {
+    hideAllPopovers();
+
+    let text = document.getElementById(textId);
+    let button = document.querySelector(`[onclick="showText('${textId}')"]`);
+
+    if (text && button) {
+      text.style.display = 'block';
+      button.classList.add('_active');
+      // currentPopover = textId;
+    }
+  }
+
+  function hideAllPopovers() {
+    allPopoversBody.forEach(function (popover) {
+      popover.style.display = 'none';
+    });
+
+    allPopoversButtons.forEach(function (button) {
+      button.classList.remove('_active');
+    });
+  }
+  /* -------- DOTS ------  */
+
   const offcanvas = document.querySelector('.offcanvas');
   const offcanvasCall = document.querySelector('.offcanvas-call');
   const offcanvasPartner = document.querySelector('.offcanvas-partner');
@@ -1343,6 +1562,20 @@
     },
     loop: true,
     spaceBetween: 30,
+  });
+
+  new Swiper(".new-collection-swiper", {
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    pagination:{
+      clickable: true,
+      el: ".swiper-pagination",
+      dynamicBullets: true
+    }
   });
 
   new Swiper(".swiper-flex-img", {
